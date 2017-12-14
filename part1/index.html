@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Esure</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro" rel="stylesheet">-->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        @media only screen and (max-width: 480px) {
+            #fb {
+                display: none;
+            }
+            #unsubscribe{
+                width:100%;
+                float: left;
+            } 
+             #mobile_banner {
+                display: block;
+            }
+            #banner {
+                display: none;
+            }
+             /*#banner {
+             background-image: url('images/multicar_mobile.jpg'), url('images/multicar_mobile_image.jpg');
+           }*/ 
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 1024px) {
+            /* #banner{
+               background-image: url('images/emx_multicar_banner.jpg');
+            }*/
+           .mobile{
+                display: none;
+            }
+            #mobile_banner{
+                display: none;
+            }
+        }
+        /* Desktops and laptops -----------  */
+        @media only screen  and (min-width : 1224px) {
+            #mobile_banner{
+                display: none;
+            }
+        }
+        /* Large screens ----------- */
+        @media only screen  and (min-width : 1824px) {
+             #mobile_banner{
+                        display: none;
+                    }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="top_text">
+                 <span>You are receiving this email on account of your previous contact with us.</span>
+            </div>
+            <div id="header">
+                <a id="logo" href="#">
+                    <img height="35" src="images/esure_logo.png" alt="esure_logo">
+                </a>
+                <span id="header_text">Multicar Insurance  | <a href="#">View online</a></span>
+            </div> 
+        </header>
+        <div class="container-fluid" id="main">
+            <div id="banner">
+                <img class="desktop" width="500" src="images/emx_multicar_banner.jpg" alt="image for emx_multicar_banner">
+            </div>
+            <div id="mobile_banner">
+                <div id="multicar_mobile">
+                    <img class="mobile" src="images/multicar_mobile.jpg" alt="image for multicar_mobile"/>
+                </div>
+                <div id="mobile-image">
+                    <img class="mobile" src="images/multicar_mobile_image.jpg" alt="image for multicar_mobile_image"/>
+                </div>
+            </div>
+            <div id="greeting">
+                <h3 class="bold">Hello [Title] [Surname]</h3>
+                <p>You've already made a great decision by choosing esure for your car insurance. Thank you. Now, why not make your policy work even harder for you by checking out our multicar insurance? If you or your partner insures an extra car with us, we’ll match the highest No Claim Discount to the other policy so you both could save!</p>
+                <button class="center"><img  width="150" src="images/esure_button_150px.jpg" alt="Get a Quote button"></button>
+            </div>
+            <div>
+                <p>As long as you live at the same address you could get:</p>
+                <div class="row">
+                     <div class="col_30">
+                        <img width="100%" src="images/emx_ncd.jpg" alt="image for emx_10" />
+                    </div>
+                     <div class="col_70 left_align">
+                        <h3 class="highlight">Matched No Claim Discount</h3>
+                        <p>The policy with the lower No Claim Discount will be matched to the higher, limited to the number of years the driver has held a UK licence.</p>
+                    </div>
+                </div>
+                 <div class="row">
+                     <div class="col_30">
+                        <img width="100%" src="images/emx_10.jpg" alt="image for emx_10" />
+                    </div>
+                     <div class="col_70 left_align">
+                        <h3 class="highlight">Up to 10% discount</h3>
+                        <p>For each extra car you and your partner insure with us.</p>
+                    </div>
+                </div>
+                 <div class="row">
+                     <div class="col_30">
+                        <img width="100%" src="images/emx_individual.jpg" alt="image for emx_individual" />
+                    </div>
+                     <div class="col_70 left_align">
+                        <h3 class="highlight">Individual policies</h3>
+                        <p>The policies are kept separate, so if a claim is made on one it won’t affect the No Claim Discount on the other.</p>
+                    </div>
+                </div>
+                 <div class="row">
+                     <div class="col_30">
+                        <img width="100%" src="images/emx_quote_save.jpg" alt="image for emx_quote_save" />
+                    </div>
+                     <div class="col_70 left_align">
+                        <h3 class="highlight">Quotes saved for six months</h3>
+                        <p>Not ready to renew yet? No problem. Get a quote today and if your details stay the same we’ll guarantee it for 6 months! </p>
+                    </div>
+                </div>
+                <button class="center"><img width="150" src="images/esure_button_150px.jpg" alt="Get a Quote button"/></button>
+            </div>
+            <div id="regards">
+                <div class="align left_align">
+                    <p>Get a quote today and you could start saving now!</p>
+                    <p class="bold"><strong>Insure more for less.</strong></p>
+                    <p>Regards,</p>
+                    <p class="bold"><strong>esure</strong></p>
+                </div>
+                <div id="defaqto">
+                    <img src="images/defaqto.jpg" alt="image of defaqto" width="80"/>
+                </div> 
+            </div>
+        </div>
+        <div id="footer">
+            <div id="social">
+                <a href="www.facebook.com/esure" style="padding:0;"><img id="fb" width="70" src="images/social_fb.png" alt="image for facebook link"/></a>
+            </div>
+            <div id="unsubscribe">
+               <p class=""><a class="highlight" href="#" style="font-size: 6px;padding: 0;">Click here to unsubscribe</a> from further marketing and promotional emails from esure.</p> 
+                <p>Insurance is not available in Northern Ireland or the Channel Islands.  Subject to normal acceptance criteria. Terms, conditions, exclusions and limitations apply. Calls may be monitored and recorded.</p>
+                <p>Insurance is arranged and administered by esure Services Limited, who are registered in England and Wales no.2135610 at The Observatory, Reigate, Surrey, RH2 0SG and authorised and regulated by the Financial Conduct Authority, register no. 312063. </p>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>
