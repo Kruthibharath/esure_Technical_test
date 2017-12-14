@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-100-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-300-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-300-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: normal;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-300-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-500-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-700-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-900-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  font-style: normal;
+  font-weight: 1000;
+  src: url(https://cdn.synthetix.com/FAQTAGENT-ESURE-MASTER_2018/assets/font/museosansrounded-1000-webfont.ttf);
+}
+
+/*
+
+General triggers style
+
+*/
+
+.sx_tr_wrapper > ul > li.sx_tr_element > button.sx_tr_launch {
+    font-size: .9em;
+    border: 3px solid #fff;
+    background-color: #0971B0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.3);
+}
+.sx_tr_wrapper > ul > li.sx_tr_element > button.sx_tr_close {
+    background-color: #0971B0;
+    border: 3px solid #fff;
+    -webkit-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.3);
+}
+.sx_tr_wrapper > ul > li.sx_tr_element > button.sx_tr_launch > span.sx_label_text {
+    font-family: 'Museo Sans Rounded', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.sx_tr_wrapper > ul > li.sx_tr_element.sx_tr_livechat > button.sx_tr_launch > span.sx_label_icon::before {
+    content: "\e970";
+}
+.sx_tr_wrapper.sx_tr_float.hide_main_trigger > ul.sx_tr_main > li.sx_tr_element.sx_tr_livechat > button.sx_tr_close > span.sx_label_icon::before {
+    content: "\e970";
+}
+
+/*
+  ______    ___     ____     __     ______  ______
+ /_  __/   /   |   / __ )   / /    / ____/ /_  __/
+  / /     / /| |  / __  |  / /    / __/     / /   
+ / /     / ___ | / /_/ /  / /___ / /___    / /    
+/_/     /_/  |_|/_____/  /_____//_____/   /_/     
+                                                  
+*/
+
+@media only screen and (max-device-width: 1024px) {
+
+	.sx_tr_wrapper.sx_tr_float > ul > li.sx_tr_element > button.sx_tr_launch {
+	    background-color: #0971B0;
+	}
+  .sx_tr_wrapper.sx_tr_float > ul > li.sx_tr_element > button.sx_tr_launch {
+      font-size: .7em;
+  }
+
+}
+
+@media only screen and (max-device-width: 768px) {
+
+
+}
+
+/*
+    __  ___   ____     ____     ____    __     ______
+   /  |/  /  / __ \   / __ )   /  _/   / /    / ____/
+  / /|_/ /  / / / /  / __  |   / /    / /    / __/   
+ / /  / /  / /_/ /  / /_/ /  _/ /    / /___ / /___   
+/_/  /_/   \____/  /_____/  /___/   /_____//_____/   
+                                                     
+*/
+
+@media only screen and (max-device-width: 650px) {
+
+
+}

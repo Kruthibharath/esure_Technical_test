@@ -1,0 +1,6800 @@
+/*================================================================================================================================
+ ESURE CSS 
+
+
+--COLORZ--
+Orange: #f48e1e;
+DarkBlue: #0971b0;
+Light Blue: #e6f1f7;
+Info Green: #89c33f;
+light Green: #eef5ed;
+Warning Red: #b94a48; / old was #ff0 Ugly
+
+ ================================================================================================================================*/
+@font-face {
+    font-family:MuseoSansRounded-300;src:url(museosansrounded300_eot.eot);src:url(museosansrounded300_eot.eot?#iefix) format('embedded-opentype'),url(museosansrounded300_ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:MuseoSansRounded-500;src:url(museosansrounded500_eot.eot);src:url(museosansrounded500_eot.eot?#iefix) format('embedded-opentype'),url(museosansrounded500_ttf.ttf) format('truetype');
+}
+
+@font-face {
+    font-family:MuseoSansRounded-700;src:url(museosansrounded700_eot.eot);src:url(museosansrounded700_eot.eot?#iefix) format('embedded-opentype'),url(museosansrounded700_ttf.ttf) format('truetype');
+}
+
+body,
+ul#your-car li,
+#mob-menu,
+#content-area-bottom #back,
+#content-area-bottom input.go-to-next,
+.next-link-button #content-area-bottom input.go-to-next,
+#content-area-bottom input.edit-btn,
+#content-area-bottom input.back-btn,
+input.add-another-driver,
+.back-button ul li input,
+.back-button ul li a,
+#benefits h3,
+#call-us h4,
+#mob-menu,
+#mob-menu, /*odd*/
+.c_code_e #content-area-main.one_col .content-area-centre .progress_button,
+.c_code_e #content-area-main.one_col .content-area-centre .progress_button:hover,
+#xsell-right dl dd input,
+#xsell-right dl dd input:focus,
+#xsell-right dl dd input:hover,
+.helpDialog .mod-hdr,
+#quote-layout #displayPremium h2
+.back-hdr,
+input#pwdReset, input#login, #submit input,
+#pages_general_siteFeedback h3,
+.content-area-centre h2,
+.add-driver-claims h4, 
+#convictionsPanel h4,
+#pages_product_motor_container_aboutYourAdditionalDrivers input#addDriver,
+#content-area-bottom input.add-another-driver,
+#content-area-bottom input.add-another-driver:hover,
+.bundleDetailsDialog.BK-modal .mod-content h4,
+.bundleDetailsDialog.LGL-modal .mod-content h4,
+.bundleDetailsDialog.PIB-modal .mod-content h4,
+.bundleDetailsDialog.CHC-modal .mod-content h4,
+.bundleDetailsDialog.BK-modal .mod-content h5,
+.bundleDetailsDialog.LGL-modal .mod-content h5,
+.bundleDetailsDialog.PIB-modal .mod-content h5,
+.bundleDetailsDialog.CHC-modal .mod-content h5,
+#progress-bar ul li span.active,
+#call-us dl dt,
+#quote-layout #details-section ul li h2, #quote-layout ul li h2,
+#quote-call-us  span,
+#quote-call-us h4,
+#quote-call-us h3,
+#call-us h3,
+.section-titles h1,
+h1.sub-titles,
+.qtip-motor-quotepage .qtip-icon,
+/* .bundle-icon-text, */
+#excessProtectionLabel > span,
+#progress-bar ul,
+input#continue, 
+input#next, 
+input#back,
+.quote-step,
+#label_breakdownCover_3 .bkRadio,
+.listviewannualmonth span,
+.breakdown-price span,
+.ncd-protection-radiobutton,
+.excess-protection-radiobutton,
+.listview-sections label,
+.quote-step,
+/* .listview-bundle-sections .label-heading, */
+.full_breakdown h2,
+#excessProtectionLabel > span,
+#quote-contact-us h3,
+#quote-contact-us h4,
+.qtip-esure .qtip-icon, 
+input#recalculateDisabled, 
+input#add_driver_next_false, 
+input#modalFinishButton, 
+input.recalculate, 
+#nextDisabled,
+#container .premium-display dt,
+#container .premium-display dd,
+.helpDialog .yui-panel .hd h3, 
+.bundleDetailsDialog .yui-panel h3,
+#container dl.top-premium-panels dt,
+.bundleDetailsDialog .mod-content h4,
+#content-area-right ul#print-save li input,
+.bundleDetailsDialog .mod-content ul.select-bundle a,
+#pages_product_motor_container_yourQuote input#quoteDetailsSideButton, 
+#pages_product_motor_container_yourQuote input#viewPaymentOptionsSideButton, 
+#pages_product_motor_container_yourQuote input#printQuote, 
+#pages_product_motor_container_yourQuote input#saveQuote, 
+#pages_product_motor_container_yourQuote #content-area-right ul li input,
+.additional-info-table ul li input.edit,
+.additional-info-table ul li input.delete,
+.specified-info-table ul li input.edit,
+.specified-info-table ul li input.delete,
+input#continue, input#next, input#back,
+input#recalculateDisabled, input#add_driver_next_false,
+input#modalFinishButton,
+input.add-section, input.add-section-clear, input#mobRecalculate,
+input#passwordHint, input#resetPassword {
+    font-family: 'MuseoSansRounded-500', Arial, Helvetica;
+}
+
+body {
+    background: #f3f0ec;
+    color: #494949;
+    font-weight: 400!important;
+}
+
+a {
+    color: #0971b0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.refer, a.refer:hover, a.xsell, a.xsell:hover {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/nextarrow.gif") no-repeat scroll right -1px #f48e1e;
+    padding: 10px 60px 10px 10px;
+    margin-bottom: 0.7em;
+}
+
+a.refer:hover,
+a.xsell:hover {
+    text-decoration: underline;
+      color: #fff !important;
+}
+#starRating p {
+    overflow: auto;
+}
+
+
+.form-background input[type="radio"],
+.content-area-centre input[type="radio"] {
+    margin: 0.2em 0.2em 0 1.7em;
+}
+
+#outer {
+    background: #fdf9f5;
+    z-index: 99;
+    border-bottom: 1px solid #e6e2de;
+}
+
+#header {
+    height: 100px;
+    background-color: #fdf9f5;
+}
+
+#container {
+    margin-top: 0;
+    width: 990px;
+    max-width: 990px;
+}
+
+#container dt {
+    width: 42%;
+    margin-right: 2%;
+    padding: 0;
+    padding-bottom: 18px;
+    font-size: 20px;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    clear: left;
+}
+
+#ncdProtectionLabel, #voluntaryExcessLimitLabel, #ncdProtectionFlagHelpLink, .help-arrow/* , .bundle-include a */{
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+}
+
+h3#debit-gaurantee {
+    margin-left: 0;
+    font-size: 18px;
+}
+
+#dd-confirmation li {
+    font-size: 14px;
+}
+
+#container dt label {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    padding-top: 10px;
+}
+
+dd {
+    width: 56%;
+    padding: 0 0 25px 0;
+}
+
+label span {
+    font-size: 16px;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400;
+}
+
+#pages_product_motor_container_yourQuote label span {
+    font-size: 14px;
+}
+
+#your-details {
+    padding: 0 0 40px;
+}
+
+.form-background input[type=text],
+ .form-background input[type=email],
+ .form-background input[type=tel],
+ .form-background input[type=number],
+ .form-background input[type=password],
+ .form-background textarea,
+ .dates input,
+ .ban-points input,
+ #pages_product_motor_container_aboutYourAdditionalDrivers fieldset dl dd input[type=text],
+ #pages_product_motor_container_aboutYourAdditionalDrivers fieldset dl dd input[type=email],
+ #pages_product_motor_container_aboutYourAdditionalDrivers fieldset dl dd input[type=tel],
+ #pages_product_motor_container_aboutYourAdditionalDrivers fieldset dl dd input[type=number] {
+    padding: 9px 4px 9px;
+    background: #fcfcfc;
+    border-color: #e1e1e1;
+    -webkit-box-shadow: inset 0 2px #f5f5f5;
+    -moz-box-shadow: inset 0 2px #f5f5f5;
+    box-shadow: inset 0 2px #f5f5f5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 80%;
+}
+
+#container dd select {
+    margin-top: 3px;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-size: 14px;
+    padding: 7px;
+}
+
+span.left {
+    display: block;
+    padding: 15px 2%;
+    margin: 20px 0;
+    background: #F3F0EC;
+    color: #494949;
+    border: 1px solid #E6E2DE;
+    width: 96%;
+}
+
+#brand-overlay {
+    position: relative;
+}
+
+#pages_product_home_container_excessesAndEndorsements .content-area-centre ul li {
+    font-size: 15px;
+}
+
+#pages_product_home_container_excessesAndEndorsements .content-area-centre ul li:last-child {
+    border-bottom: 1px solid #E6E2DE;
+}
+
+#yourquoteprintsave {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: -30px;
+}
+
+* a:hover, 
+* input:hover,
+* a, 
+* input {
+    -webkit-transition: color 0.5s ease 0s;
+    -moz-transition: color 0.5s ease 0s;
+    -ms-transition: color 0.5s ease 0s;
+    -o-transition: color 0.5s ease 0s;
+    transition: color 0.5s ease 0s;
+}
+.rich-sb-int-sel, .rich-sb-int,
+.rich-sb-int-decor-table {
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+}
+
+.rich-sb-int-sel td{
+    background: #0971b0;
+    color: #fff;
+}
+
+.richfaces_suggestionEntry {
+    border: none;
+}
+
+.rich-sb-int-decor-table {
+    background: transparent;
+}  
+.rich-sb-cell-padding {
+    padding: 0.5em; 
+    border: none;
+    font-size: 13px;
+    text-align: left;
+    color: #494949;
+}
+
+.select-address select,
+.select-car select {
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    padding: 5px;
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+input#carNotBoughtYetFlag {
+    margin-top: 15px;
+}
+
+#addressList > option,
+#carType > option {
+    height: 22px;
+}
+
+.select-address label {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 15px;
+    display: block;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+}
+
+.dates input, .ban-points input {
+    width: 3.8em;
+}
+
+input:focus, 
+select:focus {
+    border-color: #71757b;
+}
+
+th {
+    color: #494949;
+}
+
+th, td {
+    border-color: #EAEAEA;
+    border: 0;
+    text-align: center;
+}
+
+ul.claim-conv-btns,
+ul#claim-conv-btns {
+    width: 100%;
+    position: static;
+}
+
+ul.claim-conv-btns li,
+#claim-conv-btns li {
+    width: 50%;
+    margin-left: 0;
+}
+
+ul.claim-conv-btns li input {
+    height: 2.5em;
+    font-size: 1.8em;
+    margin-right: 0.5em;
+    font-weight: 700;
+}
+
+    #claimDetails input.add-section {
+    background-color: #0971B0;
+}
+
+ul#drivers {
+    top: 0;
+    height: 4.5em;
+    margin: 0 2% 1em;
+    width: 97%;
+}
+
+ul#drivers li {
+    height: 4.5em;
+    padding: 0 0.5em;
+}
+
+#claimsSubform\:addClaimButton,
+#convictionsSubform\:addConvictionButton,
+#addConvictionButton,
+#addClaimButton {
+    float: right;
+}
+
+body, a, #navigation-area-left a.visited, 
+#navigation-area-left a.visited:hover, 
+#navigation-area-left a.visited:focus,
+input.add-section-clear, 
+input.find-addr, 
+input.text-only-input,
+#view-details input,
+h2.quote-h2,
+.additional-info-table ul li input.edit,
+.additional-info-table ul li input.delete,
+#xsell-right dl dd input,
+#quote-layout ul li h2,
+.help-header,
+#quote-layout dl.premium-dl .titles, 
+#quote-layout dl.monthly-dl .titles,
+#navigation-area-left a.active,
+.driver-switch,
+.section-titles h1,
+.breakdown-tc a:hover,
+.breakdown-tc a:focus,
+.content-area-centre h4 a,
+.content-area-centre a:hover,
+.content-area-centre a:focus,
+#agg-message h1,
+#agg-message span,
+#view-details input:hover,
+#view-details input:focus,
+.section-titles-in-page h1,
+.content-area-centre.ncd-mlp h2.ncd-hdr,            
+.content-area-centre.ncd-mlp h2#vol-exces-hdr,
+#switch-display-controls input.switch-display-option:hover,
+#switch-display-controls input.switch-display-option:focus,
+input#changeCar:hover,
+input#changeCar:focus,
+#premiumAmountInstallments,
+#premiumAmount,
+.prem-title {
+    color: #0971b0;
+}
+
+/* .premium-dl, .monthly-dl {
+    border-bottom: 1px solid #f3f0ec;
+    margin-bottom: 0.8em;
+} */
+
+#quote-layout dl.premium-dl dt, #quote-layout dl.monthly-dl dt {
+    margin: 0.8em 0;
+}
+
+#pages_product_motor_container_quoteDetails .hr-one,
+#pages_product_home_container_quoteDetails hr.hr-one {
+    background-color: #f3f0ec;
+    border: none;
+    height: 1px;
+    left: 0;
+    margin: 1em 0;
+}
+
+#quote-layout  #details-section ul {
+    margin-bottom: 1.6em;
+    border-bottom: 1px solid #f3f0ec;
+}
+
+#quote-layout dl.premium-dl dd {
+    font-size: 12px;
+    padding: 0 5px;
+    width: 15%;
+}
+
+.home-prem .form-background {
+    background: #fff;
+    padding: 1em;
+}
+
+#pages_product_home_container_yourQuote .content-area-centre, 
+#pages_product_home_container_yourQuote .form-background {
+    padding: 1em;
+}
+
+.declarations a, .declarations a:focus {
+    color: #0971b0;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.declarations a:visited {
+    color: #0971b0;
+}
+
+.declarations a:hover,
+.declarations a:active {
+    text-decoration: underline;
+}
+
+#quote-layout #details-section {
+    width: 100%;
+}
+
+.declarations, 
+#renewal-declarations,
+#home-abt-decs {
+    background: #F3F0EC;
+    border: 1px solid #E6E2DE;
+    color: #494949;
+    font-size: 20px;
+    padding: 15px 2%;
+    border-radius: 0;
+}
+
+#quote-layout .content-area-centre .declarations ul li strong {
+    height: 0;
+}
+
+#home-abt-decs a {
+    color: #0971b0;
+    font-weight: 400;
+}
+
+.external-one {
+    padding-right: 15px;
+}
+
+.declaration-agrmt-btns label,
+.decs label {
+    padding: 10px 20px 8px 0;
+    background-color: #fff;
+    margin: 10px 0 0 10px;
+    display: inline-block;
+}
+
+.declaration-agrmt-btns li {
+    display: block;
+    float: left;
+}
+
+#pages_product_common_paymentOptions #payment-optns ul.noindent {
+    list-style: disc inside none;
+    font-size: 16px;
+    padding: 0 0 0 2%;
+}
+
+#billingAddrRegion {
+    font-size: 20px;
+}
+
+#information-pack {
+    font-size: 15px;
+}
+
+ul#information-pack li ul li {
+    padding: 5px 0;
+}
+
+#email-pack,
+#confirmInformationMessageAnchor,
+#efulfilmentMessageAnchor {
+    font-size: 14px;
+}
+
+#pages_product_common_cardInformation.pci #billingDetails dt {
+    line-height: 25px;
+}
+
+#pages_product_common_cardInformation.pci #billingDetails dd {
+    width: 50%;
+    font-size: 16px;
+    margin: 0;
+	font-family: "MuseoSansRounded-700", Arial, Verdana;
+}
+
+#quote-layout h2 a,
+input.add-section, 
+input.add-section-clear,
+input.find-addr,
+input#renewalCaptureButton,
+#pages_product_common_cardInformation.pci input#amendCardDetailsButton {
+    background: #f48e1e;
+    color: #fff !important;
+    height: 2.5em;
+    padding: 5px 10px;
+    width: auto;
+    margin: 0.2em 0.6em !important;
+    font-size: 18px;
+    bottom: 150px;
+    right: 50px;
+    border-radius: 0;
+}
+
+.noprint {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#pages_product_common_cardInformation.pci input#amendCardDetailsButton,
+#submitRating,
+#renewalCaptureButtonForHome {
+    font-size: 1.2em;
+}
+
+#pages_product_common_cardInformation.pci #cardDetailsFrame {
+    height: 900px;
+}
+
+#pciframe {
+    width: 600px;
+}
+
+#pciframe p {
+    font-family: arial;
+}
+
+#pciframe #content-area-bottom input.go-to-next {
+    bottom: 9px !important;
+    left: 54%;
+    border: none;
+}
+
+#paymentForm dt {
+    width: 46%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+}
+
+select#capf1 {
+    margin-top: 6px;
+}
+
+#context-help-doorLocksFlag-panel-helpButton {
+    right: 0.9375em;
+}
+
+#paymentForm dd {
+    text-align: left;
+    width: 50%;
+}
+
+dd fieldset {
+    margin-top: 7px;
+}
+
+#pages_product_common_cardInformation.pci .form-background {
+    padding-bottom: 745px;
+}
+
+#pages_product_common_paymentConfirmation .content-area-centre h2 {
+    text-indent: 0;
+    font-size: 16px;
+}
+
+#pages_product_common_paymentConfirmation #content-area-bottom input#next.go-to-next {
+    background: #89c33f;
+    border: 1px solid #89c33f;
+}
+
+.c_code_e .error {
+    position: relative;
+    font-size: 14px;
+    left: 8px;
+    margin-top: 10px;
+    float: left;
+}
+
+#navigation-area-left ul {
+    background-color: #e68926;
+    padding-bottom: 4em;
+}
+
+.external-one,      
+#footer ul li a {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_footer_external.gif") no-repeat scroll right center;
+}
+
+.external-two {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_blue_external_icon.gif") no-repeat scroll right center;
+    padding-right: 15px;
+}
+
+#content-area-bottom {
+    padding: 0 0 20px;
+    margin-top: 30px;
+}
+
+#claim-conv-btns input.add-section,
+#claim-conv-btns input.add-section-clear,
+.claim-conv-btns input.add-section,
+.claim-conv-btns input.add-section-clear {
+    background-color: #0971b0;
+    font-weight: 400;
+}
+
+/*fix li missing on queote details page of motor */
+#pages_product_motor_container_quoteDetails #content-area-bottom ul li {
+    width: 50%;
+}
+
+ul.select-car label {
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+ul#your-car {
+    padding-bottom: 30px;
+}
+
+ul#your-car span.car-title {
+    display: none;
+}
+
+ul#your-car li {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-left: 0;
+}
+
+ul#your-car li span, ul#your-car li input {
+    font-size: 13px;
+    float: none;
+    margin-right: 3px;
+}
+
+input#changeCar {
+    font-weight: 400;
+    color: #0971b0;
+    text-decoration: none;
+}
+
+input#changeCar:hover, input#viewPaymentOptionsButton:hover, input#yourQuoteDetailsButton:hover, input#customiseButton:hover, input#emaillink:hover {
+    text-decoration: underline;
+}
+
+#pages_product_common_cardInformation.pci input#amendCardDetailsButton {
+    padding-top: 0;
+}
+
+input.add-section:hover, 
+input.add-section-clear:hover,
+input.find-addr:hover,
+#pages_product_common_cardInformation.pci input#amendCardDetailsButton:hover {
+    text-decoration: underline;
+}
+
+ul#drivers li,
+ul#drivers li.passive-driver {
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 48%;
+    margin-right: 2%;
+    height: 4.5em;
+}
+
+.passive-driver .passive-ad-top-left,.passive-driver .passive-tab-top-right {
+    background: none;
+}
+
+.active-driver .active-ad-top-left, .active-driver .active-tab-top-right {
+    background: none;
+}
+
+.add-driver-claims h4, .add-driver-convictions h4 {
+    color: #0971b0;
+}
+
+.active-drivers-name,
+.driver-switch {
+    color: #fff;
+    bottom: 0;
+    font-size: 18px;
+    line-height: 37px;
+}
+
+.active-driver input.remove-driver, 
+.passive-driver input.remove-driver,
+.passive-driver input.remove-driver:hover, 
+.active-driver input.remove-driver:hover {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/lightbox_close.gif") no-repeat scroll 50% 50% transparent;
+    height: 30px;
+    width: 30px;
+    text-indent: -999px;
+}
+
+#content-area-bottom input.go-to-next,
+.next-link-button #content-area-bottom input.go-to-next {
+    padding-right: 15%;
+}
+
+#content-area-bottom input.back-btn {
+    padding-left: 15%;
+}
+
+#pages_product_common_paymentConfirmation #content-area-bottom input.go-to-next,
+input.add-another-driver {
+    background: none repeat scroll 0 0 #0971b0;
+    padding-right: 3%;
+}
+
+#pages_product_home_container_yourQuote #content-area-bottom input.go-to-next,
+#pages_product_home_container_yourQuote .next-link-button #content-area-bottom input.go-to-next {
+    padding-right: 24%;
+}
+
+#content-area-bottom #back,
+#freeAddOnsPopup-panel ul li button#noThanksButton /* free addon btn */ {
+    height: 56px;
+    margin-left: 30px;
+    color: #f48e1e;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #e7e4e0;
+    border-top-color: #f6f2ee;
+    border-bottom-color: #d1cecb;
+    -webkit-box-shadow: 0 2px 2px #e7e4e0;
+    -moz-box-shadow: 0 2px 2px #e7e4e0;
+    box-shadow: 0 2px 2px #e7e4e0;
+    padding: 0 15px 0 55px;
+    font-weight: 400!important;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/backarrow_onwhite.gif") no-repeat left 2px #fff;
+    min-width: 120px;
+}
+
+#content-area-bottom input.go-to-next,
+.next-link-button #content-area-bottom input.go-to-next,
+#content-area-bottom input.edit-btn,
+#content-area-bottom input.back-btn,
+input.add-another-driver,
+.back-button ul li input,
+.back-button ul li a,
+#faqform input,
+#freeAddOnsPopup-panel ul li button#continueButton /* free addon btn */ {
+    -webkit-box-shadow: 0 2px 2px #e7e4e0;
+    -moz-box-shadow: 0 2px 2px #e7e4e0;
+    box-shadow: 0 2px 2px #e7e4e0;
+    width: 6.5em;
+    margin: 0 0.1em 0.5em;
+    height: 56px;
+    margin-right: 30px;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/nextarrow.gif") no-repeat right 2px #f48e1e;
+    color: #fff;
+    font-weight: 400;
+    min-width: 120px;
+    border-radius: 0;
+}
+
+input#next,
+input#next_alt,
+input#add_driver_next_false {
+    border: 1px solid #f48e1e;
+}
+
+.back-button ul li a {
+    width: 50%;
+    margin: 0;
+}
+
+input.add-another-driver {
+    background-image: none;
+    background-color: #89c33f;
+}
+
+#pages_product_home_container_yourQuote #content-area-bottom input.edit-btn {
+    background: #0971b0;
+    border: 0;
+    margin-left: 30px;
+}
+
+input.add-another-driver {
+    width: auto;
+}
+
+#content-area-bottom input.go-to-next:hover, 
+#content-area-bottom input.go-to-next:focus,
+#content-area-bottom input.back-btn:hover,
+#content-area-bottom input.back-btn:focus
+.back-button ul li input:hover,
+.back-button ul li input:focus,
+input.add-another-driver:hover,
+input.add-another-driver:focus,
+.back-button ul li a:hover,
+.back-button ul li a:focus {
+}
+
+input#printQuote,
+input#saveQuote,
+#content-area-right ul li input {
+    padding-bottom: 0;
+    width: 100%;
+}
+
+#pages_product_home_container_quoteDetails input#j_id291,
+#pages_product_motor_container_quoteDetails input#j_id314 {
+    font-size: 18px !important;
+    height: 50px;
+}
+
+#pages_product_home_container_quoteDetails dl.conviction-conditions dd {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/* #pages_product_home_container_quoteDetails dl.conviction-conditions dd {
+    padding-bottom: 10px;
+} */
+/* #pages_product_home_container_quoteDetails dl.conviction-conditions dt {
+    float: right;
+} */
+
+#quote-layout .content-area-centre .declarations ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#property-dets h2, #general-qs h2 {
+    clear: both;
+    font-size: 18px;
+    margin-top: 1em;
+    color: #0971b0;
+}
+
+.p_code_HOME #content-area-right ul li input {
+    font-size: 14px;
+}
+
+#content-area-right ul#print-save li input {
+    background-color: #f48e1e;
+    color: #fff;
+}
+
+#content-area-right ul#print-save li input:hover {
+    text-decoration: underline;
+}
+
+input#printQuote,
+input[value="Print"] {
+    background: #f48e1e;
+    color: #fff !important;
+    padding-right: 1.5em;
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/print.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 80% 50%;
+}
+
+.back-button ul li input,
+.back-button ul li a {
+    background: #0971b0;
+    height: auto;
+    color: #fff;
+    padding: 0.2em;
+}
+#content-area-bottom #nextDisabled {
+    margin-right: 30px;
+}
+
+#content-area-bottom #nextDisabled, #content-area-bottom #recalculateDisabled {
+    width: 165px;
+    margin-right: 1em;
+    height: 56px;
+    border: 1px solid #e7e4e0;
+    border-top-color: #f6f2ee;
+    border-bottom-color: #d1cecb;
+    -webkit-box-shadow: 0 2px 2px #e7e4e0;
+    -moz-box-shadow: 0 2px 2px #e7e4e0;
+    box-shadow: 0 2px 2px #e7e4e0;
+    background: #dddddd;
+ /* Old browsers */
+    background: -moz-linear-gradient(top,  #dddddd 0%, #c3c3c3 100%);
+ /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#c3c3c3));
+ /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dddddd 0%,#c3c3c3 100%);
+ /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dddddd 0%,#c3c3c3 100%);
+ /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dddddd 0%,#c3c3c3 100%);
+ /* IE10+ */
+    background: linear-gradient(to bottom,  #dddddd 0%,#c3c3c3 100%);
+ /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#c3c3c3',GradientType=0 );
+ /* IE6-9 */
+    ;
+}
+
+#content-area-bottom #nextDisabled:hover, #content-area-bottom #recalculateDisabled:hover {
+    background: -moz-linear-gradient(top,  #c3c3c3 0%, #ddd 100%);
+ /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3c3c3), color-stop(100%,#dddddd));
+ /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #c3c3c3 0%,#ddd 100%);
+ /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #c3c3c3 0%,#ddd 100%);
+ /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #c3c3c3 0%,#ddd 100%);
+ /* IE10+ */
+    background: linear-gradient(to bottom,  #c3c3c3 0%,#ddd 100%);
+ /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c3', endColorstr='#dddddd',GradientType=0 );
+ /* IE6-9 */
+    ;
+}
+
+input.recalculate,
+input#mobRecalculate {
+    background: #D82A15;
+ /* Old browsers */
+    background: -moz-linear-gradient(top,  #D82A15 0%, #EC5746 100%);
+ /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D82A15), color-stop(100%,#EC5746));
+ /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #D82A15 0%,#EC5746 100%);
+ /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #D82A15 0%,#EC5746 100%);
+ /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #D82A15 0%,#EC5746 100%);
+ /* IE10+ */
+    background: linear-gradient(to bottom,  #D82A15 0%,#EC5746 100%);
+ /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D82A15', endColorstr='#EC5746',GradientType=0 );
+ /* IE6-9 */
+    text-shadow: 0px -1px 1px #970400;
+    width: 7.2em;
+    height: 2em;
+    border: 1px solid #e7e4e0;
+    border-top-color: #f6f2ee;
+    border-bottom-color: #d1cecb;
+    -webkit-box-shadow: 0 2px 2px #e7e4e0;
+    -moz-box-shadow: 0 2px 2px #e7e4e0;
+    box-shadow: 0 2px 2px #e7e4e0;
+    height: 56px;
+}
+
+input.recalculate:hover,
+input.recalculate:focus,
+input#mobRecalculate:hover,
+input#mobRecalculate:focus {
+    background: #D82A15;
+ /* Old browsers */
+    background: -moz-linear-gradient(top,  #EC5746 0%, #D82A15 100%);
+ /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EC5746), color-stop(100%,#D82A15));
+ /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #EC5746 0%,#D82A15 100%);
+ /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #EC5746 0%,#D82A15 100%);
+ /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #EC5746 0%,#D82A15 100%);
+ /* IE10+ */
+    background: linear-gradient(to bottom,  #EC5746 0%,#D82A15 100%);
+ /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EC5746', endColorstr='#D82A15',GradientType=0 );
+ /* IE6-9 */
+    ;
+}
+
+#mobRecalcButtonRegion {
+    height: 0;
+}
+
+input#mobRecalculate {
+    margin-top: 0;
+    border-radius: 0 0 3px 3px;
+    box-shadow: none;
+    border: none;
+}
+
+#benefits {
+    color: #494949;
+}
+
+#benefits h3 {
+    color: #0971b0;
+    font-size: 20px;
+    margin: 0 0.4em 0.3em;
+    font-weight: normal;
+}
+
+.additional-info-table {
+    border-color: #f3f0ec;
+}
+
+.additional-info-table td {
+    border-right: solid 1px #f3f0ec;
+}
+
+.additional-info-table thead, 
+.quote-claims-convictions thead {
+    background: #f3f0ec;
+    /* font-size: 1.3em; */
+    ;
+}
+
+.additional-info-table ul li input.edit:hover, 
+.additional-info-table ul li input.edit:focus,
+.additional-info-table ul li input.delete:hover,
+.additional-info-table ul li input.delete:focus,
+.specified-info-table ul li input.edit:hover,
+.specified-info-table ul li input.edit:focus,
+.specified-info-table ul li input.delete:hover,
+.specified-info-table ul li input.delete:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#pages_product_common_directDebitDetailsConfirmation #content-area-bottom .go-to-next {
+    background: #0971b0 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_buttons.jpg") no-repeat -5px -416px;
+}
+
+#pages_product_common_directDebitDetailsConfirmation #content-area-bottom .go-to-next:hover {
+    background: #0971b0 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_buttons.jpg") no-repeat -258px -416px;
+}
+
+/*================================================================================================================================
+xsell
+================================================================================================================================*/
+#xsell-right dl dd input {
+    background: #e68926 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_buttons.jpg") no-repeat -7px -123px;
+    height: 1.7em;
+}
+
+#xsell-right dl dd input:focus,
+#xsell-right dl dd input:hover {
+    background: #e68926 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_buttons.jpg") no-repeat -83px -123px;
+}
+
+#pages_product_common_paymentConfirmation .form-background,
+#pages_product_common_paymentConfirmation .content-area-centre {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+ul#top-controls li a.print, 
+ul#btm-controls li a.print {
+    background: #e68926 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_print_preview_sm_print_btn.png") no-repeat left -100px;
+}
+
+ul#top-controls li a.print:hover, 
+ul#btm-controls li a.print:focus {
+    background: #e68926 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_print_preview_sm_print_btn.png") no-repeat left 0;
+}
+
+ul#top-controls li input.back-to-quote, 
+ul#btm-controls li input.back-to-quote {
+    background: #0971b0 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_back_to_quote.png") no-repeat left -100px;
+    text-shadow: 0 -1px 1px #00355E;
+    width: 13em;
+}
+
+ul#top-controls li input.back-to-quote:hover, 
+ul#btm-controls li input.back-to-quote:focus {
+    background: #0971b0 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_back_to_quote.png") no-repeat left 0;
+}
+
+#pages_product_common_paymentConfirmation .shorter-area + .shorter-area {
+    -moz-border-radius: 0 0 10% 0;
+    margin: 0 0 0.625em 0;
+}
+
+#pages_product_common_paymentConfirmation .shorter-area + .shorter-area .form-background {
+    background: none;
+    border: none;
+}
+
+#container .container-btm-right {
+    display: none;
+}
+
+ul#drivers li,
+ul#drivers li.passive-driver {
+    background-color: #0971b0;
+}
+
+#pages_product_motor_container_yourQuote #agg-message {
+    margin: 0;
+}
+
+#email-pack input:hover,#email-pack input:focus {
+    color: #e68926;
+}
+
+#call-us h3.alt-info,#call-us h4.alt-info-two, #call-us hr.alt-info {
+    color: #FFF;
+}
+
+#call-us hr.alt-info {
+    background: #FFF;
+}
+
+#home-icon {
+    display: none;
+}
+
+#car-icon {
+    display: none;
+}
+
+input.switch-display-option {
+    color: #0971b0;
+}   
+
+/*====================================================================================================
+HOME STYLES (Add them here as you come across them) Tidy up
+=====================================================================================================*/
+#pages_product_home_container_aboutYourHome dd, 
+#pages_product_home_container_aboutYou dd, 
+#pages_product_home_container_moreDetailsAboutYourCover dd, 
+#pages_product_home_container_yourJointPolicyholder dd {
+    width: 55%;
+}
+
+#pages_product_home_container_aboutYou .home-spec-items {
+    left: 20em;
+    top: 17px;
+}
+
+/*=========================================================================================================
+MOTOR STYLES (Add them here as you come across them) Tidy up
+=========================================================================================================*/
+
+#pages_product_motor_container_yourQuote .content-area-centre.bundle-area .form-background {
+    background: #F2F6F9;
+}
+
+input#enterMyAddress {
+    padding: 0;
+}
+
+.custom-sections {
+    border: 1px solid #e68926;
+    background: #fff4e2;
+}
+
+#switch-display-controls-list {
+    background: #fff;
+    padding-top: 0.5em;
+}
+
+#confirmBackButton, 
+.back-button .yui-panel, 
+.helpDialog {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0 95px #000;
+    -moz-box-shadow: 0px 0 95px #000;
+    box-shadow: 0px 0 95px #000;
+}
+
+.helpDialog .yui-panel .bd,
+.yui-skin-sam .yui-panel,
+.helpDialog .mod-body {
+    border: 0;
+    padding: 0;
+}
+
+.helpDialog .mod-body {
+    margin: 10px;
+}
+
+.helpDialog .yui-panel .hd {
+    background: #0971b0;
+    border-radius: 0;
+}
+
+.helpDialog {
+    width: 30em !important;
+}
+
+.helpDialog a {
+    color: #0971b0;
+}
+
+.helpDialog .yui-panel .ft {
+    height: 0;
+}
+
+.helpDialog .mod-content {
+    min-height: 10em;
+    max-height: 20em;
+    height: auto;
+}
+
+.payment-option {
+    font-size: 1em;
+}
+
+#content-area-bottom input#continue.go-to-next {
+    background-image: none;
+    background-color: #89c33f;
+    float: right;
+    padding-right: 0;
+}
+
+.yui-skin-sam .container-close,
+.yui-skin-sam .helpDialog .container-close,
+.yui-skin-sam .helpDialog .container-close:focus,
+.yui-skin-sam .bundleDetailsDialog .container-close:focus {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/lightbox_close.gif") no-repeat right 10px transparent;
+    color: #fff;
+    text-indent: -999px;
+}
+
+.bundleDetailsDialog {
+    background: #fff;
+}
+
+.bundleDetailsDialog .yui-panel .hd {
+    background: #0971b0;
+    border-radius: 0;
+}
+
+.bundleDetailsDialog .yui-panel .bd {
+    border: none;
+    background: #fff;
+}
+
+.bundleDetailsDialog .yui-panel .ft {
+    border: none;
+    background: #fff;
+}
+
+.bundleDetailsDialog .upSell.yui-panel .hd {
+    border-color: #00537F;
+    background: #0971b0;
+}
+
+.bundleDetailsDialog .upSell.yui-panel .bd {
+    padding: 1.5em;
+}
+
+.bundleDetailsDialog .upSell.yui-panel .ft {
+    border: 0;
+    height: 0;
+}
+
+.back-button ul {
+    margin: 1.5em 0 0;
+}
+
+.back-hdr {
+    font-size: 1.4em;
+    color: #fff;
+}
+
+#confirmBackButton p {
+    text-align: left;
+    text-indent: 0;
+    line-height: 1.5;
+}
+
+#confirmBackButton_h, .back-button .yui-panel .hd {
+    text-indent: 1em;
+    border-radius: 0;
+    background: #0971b0;
+}
+
+#confirmBackButton, 
+.back-button .yui-panel,
+#confirmBackButton .bd, 
+.back-button .yui-panel .bd,
+#confirmBackButton .ft, 
+.back-button .yui-panel .ft {
+    border: 0 !important;
+}
+
+#confirmBackButton .ft, 
+.back-button .yui-panel .ft {
+    height: 0;
+}
+
+#recalcDialog, #nextDialog {
+    border-radius: 0;
+    width: 26em;
+}
+
+#recalcDialog p, #nextDialog p {
+    color: #0971b0;
+    top: 15px;
+}
+
+.recalc-modal .yui-panel .hd, .nextDialog-modal .yui-panel .hd {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.recalc-modal .yui-panel .bd, .nextDialog-modal .yui-panel .bd {
+    padding: 45px 10px 10px !important;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/logo.png") no-repeat scroll 50% 0 #fff;
+    border: 0;
+}
+
+.recalc-modal .yui-panel .ft, .nextDialog-modal .yui-panel .ft {
+    background: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+#recalcDialog img, #nextDialog img {
+    top: 0;
+    padding: 20px 20px 0;
+}
+
+.bundleDetailsDialog .mod-content {
+    color: #000;
+}
+
+.bundleDetailsDialog .mod-hdr {
+    color: #0971b0;
+}
+
+.bundleDetailsDialog .mod-content h4 {
+    font-weight: normal;
+}
+
+.bundleDetailsDialog .mod-content ul {
+    background: #fff4e2;
+    border-color: #ffcb7d;
+}
+
+.bundleDetailsDialog .mod-content ul {
+    list-style-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_view_details_tick.png");
+}
+
+.bundleDetailsDialog .mod-content ul.select-bundle a,
+.bundleDetailsDialog .mod-content ul.select-bundle a:hover,
+.bundleDetailsDialog .mod-content ul.select-bundle a:focus {
+    background-color: #0971b0;
+    ;
+    border: solid 2px #0971b0;
+    width: auto;
+    padding: 2px 5px;
+    margin: 0 0.1em 0.5em;
+    color: #fff;
+    font-size: 20px;
+}
+
+.yui-skin-sam .container-close,
+.yui-skin-sam .container-close:hover,
+.yui-skin-sam .bundleDetailsDialog .container-close,
+.yui-skin-sam .bundleDetailsDialog .container-close:hover,
+.yui-skin-sam .helpDialog .container-close:hover {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/lightbox_close.gif") no-repeat right 10px transparent;
+    color: #fff;
+    text-indent: -999px;
+}
+
+.mod-content p.view-details-additional-text {
+    background: #fff4e2;
+    border: 1px solid #ffcb7d;
+    border-top: none;
+    padding: 0.625em;
+}
+
+#pages_product_motor_container_yourQuote .content-area-centre .form-background {
+    background: #fff;
+    padding: 0;
+}
+
+#pages_product_motor_container_yourQuote .content-area-centre.bundle-area .form-background {
+    padding: 0;
+    background: #F2F6F9;
+}
+
+#container dl.top-premium-panels dt {
+    background: #0971b0;
+    color: #fff;
+    width: 100%;
+    border-radius: 0;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+#container dl.top-premium-panels dd {
+    border: 1px solid #dde9f0;
+    line-height: 3em;
+    height: 3em;
+    font-size: 26px;
+}
+
+.save-your-quotes {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_small_save_icons.gif") no-repeat right 4px;
+}
+
+.print-your-quote {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_small_print_icon.gif") no-repeat right 4px;
+}
+
+#pages_product_home_container_homeQuotePrintView #quote-layout .content-area-centre ul#btm-controls {
+    right: -12em;
+}
+
+#pages_product_motor_container_homeQuotePrintView #quote-layout .content-area-centre ul#btm-controls {
+    right: -24em;
+}
+
+#view-details input, #cover-details input, input.switch-display-option, input#emaillink {
+    font-weight: 400;
+}
+
+input#excessesButton {
+    width: auto;
+    margin-right: 5px;
+}
+
+.bundleDetailsDialog .upSell.yui-panel {
+    border: 0;
+}
+
+.bundleDetailsDialog.BK-modal .mod-content ul li,
+.bundleDetailsDialog.LGL-modal .mod-content ul li,
+.bundleDetailsDialog.PIB-modal .mod-content ul li,
+.bundleDetailsDialog.CHC-modal .mod-content ul li {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_green_es.png") no-repeat left 1px;
+}
+
+#pages_product_motor_container_yourQuote .quote-extra-dl {
+    position: relative;
+}
+
+#pages_product_motor_container_yourQuote .excessprotect.quote-extra-dl {
+    margin-top: 1em;
+}
+
+.spcolour {
+    color: #E68926;
+    font-size: 1.4em;
+}
+
+#content-area-main.one_col .content-area-centre input.login_button,
+#content-area-main.one_col .content-area-centre .progress_button,
+#pages_general_leaveRenewal #submit input,
+#pages_general_contactUs #submit input,
+#pages_general_siteFeedback .content-area-centre #feedbackSubmit,
+#pages_general_contactUs .content-area-centre #feedbackSubmit,
+.secondary {
+    background: #0971b0;
+    border-radius: 0;
+    width: 9.5em;
+    height: 2.5em;
+    margin: 0 0.1em 0.5em;
+}
+
+a.secondary,
+a.secondary:hover {
+    transition: none !important;
+    color: #fff !important;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+input#feedbackSubmit,
+input#renewalSubmit {
+    font-size: 15px;
+}
+
+#content-area-main.one_col .content-area-centre .progress_button  {
+    height: 1.7em;
+    margin-right: 0.5em;
+    position: relative;
+    right: 2%;
+    top: 0;
+    width: 8em;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#confirmFinishQuote .bd p {
+    font-size: 14px;
+}
+
+#pages_general_restricted_customerQuotes .one_col dt {
+    line-height: 27px;
+}
+
+#pages_general_restricted_customerQuotes .one_col dd {
+    margin-top: 0;
+    font-size: 17px;
+    font-family: "museosansrounded-300", arial, Verdana;
+    font-weight: 700;
+}
+
+#content-area-main.one_col .content-area-centre input.login_button:hover,
+#content-area-main.one_col .content-area-centre .progress_button:hover {
+    -webkit-box-shadow: 0px 0px 0pt 1px #EBEBEB inset;
+    -moz-box-shadow: 0px 0px 0pt 1px #EBEBEB inset;
+    box-shadow: 0px 0px 0pt 1px #EBEBEB inset;
+}
+
+#content-area-main.one_col .content-area-centre input.orange_button,
+#content-area-main.one_col  .content-area-centre input.hint_button,
+#content-area-main.one_col .content-area-centre input.orange_button:hover,
+#content-area-main.one_col  .content-area-centre input.hint_button:hover {
+    background: #f48e1e;
+    border-radius: 0 !important;
+    border: 0;
+    color: #fff;
+    margin: 0.312em 0.312em 0.312em;
+    height: 2.5em;
+    font-size: 12px;
+}
+
+.other_prods {
+    margin: 1.5%;
+    width: 47%;
+}
+.other_prods .form-background {
+    min-height: 100%;
+}
+.other_prods.right a {
+    font-size: 1em;
+}
+
+#pages_general_restricted_customerQuotes #header,
+#pages_general_customerLogin #header,
+#pages_general_customerLoginHint #header,
+#pages_general_resetPassword #header,
+#pages_general_saveQuote #header,
+#pages_general_customerRegistration #header,
+#pages_general_siteFeedback #header,
+#pages_general_leaveRenewal #header,
+#pages_general_restricted_saveQuoteConfirmation #header,
+#pages_general_loadingQuote #header,
+#pages_general_contactUs #header {
+    height: 110px;
+}
+
+#pages_general_restricted_customerQuotes dl {
+    width: 100%;
+}
+
+#content-area-main.one_col .content-area-centre input.login_button,
+#content-area-main.one_col .content-area-centre input.orange_button, 
+#content-area-main.one_col .content-area-centre input.hint_button {
+    padding-bottom: 0;
+}
+
+#pages_general_siteFeedback .content-area-centre, 
+#pages_general_leaveRenewal .content-area-centre {
+    margin: 0;
+    margin-top: 2em;
+
+}
+
+#pages_general_customerLogin h1, 
+#pages_general_customerLoginHint h1, 
+#pages_general_resetPassword h1, 
+#pages_general_saveQuote h1, 
+#pages_general_restricted_customerQuotes h1,
+#pages_general_customerRegistration h1 {
+    font-size: 20px;
+    margin-left: 10px !important;
+}
+
+#pages_general_customerLogin p, 
+#pages_general_customerLoginHint p, 
+#pages_general_resetPassword p, 
+#pages_general_saveQuote p, 
+#pages_general_restricted_customerQuotes p,
+#pages_general_customerRegistration p {
+    font-size: 14px;
+    margin-left: 10px !important;
+}
+
+.aside > #agg-message-logo {
+    position: relative;
+    top: 6px;
+    margin: 0 0 5px;
+}
+
+#agg-message > img {
+margin: 12px 0 0;
+}
+
+.large_button,
+.large_button:hover{
+    background: #0971b0;
+}
+
+#pages_general_restricted_saveQuoteConfirmation .close_button,
+#pages_general_restricted_saveQuoteConfirmation .close_button:hover {
+    background: #0971b0;
+}
+
+/*HOME*/
+
+#pages_product_home_container_yourQuote #agg-message {
+    background: none /*#FFF url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_home_logo.gif") no-repeat right center; min-height: 9em*/;
+}
+
+#header img.topSourceBanner {
+    margin: 0.625em;
+    display: inline;
+}
+
+#error_box {
+    text-align: left;
+    width: 380px;
+    margin: 50px auto;
+    border: 1px dotted #000000;
+    padding: 0 20px 20px;
+    background: #FFFFFF;
+}
+
+#error_box h1 {
+    background: transparent url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_no_browser_elogo.gif");
+    float: right;
+    text-indent: -9999px;
+    width: 150px;
+    height: 70px;
+    margin: 0;
+}
+
+#error_box p {
+    font-size: 0.8em;
+    clear: right;
+}
+
+#error_box p strong {
+    color: #E68926;
+}
+
+#container div.centered_image {
+    text-align: center;
+}
+
+#page_information {
+    text-align: left;
+    width: 59.5em;
+    margin: auto;
+}
+
+#page_information h3 {
+    font-size: 0.8em;
+}
+
+#page_information dt {
+    margin: 0 0 1em;
+    min-width: 10em;
+    float: left;
+    clear: both;
+}
+
+#page_information dd {
+    width: 70em;
+    float: left;
+    margin: 0 0 1em;
+}
+
+body#tech-fault {
+    background: #FFF;
+    font-size: 62.5%;
+}
+
+#tech-fault #wrap {
+    background: none;
+    width: 72em;
+    text-align: left;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+}
+
+#tech-fault #container {
+    background: none;
+    width: 100%;
+    border: 2px solid #0971b0;
+    margin-top: 20px;
+    text-align: center;
+    min-height: 23em;
+}
+
+* html #tech-fault #container {
+    height: 23em;
+}
+
+#tech-fault h2 {
+    font-size: 1.5em;
+    line-height: 4em;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    clear: both;
+    margin-left: 20px;
+}
+
+#tech-fault p {
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: left;
+    margin-left: 20px;
+    color: #000;
+}
+
+#tech-fault a {
+    text-decoration: underline;
+    color: #e68926;
+}
+
+#tech-fault a:hover {
+    text-decoration: none;
+    color: #0971b0;
+}
+
+#pciframe .error {
+    font-size: 18px;
+}
+
+h1#logo {
+    margin: 0;
+    padding: 0;
+    text-indent: -999%;
+    position: relative;
+    left: 0;
+    top: 7px;
+    width: 154px;
+    height: 32px;
+}
+
+#pages_general_leaveRenewal .addresses label {
+    display: block;
+    text-indent: 10px;
+    font-size: 14px;
+}
+
+ul#other-products {
+    width: 60%;
+    font-size: 14px;
+}
+
+#pages_general_leaveRenewal .content-area-centre #other-products li {
+    margin: 0 auto;
+    text-align: right;
+    width: 95%;
+}
+
+.CHC-modal .upsell-sm-print p {
+    padding-top: 50px;
+}
+
+.infoPanel {
+    border: 1px solid #B3CEDC;
+}
+
+.bundleDetailsDialog.MFC-modal .mod-content h5,
+.bundleDetailsDialog.KYC-modal .mod-content h5 {
+    color: #0971b0;
+}
+
+.bundleDetailsDialog.MFC-modal .mod-content ul,
+.bundleDetailsDialog.KYC-modal .mod-content ul {
+    list-style-image: none;
+    background: none;
+    border: none;
+}
+
+
+.yui-panel-container p,
+.main-help-text p,
+.mod-content p,
+.mod-content ul {
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+.bundleDetailsDialog.MFC-modal .main-help-text ul li,
+.bundleDetailsDialog.KYC-modal .main-help-text ul li {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_esure_upsale_bullet_point.gif") no-repeat left 1px;
+    width: 60%;
+}
+
+.KYC-modal-img {
+
+}
+
+.MFC-modal-img {
+
+}
+
+.content-area-centre #misfuellingCoverFlagLabel p {
+    margin: 0px;
+}
+
+.quoteStepContainer h1 {
+    font: bold 1.0625em arial,helvetica,serif;
+    margin-left: 45px;
+    display: block;
+    color: #0971b0;
+    padding: 5px 0px 0px 5px;
+    height: 25px;
+    letter-spacing: -0.3px;
+}
+
+.quoteStep {
+    position: absolute;
+    left: -7px;
+    top: 8px;
+}
+
+.quoteStep span {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_step_right.png") no-repeat right top;
+    padding-right: 12px;
+    display: inline-block;
+}
+
+.quoteStep span span {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_step_left.png") no-repeat left top;
+    padding: 0px 0px 0px 4px;
+    display: inline-block;
+}
+
+.quoteStep label {
+    color: #fff;
+    font: 700 15px arial,helvetica,serif;
+    padding: 7px 3px 0px 0;
+    display: inline-block;
+    height: 27px;
+}
+
+#breakdownPopupModal-panel-container.bundleDetailsDialog .yui-panel .hd {
+    background: #0971b0;
+}
+
+#breakdownPopupModal-panel-container.bundleDetailsDialog .breakDown.yui-panel .bd {
+    border-width: 8px !important;
+    border-style: solid;
+    border-bottom: none;
+    border-top: none;
+    padding: 0px 0px 0px 10px;
+    border-color: #0971b0 !important;
+}
+
+#breakdownPopupModal-panel-container.bundleDetailsDialog .breakDown.yui-panel .ft {
+    -moz-border-radius: 0 0 2px 2px;
+    border-color: #0971b0;
+    border-width: 8px !important;
+}
+
+#breakdownPopupModal-panel-container.bundleDetailsDialog .breakDown.yui-panel {
+    border-color: #FFFFFF !important;
+    border-width: 4px;
+}
+
+#breakdownPopupModal-panel-container.breakDown.bundleDetailsDialog .yui-panel-container.shadow {
+    width: 55em !important;
+    box-shadow: 0 0 95px #000;
+    border-radius: 15px;
+}
+
+.yui-skin-sam #breakdownPopupModal-panel.bundleDetailsDialog .container-close {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_breakdown_close.png") !important;
+    color: #fff;
+    right: 0.8%;
+    top: 6px;
+}
+
+#breakdownPopupModal-panel-container.breakDown .yui-panel.bundleDetailsDialog  h3 {
+    color: #fff;
+    display: inline;
+    font-size: 1.2em;
+    padding-left: 5px;
+    text-indent: 0;
+    line-height: 2.2em;
+}
+
+#breakdownPopupModal-panel-container.breakDown .yui-panel.bundleDetailsDialog h4 {
+    display: inline;
+    font-size: 0.875em;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.coverContainer {
+    width: auto;
+    float: left;
+    padding: 10px 10px 10px 0px;
+}
+
+.outerWrapper {
+    width: inherit;
+    float: left;
+    height: 410px;
+}
+
+.breakDownCoverPackage {
+    width: 17.1%;
+    float: left;
+    font-weight: normal;
+    border-right: 1px #fff solid;
+    height: 100%;
+    color: #0971b0;
+}
+
+.breakDownCoverList table {
+    background: #e9e9e9;
+    width: auto;
+    border: 0;
+    font-size: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 100px 0px !important;
+}
+
+.breakDownCoverList table tr td {
+    border-style: none;
+    border-bottom: 1px #fff solid;
+    padding: 0px;
+    text-align: left;
+    padding: 0px;
+}
+
+.breakDownCoverList table tr td div span {
+    vertical-align: middle;
+    height: inherit;
+}
+
+.breakDownCoverList table tr td div label {
+    font-size: 80%;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #0971b0;
+}
+
+.breakDownCoverList table tr td.first {
+    border-top: 1px #fff solid;
+    background: #fff;
+}
+
+.breakDownCoverList table tr td.last {
+    border-bottom: 0px;
+    background: #fff;
+}
+
+.breakDownCoverList table tr td.first div.firstDiv {
+    background: #e9e9e9 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_top_left_gray.gif") no-repeat left top;
+}
+
+.breakDownCoverList table tr td.last div.lastDiv {
+    background: #e9e9e9 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_bot_left_gray.gif") no-repeat left bottom;
+}
+
+.breakDownCoverList table tr td div {
+    height: 29px;
+    padding-left: 7px;
+}
+
+.breakDownCoverList table tr td div span {
+    padding-top: 6px;
+    display: inline-block;
+}
+
+.bdcPackageNormal table {
+    background: #e9e9e9;
+    margin: 20px 0px;
+    width: 100%;
+    border-collapse: separate;
+}
+
+.bdcPackageNormal table tr td {
+    height: 30px;
+    vertical-align: middle;
+    border-style: none;
+    border-bottom: 1px #fff solid;
+    text-align: center;
+    padding: 0px;
+}
+
+.bdcPackageNormal table tr td label {
+    font: 400 120% Arial,helvetica,sans-serif;
+}
+
+.bdcPackageNormal table tr td span.coverYes {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_green.gif") no-repeat center;
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+}
+
+.bdcPackageNormal table tr td span.coverNo {
+    background: none;
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+}
+
+.bdcPackageNormal table tr td.first, .bdcPackageNormal table tr td.last {
+    background: #fff;
+}
+
+.bdcPackageNormal .last input, .bdcPackageSelected .last input {
+    width: auto;
+    vertical-align: sub!important;
+    margin: 0px;
+}
+
+.bdcPackageNormal table tr td.last {
+    border-bottom: 0px;
+}
+
+.bdcPackageNormal table tr td.first div.firstDiv {
+    background: #e9e9e9 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_top_left_gray.gif") no-repeat left top;
+}
+
+.bdcPackageNormal table tr td.last div.lastDiv {
+    background: #e9e9e9 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_bot_left_gray.gif") no-repeat left bottom;
+}
+
+.bdcPackageNormal table tr td.first div.firstDiv  div.firstDivInner {
+    padding: 10px 5px 0px;
+    vertical-align: top;
+    height: 70px;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_top_right_gray.gif") no-repeat right top;
+}
+
+.bdcPackageNormal table tr td.last div.lastDiv  div.lastDivInner {
+    padding: 0px 5px 0px;
+    vertical-align: top;
+    height: 70px;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_bot_right_gray.gif") no-repeat right bottom;
+}
+
+.bdcPackageSelected table {
+    background: #3ba539;
+    margin: 0px 0px;
+    color: #fff;
+    width: 100%;
+    border-collapse: separate;
+}
+
+.bdcPackageSelected table tr td {
+    height: 30px;
+    vertical-align: middle;
+    border-style: none;
+    border-bottom: 1px #fff solid;
+    text-align: center;
+    padding: 0px;
+}
+
+.bdcPackageSelected table tr td label {
+    font: 400 120% Arial,helvetica,sans-serif;
+}
+
+.bdcPackageSelected table tr td span.coverYes {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_tick_white.gif") no-repeat center;
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+}
+
+.bdcPackageSelected table tr td span.coverNo {
+    background: none;
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+}
+
+.bdcPackageSelected table tr td.first, .bdcPackageSelected table tr td.last {
+    background: #fff;
+}
+
+.bdcPackageSelected table tr td.first div.firstDiv label {
+    font-weight: 700;
+}
+
+.bdcPackageSelected table tr td.last {
+    border-bottom: 0px;
+}
+
+.bdcPackageSelected table tr td.first div.firstDiv {
+    background: #3ba539 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_top_left_green.gif") no-repeat left top;
+}
+
+.bdcPackageSelected table tr td.last div.lastDiv {
+    background: #3ba539 url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_bot_left_green.gif") no-repeat left bottom;
+}
+
+.bdcPackageSelected table tr td.first div.firstDiv  div.firstDivInner {
+    vertical-align: top;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_top_right_green.gif") no-repeat right top;
+    padding: 20px 5px 0px;
+    height: 80px !important;
+}
+
+.bdcPackageSelected table tr td.last div.lastDiv  div.lastDivInner {
+    vertical-align: top;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_col_bot_right_green.gif") no-repeat right bottom;
+    padding: 0px 5px 0px;
+    height: 90px !important;
+}
+
+.bdcPackageSelected table tr td.first div.firstDiv  div.firstDivInner  span {
+    display: inline-block;
+    padding-top: 10px;
+}
+/*Breakdown cover charges style*/
+.coverCharge {
+    height: 35px;
+    padding-top: 10px;
+}
+
+.coverCharge span label.labelNone {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.coverCharge span label.labelBig {
+    font-size: 220%;
+    font-weight: bold;
+}
+
+.coverCharge span h2 {
+    font-size: 11px !important;
+    font-weight: normal;
+    display: inline;
+}
+
+.bdcPackageSelected div.coverCharge span label.labelNone {
+    font-size: 120% !important;
+}
+
+.bdcPackageSelected div.coverCharge span label.labelBig {
+    font-size: 240% !important;
+}
+
+.bdcPackageSelected .coverCharge span h2 {
+    font-size: 13px !important;
+    display: inline;
+}
+
+.breakDownReasons {
+    width: inherit;
+    color: #0971b0;
+}
+
+.breakDownReasons h2 {
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 120%;
+    clear: both;
+}
+
+.breakDown.bundleDetailsDialog .breakDownReasons ul {
+    background: /*url(breakdown_modal_es_new.png) no-repeat scroll right center transparent*/#fff;
+    border-color: #FFFFFF !important;
+    font-size: 58%;
+    font-weight: normal;
+    height: 175px;
+    list-style-image: none !important;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+}
+
+.breakDown.bundleDetailsDialog .breakDownReasons ul li {
+    width: 100%;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/breakdown_bullet.gif") no-repeat left center !important;
+    padding-left: 20px;
+    font-size: 100% !important;
+    margin: 12px 0 0 8px;
+}
+
+.breakDownReasons div.desc {
+    font-size: 100%;
+    line-height: 18px;
+    padding: 10px 0 0 20px;
+}
+
+.button01 {
+    margin: 25px 30px 0 0;
+    clear: both;
+}
+
+.button01 span {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_button_right.gif") no-repeat right top;
+    display: inline-block;
+    width: 165px;
+    height: 42px;
+}
+
+.button01 span span {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_button_left.gif") no-repeat left top;
+    display: inline-block;
+    width: 7px;
+    height: 42px;
+}
+
+.button01  a {
+    color: white;
+    position: absolute;
+    padding: 8px 65px;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+.button01 span span a:link {
+    background: transparent;
+    border: none;
+    height: 42px;
+    display: block;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.button01 span span a:hover {
+    text-decoration: underline;
+}
+
+#getAQuoteTravelLink, #getAQuotePetLink {
+    display: block;
+    height: auto;
+    left: 0;
+    position: relative;
+    width: 60%;
+}
+
+#xsell-left p {
+    clear: right;
+    float: none;
+    margin: 0;
+    position: relative;
+    top: 0;
+    width: 60%;
+}
+
+#getAQuoteMotorCrossSellTextLink {
+    font-weight: 400;
+}
+
+.modal_lady {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/gf_logo_small.png") no-repeat scroll 0 0 transparent;
+    height: 74px;
+    position: absolute;
+    width: 90px;
+    right: 40px;
+    top: 35px;
+}
+
+.custom-sections #carHirePrice {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/listview_es_ch.jpg") no-repeat scroll right top transparent;
+}
+
+.custom-sections #personalInjuryPrice {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/listview_es_pib.jpg") no-repeat scroll right top transparent;
+}
+
+.custom-sections #mlpPrice {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/listview_es_mlp.jpg") no-repeat scroll right top transparent;
+}
+
+.custom-sections #misfuellingPrice {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/listview_es_mf.jpg") no-repeat scroll right top transparent;
+    padding-bottom: 12px;
+}
+
+.custom-sections #keyCoverPrice {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/listview_es_kc.jpg") no-repeat scroll right top transparent;
+    padding-bottom: 12px;
+}
+
+.custom-sections ul#pib_list {
+    font-size: 1em;
+    list-style: disc outside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/green_tick_listview.png");
+    margin-bottom: 30px;
+}
+
+.custom-sections ul#mlp_list {
+    font-size: 1em;
+    list-style: disc outside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/green_tick_listview.png");
+    margin-bottom: 20px;
+    margin-top: 18px;
+}
+
+.custom-sections ul#ch_list {
+    font-size: 1em;
+    list-style: disc outside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/green_tick_listview.png");
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.viewDetailsHeader {
+    border-bottom: 1px solid #FFCB7D;
+}
+
+.totalSavings p {
+    background: none no-repeat scroll 5px center #FFF4E2;
+    border: 1px solid #FFCB7D;
+    color: #0971b0;
+    padding: 0;
+    text-transform: none;
+}
+
+#brand-overlay {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/logo.png") no-repeat scroll 30px 46% #fff;
+    border: 1px solid #dad6d1;
+    -webkit-box-shadow: 0 2px 2px #e5e3df;
+    box-shadow: 0 2px 2px #e5e3df;
+    height: 100px;
+    top: 0;
+    width: 990px;
+    margin: 0 auto;
+    left: 0;
+}
+
+.sm-a a {
+    background-position: 2px 1px;
+    color: #000000;
+    line-height: 18px;
+}
+
+.med-a a {
+    background-position: -20px 1px;
+    color: #000000;
+    font-size: 1.5em;
+    line-height: 18px;
+}
+
+.contrast-a a {
+    background-color: #000000;
+    background-position: -41px 1px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    line-height: 18px;
+}
+
+#footer {
+    padding: 20px 0 10px;
+    width: 970px;
+    background: none;
+    margin: auto;
+}
+
+#footer ul {
+    width: 100%;
+    left: 0;
+}
+
+.policy-area h1 {
+    font-size: 20px;
+}
+
+#pre-footer {
+    position: relative;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 990px;
+    height: 15px;
+}
+
+#pre-footer img {
+    right: 3%;
+    left: auto;
+    top: 30px;
+    bottom: 20px;
+}
+
+#pages_product_motor_container_aboutYourAdditionalDrivers .content-area-centre {
+    margin-top: 0;
+    padding: 25px 3%;
+}
+
+.details-area,
+.listview-sections,
+/* .listview-bundle-sections, */
+#pages_product_motor_container_yourQuote .quote-extra-dl,
+.full_breakdown fieldset label,
+.full_breakdown fieldset label.selected {
+    background-color: #fff!important;
+    border-color: #e7e4e0!important;
+    border-top-color: #f0ece9!important;
+    border-bottom-color: #dddad6!important;
+    -webkit-box-shadow: 0 2px 3px #dddad6;
+    -moz-box-shadow: 0 2px 3px #dddad6;
+    box-shadow: 0 2px 3px #dddad6;
+}
+
+.policy-area-motor {
+    width: 100%;
+}
+
+#policy-cover-motor {
+    border: none;
+    padding: 0 0 0.8em;
+    position: relative;
+}
+
+.third-party-logos {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/defaqto_logo_listview_sm.png") no-repeat scroll center center transparent;
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    padding: 0;
+    height: 128px;
+}
+
+.details-area {
+    padding: 0 1.5em 0.5em;
+}
+
+.full_breakdown .section-titles {
+    margin-top: 1em;
+}
+
+body, #navigation-area-left a.visited, 
+#navigation-area-left a.visited:hover, 
+#navigation-area-left a.visited:focus, 
+input.add-section-clear, 
+input.find-addr, 
+input.text-only-input, 
+#view-details input, 
+h2.quote-h2, 
+.additional-info-table ul li input.edit, 
+.additional-info-table ul li input.delete,
+#xsell-right dl dd input,
+.help-header, #quote-layout dl.premium-dl .titles, 
+#quote-layout dl.monthly-dl .titles,
+#navigation-area-left a.active {
+    color: #494949;
+}
+
+#quote-call-us {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/callus_car.jpg") no-repeat scroll right bottom #0971b0;
+    float: right;
+    height: auto;
+    width: 289px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 8px 8px 8px 4px;
+    border-radius: 10px;
+}
+
+#quote-call-us h4 {
+    margin: 5px 0 0 10px;
+    color: #E68926;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+#quote-call-us  span {
+    font-size: 1.1em;
+    color: #E68926;
+    margin: 12px 0 0 10px;
+    display: block;
+    font-weight: normal;
+}
+
+#quote-call-us dl {
+    color: #FFF;
+    width: 100%;
+    padding-top: 5px;
+}
+
+#quote-call-us h3 {
+    font-size: 1.6em;
+    color: #FFFFFF;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+#quote-call-us dt {
+    padding-left: 11px;
+    text-align: left;
+    line-height: 1;
+    width: 24%;
+}
+
+#quote-call-us dd {
+    padding-top: 2px;
+    width: 43.3%;
+}
+
+#navigation-area-left {
+    display: none;
+}
+
+#content-area-main {
+    width: 77.5%;
+}
+
+#progress-bar {
+    width: 100%;
+    text-align: center;
+    background: #f6f1ec;
+    padding: 20px 0;
+    border-bottom: 1px solid #d5d2cf;
+    border-top: 1px solid #dad6d1;
+    border-left: 1px solid #efebe8;
+    border-right: 1px solid #efebe8;
+    margin: 0 -1px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: inset 0 2px 2px #e5e3df;
+    -moz-box-shadow: inset 0 2px 2px #e5e3df;
+    box-shadow: inset 0 2px 2px #e5e3df;
+    z-index: 1;
+}
+
+#progress-bar ul {
+    counter-reset: nav-counter;
+    margin-left: 14px;
+    font-size: 1.2em;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0px;
+}
+
+#progress-bar ul li {
+    text-align: center;
+    width: auto;
+    float: left;
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+#progress-bar ul li span {
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400!important;
+    font-size: 17px;
+}
+
+#progress-bar ul li span.active {
+    color: #0971b0;
+    display: block;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+
+#progress-bar ul li span.passive {
+    display: block;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+
+#progress-bar ul li span.active:before {
+    color: #f48e1e;
+    border-color: #f48e1e;
+}
+
+#progress-bar ul li span:before {
+    display: block;
+    float: left;
+    width: 19px;
+    height: 19px;
+    margin: 4px 10px -20px 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #494949;
+    content: counter(nav-counter);
+    counter-increment: nav-counter;
+    text-align: center;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400!important;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.content-area-centre p {
+    font-size: 15px;
+    line-height: 27px;
+    padding: 0 0 15px;
+    margin: 0;
+    clear: both;
+}
+
+#content-area-bottom p {
+    font-size: 15px;
+}
+
+#pages_product_home_container_yourQuote #content-area-bottom p,
+#pages_product_motor_container_yourQuote #content-area-bottom p,
+#content-area-bottom ul + p {
+    font-size: 0.68em;
+}
+
+#confirmBackButton-container p {
+    font-size: 14px;
+    }
+
+.content-area-centre span.left p {
+    padding-bottom: 0;
+}
+
+#progress-bar table {
+}
+
+#progress-bar table tr td {
+    padding: 0;
+    border: 0;
+}
+
+.one-col #content-area-main.one_col {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    top: -1.5em;
+    position: relative;
+}
+
+#pages_product_motor_container_yourQuote .bundle-area {
+    border: 0px !important;
+    margin: 10px;
+    padding-bottom: 0px;
+}
+
+#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message p {
+    width: 100%;
+    padding: 0px;
+}
+
+#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message-logo {
+    padding-bottom: 25px;
+}
+
+#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message-logo p {
+    margin: 0;
+}
+
+#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message-logo p a:link {
+    font-weight: bold;
+    color: #0971b0;
+}
+
+#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message-logo p a:focus,
+#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message-logo p a:hover {
+    font-weight: bold;
+    color: #e68926;
+}
+
+#view-details {
+    width: 68%;
+}
+
+#view-details p {
+    padding: 0;
+}
+
+#pages_product_home_container_yourQuote .content-area-centre {
+    padding: 0 !important;
+}
+
+#pages_product_home_container_yourQuote #view-details {
+    width: 100%;
+    padding: 0;
+}
+
+#monthpremiumannualcost dl.top-premium-panels.right {
+    float: left;
+    margin-left: 25px;
+}
+
+#monthpremiumannualcost dl.top-premium-panels.left dt {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_monthly_premium.png") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    width: 263px;
+    height: 31px;
+    line-height: 31px;
+}
+
+#monthpremiumannualcost dl.top-premium-panels.right dt {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_annual_premium.png") no-repeat scroll 0 0 transparent;
+    color: #0971b0;
+    width: 263px;
+    height: 31px;
+    line-height: 31px;
+}
+
+#monthpremiumannualcost dl.top-premium-panels.left dd {
+    width: 260px;
+    line-height: 35px;
+    height: 35px;
+}
+
+#monthpremiumannualcost dl.top-premium-panels.right dd {
+    width: 260px;
+    line-height: 35px;
+    height: 35px;
+}
+
+#monthpremiumannualcost dl.top-premium-panels {
+    background: none;
+    min-height: 20px;
+}
+
+#monthpremiumannualcost  dl.top-premium-panels dd {
+    background: none;
+    width: 259px;
+}
+
+#pages_product_motor_container_yourQuote  dl.top-premium-panels {
+    width: 263px;
+}
+
+#monthpremiumannualcost {
+    width: 585px;
+    float: left;
+}
+
+#pages_product_motor_container_yourQuote #yourquoteprintsave ul#print-save li {
+    margin: 0;
+    float: left;
+    font-size: .5em;
+}
+
+#pages_product_motor_container_yourQuote #yourquoteprintsave ul#print-save {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding-left: 0;
+}
+
+#pages_product_motor_container_yourQuote input#quoteDetailsSideButton, 
+#pages_product_motor_container_yourQuote input#viewPaymentOptionsSideButton, 
+#pages_product_motor_container_yourQuote input#printQuote, 
+#pages_product_motor_container_yourQuote input#saveQuote, 
+#pages_product_motor_container_yourQuote #content-area-right ul li input {
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    height: 2em;
+    background: none;
+    width: 100%;
+    font-size: 2.4em;
+    padding: 0 5px;
+    color: #494949;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+
+#pages_product_motor_container_yourQuote input#quoteDetailsSideButton:hover, 
+#pages_product_motor_container_yourQuote input#viewPaymentOptionsSideButton:hover, 
+#pages_product_motor_container_yourQuote input#printQuote:hover, 
+#pages_product_motor_container_yourQuote input#saveQuote:hover, 
+#pages_product_motor_container_yourQuote #content-area-right ul li input:hover {
+    text-decoration: underline;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+
+#recalcButtonBundleMsgRegion {
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 24%;
+}
+
+#recalcButtonBundleMsgRegion input.recalculate {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_indicator_recalculate_orange.png") no-repeat scroll left top #ddffd5;
+    height: 30px;
+    font-size: 0.8em;
+    width: 201px;
+    text-shadow: none;
+    font-weight: bold;
+    font-family: arial;
+}
+
+#recalcButtonBundleMsgRegion input#recalculateBundleDisabled {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_indicator_recalculate_grey.png") no-repeat scroll left top transparent;
+    height: 31px;
+    font-size: 0.8em;
+    width: 204px;
+    padding: 0;
+    text-shadow: none;
+    font-weight: bold;
+    border: none;
+    font-family: arial;
+}
+
+#display-option dd {
+    z-index: 1;
+    width: 305px;
+    padding-bottom: 2px;
+}
+
+#display-option label.exinterest {
+    float: right;
+    padding: 5px 5px 0 0;
+}
+
+#display-option {
+    float: right;
+    width: 305px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+img#commonStatus-status {
+    left: 0;
+}
+
+#display-option fieldset {
+    float: left;
+    width: 277px;
+    clear: none;
+}
+
+.excludeinterest {
+    margin-right: 9px;
+    font-size: 1em;
+    text-align: right;
+}
+
+.exint {
+    clear: both;
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 18px;
+}
+
+#monthlySmallPrint {
+    float: right;
+    height: 1em;
+}
+
+#pages_product_motor_container_yourQuote .content-area-centre.bundle-area .form-background {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+.priceTag label.saveTextperyear {
+    font-size: 12px;
+}
+
+.priceTag label.saveText {
+    font-size: 13px;
+}
+
+#pages_product_motor_container_yourQuote .ncd-mlp.shorter-area.content-area-centre {
+    margin: 0.9em 10px 0;
+}
+
+#pages_product_motor_container_yourQuote .bundle-area  .form-background .quoteStepContainer .quoteStep {
+    left: 8px;
+}
+
+#pages_product_motor_container_yourQuote .bundle-area  .form-background .quoteStepContainer  h1 {
+    padding-left: 20px;
+}
+
+#pages_product_motor_container_yourQuote .premium-area {
+    margin: 10px 10px 10px 10px;
+    border: 0px !important;
+}
+
+#switch-display-controls {
+    height: auto;
+    margin: 0px 10px 10px 20px;
+    width: auto;
+}
+
+#customiseButtonAddCoversPanel {
+    font-size: 0.68em;
+}
+
+#switch-display-controls a.switch-display-option:hover,
+#switch-display-controls a.switch-display-option:focus {
+    color: #e68926;
+}
+
+#switch-display-controls a.switch-display-option {
+    color: #0971b0;
+}
+
+#view-details input {
+    color: #0971b0;
+}
+
+#view-details input:hover, #view-details a:hover {
+    color: #e68926;
+}
+
+#chooseoption {
+    font-size: 0.675em;
+}
+
+#epcCoverFlagLabel a {
+    color: #0971b0;
+}
+
+#motorLegalProtectionFlagPrice,#personalInjuryFlagPrice,#carHireFlagPrice,#misfuellingCoverFlagPrice,#keyCoverFlagPrice,#epcCoverFlagPrice {
+    float: none;
+    font-size: 1em;
+}/*EW change to float to none CR3711*/
+#customizepaneladdons {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D2D6D8;
+    border-radius: 5px;
+    float: left;
+}
+
+#recalcButtonCustomiseRegion {
+    float: left;
+    font-family: arial;
+    font-size: 14px;
+    padding: 0 0 0.5em 0.5em;
+    text-align: left;
+    width: 100%;
+}
+
+#savingMsgTextred {
+    color: #C60000;
+    float: right;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-right: 10px;
+}
+
+#savingMsgTextwhite {
+    color: #FFFFFF;
+    float: right;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-right: 10px;
+}
+
+#switch-display-controls input {
+    display: none;
+}
+
+#pages_product_motor_container_yourQuote .content-area-centre .custom-sections h2 {
+    text-indent: 0.2em;
+}
+
+#context-help-epcCover-panel-context-help {
+    top: 2.8em;
+}
+
+#pages_product_motor_container_yourQuote .list-area {
+    margin: 0 20px;
+}
+
+#pages_product_motor_container_yourQuote .list-area .form-background {
+    margin: 0;
+    border: 0;
+}
+
+#pages_product_motor_container_yourQuote dl.quote-extra-dl {
+    width: 100%;
+    padding: 1.7em 1.2em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.helpButton,.info_icon,  #information-pack ul li a {
+    width: 29px;
+    height: 28px;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/help_i.png") top left no-repeat;
+    text-indent: -99999px;
+    white-space: nowrap;
+    overflow: hidden;
+    direction: ltr;
+    top: 5px;
+}
+
+.external-one, #email-pack .external-two, a.pdf, #email-pack a {
+    font-weight: 400;
+}
+
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.ncd-proection,
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.voluntary-excess,
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.excess-protection {
+    width: 60%;
+    padding: 0;
+    font-weight: 400;
+}
+
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.ncd-proection-help-icon,
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.voluntary-excess-help-icon,
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.excess-protection-help-icon {
+    width: 5%;
+    padding: 0;
+}
+
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.ncd-proection-radiobutton,
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.voluntary-excess-radiobutton,
+#pages_product_motor_container_yourQuote .quote-extra-dl dt.excess-protection-radiobutton {
+    width: 25%;
+    float: right;
+}
+
+.volexcesstxt {
+    margin-left: 0em;
+    font-size: 80%;
+}
+
+select#voluntaryExcessLimit {
+    float: right;
+    margin-top: 10px;
+}
+
+#voluntaryExcessLimitLabel {
+    padding-right: 10px;
+}
+
+#container label#voluntaryExcessLimitLabel {
+    text-align: left;
+}
+
+.ncdtxt p {
+    font-size: 80%;
+}
+
+#pages_product_motor_container_yourQuote .excessprotect dd {
+    width: 25%;
+}
+
+.yui-skin-sam .container-close,
+.yui-skin-sam .helpDialog .container-close, 
+.yui-skin-sam .bundleDetailsDialog .container-close {
+    right: 12px;
+}
+
+.helpDialog .yui-panel .hd h3, .bundleDetailsDialog .yui-panel h3 {
+    font-size: 1.5em;
+}
+
+#secure_logos,
+#call-us,
+#benefits,
+#pages_product_home_container_yourQuote #your-details, 
+#pages_product_home_container_yourQuote #your-cover,
+#pages_product_home_container_yourQuote #your-excesses {
+    background: #fff;
+    -webkit-box-shadow: 0 2px 3px #dddad6;
+    box-shadow: 0 2px 3px #dddad6;
+    border: 1px solid #e7e4e0;
+    height: auto;
+    padding: 20px 7%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#secure_logos {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_dyn_defaqto_logo.png");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+}
+
+.p_code_HOME #your-details dl, #your-cover dl, #your-excesses dl,
+.p_code_HOME #your-details h4, #your-cover h4, #your-excesses h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.p_code_HOME #your-details h3, #your-cover h3, #your-excesses h3 {
+    text-align: left;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+}
+
+.p_code_HOME #your-details dt, #your-cover dt, #your-excesses dt,
+.p_code_HOME #your-details dd, #your-cover dd, #your-excesses dd {
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 5px;
+    width: 100%;
+    word-break: normal;
+}
+
+.p_code_HOME #your-details dd, #your-cover dd, #your-excesses dd {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+a.edit-details {
+    color: #0971b0;
+    text-decoration: underline;
+    padding: 15px 0 5px;
+    position: static;
+    display: block;
+    padding: 15px 0 0;
+    font-size: 0.8em;
+    text-transform: capitalize;
+}
+
+ul.includes {
+    list-style: none;
+    margin: 0;
+    width: 50%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.includes li {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_blue_es.gif") no-repeat 0 9px transparent;
+    padding-left: 25px;
+    padding-right: 8px;
+    border-bottom: none;
+    height: auto;
+}
+
+#extra-cover.section-titles h1, #extra-cover.section-titles p {
+    padding-left: 0;
+}
+
+#extra-cover {
+    padding-top: 0.8em;
+}
+
+input#topRecalculateDisabled,  #recalculateDisabled, input#topRecalculateActive {
+    border: none;
+    border-radius: 0;
+    font-size: 2.3em;
+    height: 45px;
+}
+
+input#topRecalculateDisabled, input#topRecalculateActive {
+    font-size: 19px;
+}
+
+#home-addons label span {
+    line-height: 38px;
+}
+
+#home-addons .price span {
+    font-size: 16px;
+    line-height: 29px;
+}
+
+#price-recal {
+    border-radius: 0;
+}
+
+#call-us span {
+    color: #FFF;
+    padding-left: 6px;
+    padding-bottom: 3px;
+    display: block;
+    font: 1em 'MuseoSansRounded-500';
+    color: #E68926;
+}
+
+#call-us h4 {
+    margin: 0 0.4em 0.3em;
+    color: #494949;
+    font-size: 19px;
+    font-weight: 400!important;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#call-us dl {
+    color: #FFFFFF;
+    width: 96%;
+}
+
+#call-us span, #call-us p {
+
+}
+
+#call-us dl dt {
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+#call-us dl dt,#call-us dl dd {
+    width: 100%!important;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400!important;
+    font-size: 15px;
+}
+
+#call-us h3 {
+    padding-left: 6px;
+    color: #0971b0;
+    font-size: 20px;
+    padding: 0 0 10px;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+#call-us dl {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: #494949;
+    margin-bottom: -10px;
+}
+
+#call-us dl dd {
+    padding-bottom: 10px!important;
+    margin-bottom: 10px!important;
+    border-bottom: 1px solid #F3F0EC;
+}
+
+#call-us p {
+    margin: 0 0 10px;
+}
+
+.policy-area-motor ul.includes {
+    list-style: none;
+    color: #494949;
+    margin: 1% 0.5% 0 0px;
+    width: 32.5%;
+    height: 11em;
+}
+
+.policy-area-motor p {
+    margin-left: 1em;
+}
+
+.listview-sections ul {
+    margin: 1.5em 0 1.5em 6.5em;
+    font-size: 14px;
+}
+
+.listview-sections > p {
+    margin-left: 8.2em;
+    font-size: 14px;
+    padding-right: 12em;
+}
+
+.listview-sections li {
+    list-style: none;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_green_es.png") no-repeat 0 3px transparent;
+    padding-left: 25px;
+}
+
+.policy-area-motor ul.includes li {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_blue_es.gif") no-repeat 0 9px transparent;
+    padding-left: 28px;
+    border: none;
+    height: auto;
+}
+
+#benefits {
+    font-size: 20px;
+}
+
+.content-area-centre .quoteStepContainer p {
+    margin-left: 4.5em;
+}
+
+.quoteStepContainer h1 {
+    font: 1.3em "MuseoSansRounded-500",arial,helvetica,serif;
+    margin-left: 45px;
+    display: block;
+    padding: 5px 0px 5px 5px;
+    height: 15px;
+}
+
+.yourQuoteInner {
+    padding-left: 45px;
+}
+
+.form-background {
+    border: 0.625em solid #FFFFFF;
+    border-radius: 0 0 0 0;
+}
+
+.content-area-centre,
+#quote-layout .content-area-centre {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 25px 3%;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #d2d6d8;
+    border-color: #e7e4e0;
+    border-top-color: #f0ece9;
+    border-bottom-color: #dddad6;
+    -webkit-box-shadow: 0 2px 3px #dddad6;
+    -moz-box-shadow: 0 2px 3px #dddad6;
+    box-shadow: 0 2px 3px #dddad6;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+#content-area-main.one_col {
+    padding-left: 0;
+}
+
+input.find-addr {
+    color: #0971b0;
+}
+
+#recalcButtonCustomiseRegion a {
+    color: #0971b0;
+}
+
+#context-help-excessProtectionFlag1-panel-context-help {
+    padding-top: 5px;
+}
+
+.bundleDetailsDialog .mod-content ul {
+    list-style-image: none;
+    padding: 0.625em 0 0.625em 1%;
+}
+
+.bundleDetailsDialog .mod-content ul li span {
+    font-weight: none;
+}
+
+.bundleDetailsDialog .mod-content ul li h2 {
+    color: #0971b0;
+    font-weight: bold;
+    font-size: 1.0625em;
+}
+
+.bundleDetailsDialog.CHC-modal .mod-content .upsell-sm-print {
+    font-family: arial;
+    font-size: 0.825em;
+}
+
+.upsell-sm-print {
+    font-family: arial;
+    font-size: 0.9em;
+}
+
+.bundleDetailsDialog.EPC-modal .mod-content ul,.bundleDetailsDialog.CHC-modal .mod-content ul {
+    font-size: 0.75em;
+    list-style-image: none;
+    background: none;
+    border: none;
+    padding: 0.625em 0 0.625em 0;
+}
+
+.bundleDetailsDialog.EPC-modal .main-help-text ul li,.bundleDetailsDialog.CHC-modal .main-help-text ul li {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/blue_tick.png") no-repeat scroll left -1px transparent;
+    line-height: 1.6;
+    padding-left: 25px;
+}
+
+.bundleDetailsDialog.EPC-modal .mod-content ul li {
+    margin: 0;
+    color: #0971b0;
+}
+
+.bundleDetailsDialog.EPC-modal .mod-content p {
+    line-height: 1.5;
+    width: 60%;
+    position: relative;
+    z-index: 25;
+    font-size: 0.75em;
+}
+
+.bundleDetailsDialog.EPC-modal .mod-content h5 {
+    margin: 0.9375em 0;
+    position: relative;
+    z-index: 25;
+    font-size: 1em;
+    color: #0971b0;
+}
+
+.bundleDetailsDialog.EPC-modal .mod-content h4 {
+    margin: 0;
+    position: relative;
+    z-index: 25;
+    width: 100%;
+    font-size: 1em;
+    color: #0971b0;
+}
+
+.bundleDetailsDialog .mod-content ul {
+    border-style: none;
+    border: none;
+    background: none;
+}
+
+.excess-notes {
+    width: 65%;
+}
+
+#pre-footer p {
+    margin: 1.125em 0 1.125em 1.125em;
+    padding-right: 60px;
+}
+
+#recalcButtonCustomiseRegion a:link {
+    font-weight: bold;
+}
+
+#recalcButtonCustomiseRegion a:focus,#recalcButtonCustomiseRegion a:hover {
+    font-weight: bold;
+    color: #e68926;
+}
+
+.LGL-modal-img, .PIB-modal-img {
+    top: 105px;
+}
+
+.EPC-modal-img {
+    height: 262px;
+    overflow: hidden;
+    position: absolute;
+    right: 15px;
+    top: 105px;
+    width: 185px;
+    display: none;
+}
+
+.saveTextperyear {
+    font-size: 70%;
+}
+
+#pages_product_home_container_quoteDetails #pre-footer p, #pages_product_home_container_yourQuote #pre-footer p {
+    margin: 1.125em auto;
+    width: 63.6%;
+    padding-right: 0;
+}
+
+#pages_product_home_container_yourQuote #pre-footer img,
+#pages_product_home_container_quoteDetails #pre-footer img,
+#pages_product_home_container_quoteDetailsSummaryView #pre-footer img {
+    top: -5em;
+}
+
+#pages_product_motor_container_referToFa #pre-footer img {
+    top: 0;
+}
+
+.bundleDetailsDialog.EPC-modal .mod-content ul li.right {
+    float: right;
+}
+
+#copyright {
+    width: 100%;
+}
+
+#copyright p {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 14px;
+    color: #626262;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400!important;
+    margin: 30px 0 10px;
+}
+
+#secure_logos {
+    text-align: center;
+    padding-top: 11.5em;
+}
+
+#info-declarations {
+    background: #0971b0;
+    padding: 5px;
+}
+
+#pages_product_common_cardInformation #secure_logos {
+    padding-top: 127px;
+    ;
+}
+
+#footer ul li a {
+    color: #938e89!important;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-weight: 400!important;
+}
+
+input#changeAddress, input#findAddress {
+    margin: 2% 0 3% 1%;
+}
+
+#content-area-right {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_dyn_defaqto_logo.png") no-repeat 50% 95%;
+    padding-bottom: 155px;
+    margin: 0;
+    width: 19.5%;
+}
+
+#view-details {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_dyn_defaqto_logo.png") no-repeat top right;
+    width: 44%;
+    height: 105px;
+}
+
+#view-details p {
+    width: 95%;
+}
+
+#print-save input {
+    font-size: 1.1em;
+    height: auto;
+}
+
+.specified-info-table .right-col ul {
+    margin: 0 5%;
+    width: auto;
+}
+
+.specified-info-table .right-col ul li {
+    width: 100%;
+}
+
+.additional-info-table ul li input.edit, 
+.specified-info-table ul li input.edit,
+.additional-info-table ul li input.delete, 
+.specified-info-table ul li input.delete {
+    background: #f48e1e;
+    border-radius: 0;
+    color: #fff;
+    height: 2em;
+    width: 100%;
+}
+
+#editYourCover {
+    display: none;
+}
+
+.hint_text {
+    background: #0971b0;
+}
+
+#progress-bar ul li:last-child {
+    font-size: 95%;
+}
+
+h1, h2, h3, h4, h5, 
+.policy-link a, 
+#topRecalcButtonRegion input, 
+#progress-bar ul, 
+input.edit-btn, 
+input.add-section, 
+.right-but a.close-btn, 
+.left-but a.nothanks_btn,
+.specified-info-table ul li input.edit, 
+.specified-info-table ul li input.delete,
+input.add-section, 
+input.add-section-clear,
+input.find-addr {
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+}
+
+#paymentPanel h2 {
+    font-size: 1em;
+}
+
+#quote-layout .content-area-centre ul li,
+.quote-claims-convictions tr {
+    font-size: 15px;
+    margin: 0.2em 0;
+}
+
+#quote-layout dl.premium-dl dt, 
+#quote-layout dl.monthly-dl dt,
+#quote-layout span.prem-title {
+    width: 80%;
+}
+
+#pages_product_motor_container_quoteDetails h2,
+#quote-layout ul li h2 {
+    font-size: 18px;
+    color: #0971b0;
+    padding-right: 7em;
+    position: relative;
+}
+
+#quote-layout .content-area-centre ul.including h2 {
+    left: -20px;
+    text-transform: capitalize;
+    color: #0971b0;
+}
+
+#quote-layout #displayPremium h2 {
+    font-size: 25px;
+}
+
+#displayPremium > h2 {
+    padding-right: 0;
+}
+
+.with-bullets {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 1em;
+    margin-bottom: 1em !important;
+}
+
+.with-bullets.including {
+    margin-left: 5px;
+}
+
+.quote-claims-convictions {
+    border: 1px solid #f3f0ec;
+}
+
+#quote-layout .content-area-centre ul#convictions,
+#quote-layout .content-area-centre ul#claims {
+    border-bottom: none;
+}
+
+#general-questions dl dd {
+    font-size: 15px;
+    font-weight: 700;
+    width: 0;
+    margin-top: 0;
+}
+
+#general-questions dl dt {
+    float: right;
+    width: 92%;
+    margin-top: 2px;
+}
+
+#general-questions > h2 {
+    margin-bottom: 0.5em;
+}
+
+#your-details p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+#your-details img {
+    margin: 10px auto;
+}
+
+#headline,
+#headline_direct {
+    color: #0971b0;
+}
+
+.message-one {
+    padding: 17px 35px 5px;
+}
+
+.toolhover:focus, .on {
+    background-color: #e6f1f7;
+}
+
+.specified-info-table {
+    width: 77%;
+}
+
+.specified-info-table ul li a.delete, 
+.additional-info-table ul li a.delete {
+    background-color: #F48E1E;
+}
+
+.additional-info-table ul li a.edit,
+.specified-info-table ul li a.edit {
+    background-color: #F48E1E;
+}
+
+.intro-area h1,.policy-area-motor h1 {
+    font-size: 24px;
+    color: #0971b0;
+    font-weight: 400;
+    font-family: MuseoSansRounded-700;
+    margin-bottom: 0.5em;
+    padding-right: 0;
+}
+
+.section-titles h1,
+#xsell-iq h1,
+#bundleFlagMessageAnchor.sub-titles {
+    padding-bottom: 0;
+    color: #0971b0;
+    font-size: 22px;
+    font-family: MuseoSansRounded-700;
+    font-weight: 400;
+    background: none;
+}
+
+.policy-link a {
+    color: #0971b0;
+    font-size: 1em;
+    background: none;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+p.policy-details a, p.policy-details-travel a, .tile-link {
+    color: #0971b0;
+}
+
+#home-addons h2 , #home-addons h3 {
+    background: #0971b0;
+    color: #fff;
+}
+
+#home-addons #travel,
+#home-addons #pest,
+#home-addons #flp,
+#home-addons #home-emergency,
+#home-addons #winter {
+    background-color: #E5F6FE;
+    padding-bottom: 1.2em;
+}
+
+#home-addons #travel.chosen,
+#home-addons #pest.chosen,
+#home-addons #flp.chosen,
+#home-addons #home-emergency.chosen,
+#home-addons #winter.chosen {
+    background-color: #EEF5ED;
+}
+
+#pages_product_home_container_yourQuote.c_code_e #content-area-right {
+    background-position: 50% 285px;
+}
+
+#pages_product_common_paymentOptions.c_code_e/* .p_code_MOTOR */ #content-area-right,
+#pages_product_common_cardInformation.c_code_e/* .p_code_MOTOR */ #content-area-right,
+#pages_product_common_threeDSecure #content-area-right {
+      background: none;
+}
+
+.additional-info-table ul li {
+    width: 75px;
+}
+
+#home-addons h2, #home-addons h3 {
+    font-size: 17px;
+}
+
+#home-addons .active h2, #home-addons .chosen h2, 
+#home-addons .active h3, #home-addons .chosen h3 {
+    background: #89c33f;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+#home-addons .passive h2, 
+#home-addons .passive h3 {
+    background: #BAD0DC;
+    color: #002C51;
+}
+
+#home-addons .helpDialog  h3,
+#home-addons .helpDialog  h4 {
+    color: #0971b0;
+}
+
+#home-addons p.intro,
+#tile-area ul,
+#winter > p {
+    margin: 10px 15px;
+    padding: 10px 0;
+}
+
+#uniform-checkboxwin.checker {
+    top: -5px;
+}
+
+#home-addons h3 {
+    height: auto;
+}
+
+#tile-area ul {
+    color: #494949;
+    font-size: 16px;
+    line-height: 2;
+    list-style: none;
+}
+
+#tile-area ul li {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_green_es.png") no-repeat 5px 9px transparent;
+    padding-left: 28px;
+}
+
+p.attention {
+    font-weight: 400;
+    margin: 10px 15px !important;
+    padding: 10px 0;
+}
+
+p.attention-travel {
+    margin-top: 0 !important;
+}
+
+p.policy-details, p.policy-details-travel {
+    padding: 20px 0 10px;
+    text-decoration: underline;
+}
+
+#home-addons #flp, #home-addons #home-emergency, #home-addons #travel, #home-addons #pest{min-height: 690px;}
+
+.mod-content table tr:nth-of-type(2n+1) {
+    background: #eee;
+}
+
+.left-but a.nothanks-btn,
+.left-but a.nothanks-btn:hover,
+.right-but a.continue-btn,
+.right-but a.continue-btn:hover {
+    background: #0971b0;
+    color: #FFFFFF;
+    height: 33px;
+    width: 160px;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 4px;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+}
+
+.right a,
+.right a:hover {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font-size: 1.2em;
+    border: none;
+    font-weight: 400;
+}
+
+
+
+a#doc-pdf {
+    color: #0971b0;
+}
+
+#context-help-winterSportsPolicyDetails-panel-container table tr td+td,
+#context-help-travelPolicyDetails-panel-container table tr td+td {
+    width: 25%;
+}
+
+#pages_product_home_container_yourQuote #your-details h3,
+#pages_product_home_container_yourQuote #your-cover h3,
+#pages_product_home_container_yourQuote #your-excesses h3 {
+    color: #0971b0;
+}
+
+/*next button disabled*/
+#content-area-bottom input.go-to-nextDisabled {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_esure_next_button.png") repeat scroll left -138px #0971b0;
+}
+
+.p_code_HOME div.checker, .p_code_HOME div.checker span, .p_code_HOME div.checker input {
+    top: -5px;
+    left: 3px;
+}
+
+.right-but a.close-btn {
+    border: none !important;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.qtip-esure {
+    margin-left: 3.2em;
+    background-color: #0971b0;
+    border: 1px solid #0971b0;
+    color: #fff;
+    width: 220px;
+    -webkit-box-shadow: 1px 1px 1px #c2c2c2;
+    -moz-box-shadow: 1px 1px 1px #c2c2c2;
+    box-shadow: 1px 1px 1px #c2c2c2;
+    min-height: 7.5em;
+}
+
+.qtip-esure .qtip-titlebar {
+    background-color: #404040;
+}
+
+.qtip-esure .qtip-icon {
+    background: none repeat scroll 0 0 #E68926;
+    border: 2px solid #E68926;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    height: 15px;
+    padding: 5px 6px 4px 4px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -10px;
+    width: 15px;
+    color: #fff;
+}
+
+.qtip-esure .qtip-titlebar .ui-state-hover {
+    border-color: #303030;
+}
+
+.bundleContain ul.bundle-benefits li label.markFree {
+    color: #0971b0;
+}
+
+.yui-accordion-content ul {
+    padding-top: 1.4em;
+}
+
+a.yui-accordion-toggle {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/accordian_icon_plus.png") no-repeat scroll 10px 50% #fff !important;
+}
+
+#modsAccordianPanel a.active {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/accordian_icon_minus.png") no-repeat scroll 10px 50% #0971b0 !important;
+    border: 1px solid #0971b0 !important;
+    border-radius: 0;
+}
+
+#pages_product_motor_container_youAndYourInsurance .form-background img {
+    bottom: -4px;
+}
+
+.select-address select {
+    margin: 0.625em 0;
+    width: 100%;
+}
+
+.yui-skin-sam .yui-accordionview li.yui-accordion-panel a.yui-accordion-toggle {
+    font-weight: 400 !important;
+}
+
+.yui-accordion-content label {
+    height: 35px;
+    font-weight: 400 !important;
+}
+
+.yui-accordion-content ul li {
+    font-size: 1em;
+}
+
+.yui-skin-sam .yui-accordionview {
+    font: 400 15px "MuseoSansRounded-300" !important;
+}
+
+.yui-accordion-content {
+    background: #E6F1F7 !important;
+}
+
+a.yui-accordion-toggle {
+    border-radius: 0;
+    height: 40px !important;
+    line-height: 30px;
+}
+
+#container .premium-display dt,#container .premium-display dd {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    padding: 0.5em 0;
+    margin: 0 !important;
+}
+
+.premium-display dt {
+    background: #0971b0;
+}
+
+#quote-contact-us {
+    padding: 10px 2%;
+    background: #F3F0EC;
+    border: 1px solid #E6E2DE;
+    position: relative;
+    margin-top: 15px;
+}
+
+.multicar #quote-contact-us {
+    margin-top: 0;
+}
+
+#quote-contact-us h4 {
+    font-size: 1em;
+    font-weight: 400;
+    color: #494949;
+}
+
+#quote-contact-us h3 {
+    font-size: 1.5em;
+    color: #0971b0;
+    font-weight: 400;
+}
+
+#quote-contact-us dd, #quote-contact-us dt, #quote-contact-us span {
+    font-size: 14px;
+    height: auto;
+    padding: 0;
+    width: 49%;
+}
+
+#cover-details {
+    width: 70%;
+}
+
+.premium-display dl {
+    margin: 0 2% 0 0;
+    width: 47%;
+}
+
+.details-area .section-titles {
+    margin-left: 0;
+    margin-top: 1.5em;
+}
+
+#selectcustomaddons.active {
+    background-color: #89c33f;
+}
+
+#pages_product_motor_container_yourQuote input#saveQuote,
+#pages_product_motor_container_yourQuote input#printQuote {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_listview_sprite.png") no-repeat -97px -80px;
+    height: 21px;
+    width: 21px;
+    text-indent: -999px;
+    margin: 0 0.4em;
+}
+
+#pages_product_motor_container_yourQuote input#printQuote {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_listview_sprite.png") no-repeat -75px -80px;
+}
+
+.quote-step {
+    background: #0971b0;
+}
+
+.step-arrow {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/step_arrow.png");
+    background-position: 0 0;
+}
+
+.full_breakdown h2,
+#excessProtectionLabel > span {
+    background-color: #e6f1f7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#pages_product_motor_container_yourQuote #excessProtectionLabel > span {
+    font-size: 18px;
+}
+
+#excessProtectionLabel > span {
+    font-size: 1.1em;
+}
+
+.listview-sections {
+    background-color: #D9E5FA;
+    padding: 20px 15px 45px;
+}
+
+.listview-sections h3 {
+    font-family: "MuseoSansRounded-300", Arial, Verdana;
+    font-size: 14px;
+}
+
+.listview-sections label {
+    font-size: 1.2em;
+}
+
+.listview-sections label span {
+    font-size: 0.9em;
+}
+
+.listview-sections label .priceType {
+    font-size: 0.8em;
+}
+
+.help-arrow,
+.voluntartexcesslink {
+    color: #0971b0;
+}
+
+.ncd-protection-radiobutton,
+.excess-protection-radiobutton {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_listview_sprite.png") no-repeat 0 -220px;
+}
+
+.excess-protection-radiobutton {
+    background-position: 0 -220px;
+}
+
+.active-radiobutton-ex {
+    background-position: -120px -220px;
+}
+
+.active-radiobutton {
+    background-position: -120px -220px;
+}
+
+.listviewannualmonth, .breakdown-price {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_listview_sprite.png");
+    background-position: 0 -120px;
+}
+
+.active-addon {
+    background-position: -80px -120px;
+}
+
+#quote-layout .content-area-centre .declarations ul li p {
+    font-size: 15px;
+}
+
+.listviewannualmonth span,
+.breakdown-price span,
+.ncd-protection-radiobutton,
+.excess-protection-radiobutton {
+    color: #fff;
+}
+
+.help-arrow {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/list_view_readmore.png") no-repeat right 1px transparent;
+}
+
+li.plus:before {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_listview_sprite.png") no-repeat -203px -86px;
+}
+
+.prd-mlp {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_mlp.png") no-repeat 0 0 transparent;
+}
+
+.prd-chc {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_chc.png") no-repeat 0 0 transparent;
+}
+
+.prd-kyc {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_kyc.png") no-repeat 0 0 transparent;
+}
+
+.prd-msf {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_mfc.png") no-repeat 0 0 transparent;
+}
+
+.prd-pib {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_pib.png") no-repeat 0 0 transparent;
+}
+
+.prd-exc {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_exc.png") no-repeat 0 0 transparent;
+}
+
+.content-area-centre #current-address-is p,
+.current-address-is-display {
+    font-size: 16px;
+}
+
+#payment-optns label,
+.current-address-is-display {
+  background: #FFFFFF;
+  border: 1px solid #E6E2DE;
+	display: block;
+		padding: 0.5em;
+		border-radius: 5px;
+}
+
+.content-area-centre #current-address-is p {
+      margin-left: 0;
+  }
+
+h1 {
+    clear: right;
+}
+
+.full_breakdown h2,
+#excessProtectionLabel > span {
+    background-color: #e6f1f7;
+}
+
+.full_breakdown label.selected h2 {
+    background: #f7c47f;
+}
+
+#label_breakdownCover_3 {
+    height: 65px;
+}
+
+#label_breakdownCover_3.selected {
+    background: #f7c47f !important;
+    color: #494949;
+}
+
+#label_breakdownCover_3 .bkRadio {
+    line-height: 3em;
+    font-size: 18px;
+}
+
+#cover-details input, .policy-area-motor a {
+    color: #0971b0;
+}
+/*! esure motor quote tooltip style */
+
+
+div.checker span,
+div.radio span {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/ticks_listview.png");
+    background-repeat: no-repeat;
+}
+
+div#uniform-breakdownCover_3.radio span {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/cross_listview.png");
+    background-repeat: no-repeat;
+}
+
+
+/*radio different*/
+.ncd-protection-radiobutton div.radio span,
+.excess-protection-radiobutton div.radio span {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/radio_listview.png");
+    background-repeat: no-repeat;
+}
+
+#display-option div.radio span {
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/radio_display_option.png");
+    background-repeat: no-repeat;
+}
+
+.qtip-motor-quotepage.qtip {
+    font-size: 14px;
+    line-height: 1.1;
+}
+
+.qtip-motor-quotepage {
+    background-color: #0971b0;
+    border: solid 1px #0971b0;
+    color: #f4f4f4;
+    width: 400px;
+    padding: 1em 0.5em;
+}
+
+.qtip-motor-quotepage h2 {
+    font-weight: 900;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 110%;
+    margin: 0 0 0.5em 1em;
+}
+
+.qtip-motor-quotepage p,
+.qtip-motor-quotepage ul {
+    font-size: 100%;
+    margin-top: 0;
+}
+
+.qtip-motor-quotepage li {
+    list-style: disc outside;
+    padding: 0.5em 0;
+    margin-left: 1.2em;
+}
+
+.qtip-motor-quotepage .qtip-content {
+    overflow: auto;
+    max-height: 280px;
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+}
+
+.qtip-motor-quotepage .qtip-icon {
+    background-color: #0971b0;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    right: 14px;
+    top: 3px;
+    color: #fff;
+}
+
+.qtip-motor-quotepage .qtip-titlebar .ui-state-hover {
+    border-color: #303030;
+}
+
+.qtip-dark {
+    background-color: transparent;
+}
+
+#excessPrice {
+    margin-top: 4px;
+}
+
+.declarations ul li {
+    margin-left: 0.5em;
+}
+
+.declarations h2 {
+    padding: 0.5em 1.25em;
+}
+
+.description ul li {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_green_es.png") no-repeat scroll left top transparent;
+}
+
+table {
+    font-size: 14px;
+}
+
+#quote-layout .content-area-centre ul {
+    width: 100% !important;
+    padding-bottom: 2em;
+    padding-top: 0.5em;
+}
+
+#quote-layout .content-area-centre ul li span {
+    margin: 0 3px;
+}
+
+#quote-layout .content-area-centre .declarations ul li  span {
+    margin: 0;
+}
+
+/*----------------------------------------------------
+Assumptions changes home
+----------------------------------------------------- */
+
+#home-abt-decs li {
+    list-style: outside disc;
+    margin-left: 2em;
+}
+
+#home-abt-decs ul.decs li {
+    list-style: none;
+    margin-left: 0;
+}
+
+/*esure FaqAgent*/
+#faqtAgent_content {
+    border: 1px solid #f48e1e;
+}
+
+#faqtAgent_close span.close {
+    background: #1072ad;
+}
+
+.fa_autosuggest {
+    border: 1px solid #f48e1e;
+}
+.as_padding,.as_padding_over {
+    font-family: "MuseoSansRounded-500",Arial,Helvetica,sans-serif;
+    color: #494949;
+    font-size: 14px;
+}
+.as_padding_over {
+    color: #1072ad;
+}
+
+#fa_autosuggest_input.fa_autosuggest_input {
+     background-color: #ffffff;
+     border-radius: 6px 0px 0px 6px;
+     border: 1px solid #e5e0da;
+     color: #1072ad ! important;
+     font-family: "MuseoSansRounded-500",Arial,Helvetica,sans-serif;
+     font-size: 15px;
+     height: 30px;
+     margin: 5px 0;
+     outline: 0px none;
+     padding: 0 11px;
+     width: 200px;
+}
+#fa_autosuggest_input.fa_autosuggest_input:focus {
+    border: 1px solid #f48e1e;
+}
+
+#faqform input {
+    border: none;
+    height: 32px;
+    width: 32px;
+    margin: 5px 15px 0 0;
+    background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/search.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+    min-width: 0;
+}
+
+/*-----------------------------------------------------------------
+ CR3667 - Agg handover page
+-----------------------------------------------------------------*/
+
+#pages_general_loadingQuote #content-area-main {
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/logo.png") no-repeat scroll center 20px transparent !important;
+    padding-top: 90px;
+}
+#pages_general_loadingQuote #container {
+    margin: 5% auto 0;
+    background-color: #fff;
+}
+
+#pages_general_loadingQuote #header,
+#pages_general_loadingQuote #copyright,
+#pages_general_loadingQuote #content-area-bottom {
+        display: none;
+}
+#pages_general_loadingQuote #outer,
+#pages_general_loadingQuote #footer {
+    background: none !important; 
+    border: none;
+}
+#pages_general_loadingQuote #outer {
+    padding-top: 0 !important;
+}
+
+#pages_general_loadingQuote {
+    background-color: #fff !important;
+}
+
+#loader {
+    margin-top: 15px;
+}
+#loading_content {
+    padding: 0.8em;
+}
+#loading_content ul {
+    list-style: inside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/small_tick.png") disc;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: left;
+    width: 100%;
+    font-size: 0.8em;
+    line-height: 1.6;
+}
+#loading_content ul li {
+    padding-bottom: 10px;
+}
+
+fieldset fieldset label, 
+fieldset.radio_stack label,
+.ncd-proection-radiobutton label, 
+#specified-radio label,
+#label_billingAddrSameAsPolicyAddr_0,
+#label_billingAddrSameAsPolicyAddr_1,
+#label_cardOwnerPolicyHolder_0,
+#label_cardOwnerPolicyHolder_1
+{background: none repeat scroll 0 0 #F3F0EC; 
+border: none;
+    border-radius: 3px 3px 3px 3px; 
+    display: block; 
+    float: left; 
+    margin-left: 2%; 
+    margin-bottom: 0.4em;  
+    padding: 5px 0;  
+    width: 40%;}
+
+        fieldset fieldset label.selected, fieldset.radio_stack label.selected,
+    #pages_product_motor_container_aboutYou .declarations label.selected,
+    .ncd-proection-radiobutton label.selected,
+    #specified-radio label.selected,
+    #label_billingAddrSameAsPolicyAddr_0.selected,
+    #label_billingAddrSameAsPolicyAddr_1.selected,
+    #label_cardOwnerPolicyHolder_0.selected,
+    #label_cardOwnerPolicyHolder_1.selected,
+        #pages_product_motor_container_aboutYou .declarations label.selected, #home-abt-decs label.selected {
+        background: #0971b0;
+        color: #fff !important;
+        margin-left: 1em;
+    }
+
+    @media only screen and (max-width : 960px) {
+        #pages_general_loadingQuote #container #content-area-main {
+            margin: 0 !important;
+            width: 100% !important;
+        }
+    }
+    
+    @media only screen and (max-width : 750px) {
+        #pages_general_loadingQuote #container {
+            width:80%;
+        }
+    }
+
+    @media only screen and (max-width : 480px) {
+        #loading_text {
+            font-size: 0.8em;
+            margin: 5px;
+        }
+
+    }   
+
+   
+/* Leave Renewal - form update */
+
+label[for=buildingRenewalMonth] {
+  background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_renewal_home_icon.png") no-repeat;
+}
+
+label[for=contentRenewalMonth] {
+  background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_renewal_contents_icon.png") no-repeat;
+}
+
+label[for=travelRenewalMonth] {
+  background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_renewal_travel_icon.png") no-repeat;
+}
+
+label[for=carRenewalMonth] {
+  background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_renewal_car_icon.png") no-repeat;
+}
+
+label[for=multicarRenewalMonth] {
+  background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_renewal_multicar_icon.png") no-repeat;
+}
+
+/* ===============================================================================================================================
+ Covers small & medium
+==================================================================================================================================*/
+
+@media only screen and (max-width : 954px) {
+
+    #agg-message > img {
+    display: none;
+    }
+
+    #brand-overlay {
+        background-position: 50% 50%;
+        margin: 10px 3%;
+        width: 94%;
+    }
+
+    #mob-menu {
+        background: #fff !important;
+    }
+
+    #mob-menu .contact-open {
+        color: #0971b0 !important;
+    }
+
+    #mob-menu li a,
+    .contact-area h3 {
+        color: #0971b0 !important;
+    }
+
+    #mob-menu li a:hover {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_white_external_icon.gif") no-repeat scroll 95% center #F7F7F7;
+    }
+
+    .contact-area dd, .contact-area dt {
+        line-height: 1.7em !important;
+    }
+
+    .contact-area dd {
+        border-bottom: 1px solid #F7F7F7;
+        margin-bottom: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .contact-area dl dd:last-child {
+        border-bottom: none;
+    }
+
+    .contact-area {
+        background: #fff !important;
+        color: #494949 !important;
+    }
+
+    #mob-menu ul {
+        background: #fff !important;
+    }
+
+    #mob-menu li {
+        border-bottom: none !important;
+    }
+
+    .one-col #content-area-main.one_col {
+        top: 0;
+    }
+
+    #hamburgerDialog-container .bd {
+        padding: 0 !important;
+    }
+
+
+}
+/* ===============================================================================================================================
+ SMALL Mobile styling
+==================================================================================================================================*/
+
+@media only screen and (max-width : 640px) {
+
+    #faqform {
+        display: none;
+    }
+
+    dt {
+        margin-left: 8px !important;
+    }
+    body,
+    #copyright {
+        background: transparent !important;
+    }
+
+    .aside > #agg-message-logo {
+        display: none;
+    }
+
+    #general-questions dl dt,
+     #general-questions dl dd {
+        list-style-type: none !important;
+        width: 90% !important;
+        margin: 0 5% !important;
+        padding: 0 !important;
+    }
+
+     #general-questions dl dd {
+        margin-bottom: 10px !important;
+     }
+
+    .specified-info-table {
+        width: 100%;
+    }
+
+    .specified-info-table .right-col ul {
+        height: 9em;
+    }
+
+    .details-area {
+        padding: 6em 1em 0.5em;
+        margin: 1em 2% !important;
+        width: 96%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #pages_product_home_container_yourQuote ul.includes, #pages_product_home_container_yourQuote ul.includes + ul.includes {
+        padding: 5px !important;
+        width: 95%;
+        margin: 0;
+    }
+
+    #pages_product_home_container_quoteDetails dl.conviction-conditions dd {
+        border-bottom: 1px solid #f3f0ec;
+    }
+
+    #pages_product_home_container_yourCover .tooltip {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/help_i.png") no-repeat scroll 98% 10% transparent !important;
+    }
+
+    #contents-extra label, #buildings-extra label {
+        border: none;
+        margin-bottom: 0.5em;
+    }
+
+    #contents-extra label span, #buildings-extra label span {
+        line-height: 1.1;
+    }
+
+    #pages_product_home_container_yourCover #container dt {
+        width: 83%;
+    }
+
+    .qtip-esure {
+        margin-left: 3%;
+    }
+
+    #header {
+        height: 120px;
+    }
+
+    #home-addons .price span {
+        font-size: 15px;
+    }
+
+    #home-addons label {
+        font-size: 15px;
+    }
+
+    /* mobile fix for prices replace FREE  */
+    .price {
+    display: block !important;
+    width: auto;
+    float: none !important;
+    }
+
+    #winter > p {
+        margin-left: 10px !important;
+    }
+
+    .intro-area h1, .policy-area-motor h1 {
+        font-size: 20px;
+    }
+
+    .policy-area-motor ul.includes {
+        list-style: none !important;
+        margin: 0 !important;
+        width: 100% !important;
+        font-size: 12px;
+        height: auto !important;
+    }
+
+    .policy-area-motor .includes li:last-child {
+        border-bottom: none !important;
+    }
+
+    #policy-cover-motor {
+        margin: 0 !important;
+        padding-top: 2em !important;
+    }
+
+    #yourquoteprintsave {
+        display: none;
+    }
+
+    #progress-bar ul li span.active {
+        display: block;
+        font-size: 24px;
+    }
+
+    #progress-bar table {
+        padding-bottom: 0;
+    }
+
+    #progress-bar tr {
+        background: transparent;
+        padding-bottom: 0;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    #container dt {
+        width: 94%;
+        padding-bottom: 10px;
+    }
+
+    #container dd {
+        margin-bottom: 15px;
+    }
+
+    .form-background select {
+        margin-left: 0;
+    }
+
+    .third-party-logos {
+        padding: 1em 0 !important;
+    }
+
+    #container dt label {
+        text-align: left;
+    }
+
+    .listview-sections {
+        padding: 20px 5px 45px !important;
+    }
+
+    .listview-sections ul {
+        margin-left: 5px !important;
+    }
+
+    .listview-sections h3 {
+        font-size: 13px !important;
+    }
+
+    .helpButton, 
+    .info_icon, 
+    #information-pack ul li a {
+        top: 14px;
+        right: 2% !important;
+    }
+
+    .content-area-centre, 
+    #quote-layout .content-area-centre {
+        width: 96%;
+        margin: 0px 2% 0.625em !important;
+        padding: 25px 0 !important;
+    }
+
+    #pages_product_motor_container_yourQuote #monthlySmallPrint {
+        color: #0971b0;
+    }
+
+    #pages_product_common_cardInformation.pci #cardDetailsFrame {
+        left: 1em !important;
+    }
+
+    #pages_product_motor_container_yourQuote .excessprotect {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/exc_icon_mob.png");
+    }
+
+    #pciframe {
+        width: 100%;
+    }
+
+    .quote-step {
+        background: #0971b0;
+        border-top: solid 3px #f08a00;
+        margin: 0 2% 16px !important;
+        width: 96% !important;
+    }
+
+    .listview-sections,
+/*     .listview-bundle-sections, */
+    #label_breakdownCover_0, 
+    #label_breakdownCover_1, 
+    #label_breakdownCover_2,
+    .quote-extra-dl.ncd-mlp,
+    .quote-extra-dl,
+    .quote-extra-dl.excessprotect {
+        width: 94%;
+        margin: 0 3% 6%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #label_breakdownCover_3 {
+        width: 94% !important;
+        margin: 0 3% 6% !important;
+    }
+
+    #pages_product_motor_container_yourQuote label.viewprice {
+        display: block;
+        margin-top: 12px;
+    }
+
+    #pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_0, 
+    #pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_1 {
+        background: #fff!important;
+        border-color: #e7e4e0!important;
+        border-top-color: #f0ece9!important;
+        border-bottom-color: #dddad6!important;
+        -webkit-box-shadow: 0 2px 3px #dddad6;
+        -moz-box-shadow: 0 2px 3px #dddad6;
+        box-shadow: 0 2px 3px #dddad6;
+        display: inline-block !important;
+        width: 46% !important;
+        margin: 2% 1% 0 !important;
+    }
+
+    #pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_0.selected, 
+    #pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_1.selected {
+        background: #0971b0 !important;
+        color: #fff;
+    }
+
+    #pages_product_motor_container_yourQuote #commonStatus-status {
+        top: 7.5em !important;
+        left: 85% !important;
+    }
+
+    #display-option {
+        margin-bottom: 60px !important;
+    }
+
+    .step-arrow {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/step_arrow_mobile.png");
+        top: 34px;
+    }
+
+    .prd-mlp {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/mlp_icon_mob.png");
+    }
+
+    .prd-chc {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/chc_icon_mob.png");
+    }
+
+    .prd-kyc {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/kyc_icon_mob.png");
+    }
+
+    .prd-msf {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/mfc_icon_mob.png");
+    }
+
+    .prd-pib {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/pib_icon_mob.png");
+    }
+
+    .prd-exc {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/exc_icon_mob.png");
+    }
+
+    #footer {
+        padding: 50px 0 0px;
+        height: 40px;
+    }
+
+    #pre-footer,
+    #footer {
+        width: 100%;
+        background: #f3f0ec;
+    }
+
+    #pre-footer img {
+        position: static !important;
+        margin: 15px auto;
+    }
+
+    .additional-info-table ul li input.edit,
+        .additional-info-table ul li input.delete,
+        .specified-info-table ul li input.edit,
+        .specified-info-table ul li input.delete,
+        input#continue, input#next, input#back,
+        input#recalculateDisabled, input#add_driver_next_false,
+        input#modalFinishButton, input#findAddress,
+        input.add-section, input.add-section-clear,
+        input.find-addr, input#mobRecalculate,
+        input#passwordHint, input#resetPassword {
+        font-size:16px;
+		font-size: 2.4em;
+        font-weight: normal;
+    }
+
+    .additional-info-table td {
+        border-right: 0;
+    }
+
+    .section-titles h1,
+    h1.sub-titles {
+        font-size: 24px;
+    }
+
+    #pages_general_siteFeedback h3 {
+        color: #0971b0;
+    }
+
+    ul.declaration-agrmt-btns {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        left: 0;
+    }
+
+    #pages_product_motor_container_aboutYourCar ul#your-car {
+        margin-bottom: 7em !important;
+    }
+
+    .bundleDetailsDialog .upSell.yui-panel {
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .bundleDetailsDialog.BK-modal .mod-content h4,
+        .bundleDetailsDialog.LGL-modal .mod-content h4,
+        .bundleDetailsDialog.PIB-modal .mod-content h4,
+        .bundleDetailsDialog.CHC-modal .mod-content h4,
+        .bundleDetailsDialog.BK-modal .mod-content h5,
+        .bundleDetailsDialog.LGL-modal .mod-content h5,
+        .bundleDetailsDialog.PIB-modal .mod-content h5,
+        .bundleDetailsDialog.CHC-modal .mod-content h5 {
+        margin: 0.2em 0;
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    .bundleDetailsDialog.BK-modal .mod-content ul.select-bundle li,
+        .bundleDetailsDialog.LGL-modal .mod-content ul.select-bundle li,
+        .bundleDetailsDialog.PIB-modal .mod-content ul.select-bundle li,
+        .bundleDetailsDialog.CHC-modal .mod-content ul.select-bundle li,
+        .bundleDetailsDialog.EPC-modal .mod-content ul.select-bundle li {
+        width: 100%;
+    }
+
+    #callCentreUpSellModal-panel-container.LGL-modal .bundleDetailsDialog .mod-content ul.select-bundle .right a,
+        #callCentreUpSellModal-panel-container.LGL-modal .bundleDetailsDialog .mod-content ul.select-bundle .left a,
+        #callCentreUpSellModal-panel-container.EPC-modal .bundleDetailsDialog .mod-content ul.select-bundle .right a,
+        #callCentreUpSellModal-panel-container.EPC-modal .bundleDetailsDialog .mod-content ul.select-bundle .left a {
+        width: 92%;
+        margin-bottom: 0.5em;
+    }
+
+    fieldset fieldset label,
+    fieldset.radio_stack label,
+    #specified-radio label,
+        #label_billingAddrSameAsPolicyAddr_0,
+        #label_billingAddrSameAsPolicyAddr_1,
+        #label_cardOwnerPolicyHolder_0,
+        #label_cardOwnerPolicyHolder_1 {
+        background-color: #EFF5F8;
+        color: #0971B0;
+        border: none;
+        margin-bottom: 2px;
+    }
+
+    a#manualAddressToggle, a#manualAddressToggle2 {
+        width: 100%;
+    }
+
+    a#manualAddressToggle2 input, a#manualAddressToggle input {
+        margin-left: 1em !important;
+        font-size: 1.2em !important;
+    }
+
+    #label_bundlePriceMonthlyRadio_0, 
+        #label_bundlePriceMonthlyRadio_1 {
+        border-bottom: solid 1px #E2E8F1;
+    }
+
+    img.cc-logo {
+        top: 75px !important;
+    }
+
+    #pages_product_home_container_paymentOptionsSummaryView img.cc-logo {
+        top: 110px !important;
+    }
+
+    fieldset fieldset label.selected,
+    fieldset.radio_stack label.selected,
+    #specified-radio label.selected,
+    #contents-extra label.selected,
+    #buildings-extra label.selected,
+    #label_bundlePriceMonthlyRadio_0.selected,
+    #label_bundlePriceMonthlyRadio_1.selected,
+    #label_billingAddrSameAsPolicyAddr_0.selected,
+    #label_billingAddrSameAsPolicyAddr_1.selected,
+    #label_cardOwnerPolicyHolder_0.selected,
+    #label_cardOwnerPolicyHolder_1.selected {
+        background: #0971b0;
+        color: #fff;
+        font-weight: 700 !important;
+    }
+
+    #pages_product_motor_container_aboutYou .declarations fieldset label,
+    #pages_product_home_container_aboutYou .declarations fieldset label,
+    #home-abt-decs label {
+        border: solid 1px #E6F1F7;
+    }
+
+    #pages_product_motor_container_aboutYou .declarations fieldset label.selected,
+    #pages_product_home_container_aboutYou .declarations fieldset label.selected,
+    #home-abt-decs label.selected {
+        background: #0971b0;
+        color: #fff;
+    }
+
+    #pages_product_motor_container_quoteDetails td {
+        text-align: left;
+    }
+
+    #pages_product_home_container_quoteDetails #quote-layout .declarations .error, 
+#pages_product_motor_container_quoteDetails #quote-layout .declarations .error {
+        color: #d82a15;
+        font-weight: 400;
+    }
+
+    #display-option dd {
+        margin-bottom: 0 !important;
+    }
+
+    ul.claim-conv-btns {
+        width: 100%;
+        position: static;
+        margin-bottom: 0.5em;
+    }
+
+    #outer {
+        overflow-x: none;
+        width: 100%;
+        background-color: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_header.png") repeat-x scroll 0 0 transparent;
+        position: relative;
+        left: 0px;
+    }
+
+    .declarations {
+        margin: 0 0.3em;
+    }
+
+    .quoteStepContainer .section-titles {
+        background: #0971b0;
+        height: 3em;
+    }
+
+    .quoteStepContainer .section-titles h1 {
+        color: #fff;
+        display: block;
+        font: normal 1em MuseoSansRounded-500;
+        line-height: 2.5em;
+        margin-left: 4.2em;
+        background: #0971b0;
+    }
+
+    .quoteStep span {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_step_right.png") no-repeat scroll right top transparent;
+        display: inline-block;
+        padding-right: 12px;
+    }
+
+    .quoteStep span span {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_step_left.png") no-repeat scroll left top transparent;
+        display: inline-block;
+        padding: 0 0 0 4px;
+    }
+
+    .c_code_e #commonStatus-status {
+        float: right;
+        right: 8%;
+        position: absolute;
+        top: 10.5em;
+    }
+
+    .c_code_e ul#drivers li {
+        border-radius: 0;
+        border: none;
+        background: #0971b0;
+        height: 60px;
+    }
+
+    ul#drivers li.passive-driver {
+        background: #0971b0 !important;
+        color: #fff;
+    }
+
+    .active-driver span {
+        background: #E2E8F1;
+        height: 0;
+    }
+
+    #pages_product_motor_container_aboutYourAdditionalDrivers .content-area-centre {
+        margin-top: 0 !important;
+    }
+
+    .add-driver-add {
+        position: relative;
+    }
+
+    #pages_product_motor_container_aboutYourAdditionalDrivers #content-area-bottom ul {
+        padding-bottom: 70px;
+    }
+
+    #pages_product_motor_container_aboutYourAdditionalDrivers input#addDriver,
+        #content-area-bottom input.add-another-driver,
+        #content-area-bottom input.add-another-driver:hover {
+        text-shadow: 0 -1px 1px #00355E;
+        font-size: 2.2em;
+        height: 2.9em;
+        margin: 0em 2%;
+        position: absolute;
+        top: 72px;
+        width: 96%;
+    }
+
+    #pages_product_motor_container_aboutYourAdditionalDrivers .passive-driver .driver-switch {
+        height: 81px;
+        top: 0 !important;
+        font-size: 12px !important;
+    }
+
+    #pages_product_motor_container_aboutYourAdditionalDrivers select, #pages_product_motor_container_aboutYourAdditionalDrivers input {
+        font-size: 16px !important;
+    }
+
+    .active-drivers-name, 
+        .passive-drivers-name {
+        bottom: -5px !important;
+        font-size: 12px;
+    }
+
+    .add-driver-claims h4, 
+    .add-driver-convictions h4 {
+        font-size: 16px;
+    }
+
+    .add-driver-claims h4, .add-driver-convictions h4 {
+        color: #0971b0;
+    }
+
+    .add-driver-claims h4, #convictionsPanel h4 {
+        background: none repeat scroll 0 0 #0971b0;
+        color: #FFFFFF;
+        font-weight: normal;
+        height: 2em;
+        line-height: 2em;
+    }
+
+    #pages_product_motor_container_aboutYourAdditionalDrivers dd {
+        width: 97% !important;
+    }
+
+    #copyright p {
+        margin: 0.5em;
+        color: #494949 !important;
+    }
+
+    #quote-layout .declarations ul, 
+    #quote-layout ul#claims, 
+    #quote-layout ul#convictions, 
+    #quote-layout #claim-details,
+    #quote-layout .content-area-centre ul {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    span.left {
+        background: #F3F0EC;
+        border: 1px solid #E6E2DE;
+        width: 96%;
+        margin: 5% 2%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #pages_product_motor_container_quoteDetails .declarations ul li {
+        list-style: none !important;
+    }
+
+    #quote-layout #displayPremium h2 {
+        color: #494949 !important;
+        font-size: 1.4em !important;
+    }
+
+    #quote-layout dl.premium-dl, #quote-layout dl.premium-dl dt, #quote-layout dl.monthly-dl dt {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #quote-layout #details-section ul li h2, #quote-layout ul li h2 {
+        color: #0971b0;
+    }
+
+    #pages_product_common_paymentOptions #information-pack li ul {
+        list-style: disc outside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/mob_es_list_arrow.png");
+    }
+
+    #pages_product_common_cardInformation.pci .form-background {
+        padding-bottom: 1300px !important;
+    }
+
+    #pages_product_common_cardInformation.pci #cardDetailsFrame {
+        height: 1400px !important;
+    }
+
+    #info-declarations {
+        background: #F3F0EC;
+        border: 1px solid #E6E2DE;
+        width: 96%;
+        margin: 5% 2%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #billingAddrRegion {
+        margin-bottom: 1em;
+        display: block;
+    }
+
+    #billingAddrRegion dd {
+        margin: 0 !important;
+    }
+
+    #payment-optns ul, #paymentPanel ul {
+        margin: 0 !important;
+    }
+
+    #pages_product_common_cardInformation .left p {
+        margin: 0 auto !important;
+    }
+
+    #pages_product_common_cardInformation span.left {
+        margin-top: 4em;
+    }
+
+    .full_breakdown  fieldset label.active,
+        .full_breakdown  fieldset label.selected {
+        background: none repeat scroll 0 0 #EEF5ED;
+    }
+
+    #xsell-left, #xsell-two-left, #xsell-two-right, #xsell-right {
+        background: #F3F0EC !important;
+        border: 1px solid #E6E2DE !important;
+        float: none !important;
+    }
+
+    #xsell-two-left, #xsell-two-right {
+        width: 96% !important;
+        margin: 0 2% !important;
+    }
+
+    #xsell-right,#xsell-two-right {
+        padding-left: 0 !important;
+        margin-top: 1em !important;
+    }
+
+    #pages_product_common_paymentConfirmation .shorter-area + .shorter-area {
+        padding-top: 0 !important;
+    }
+
+    input#modalFinishButton {
+        height: auto !important;
+    }
+
+    #xsell-left h2, #xsell-two-left h2, #xsell-two-right h2, #xsell-right h2 {
+        color: #0971b0;
+    }
+
+    #xsell-left p {
+        width: 90% !important;
+    }
+
+    .listview-sections label {
+        padding-right: 4.5em !important;
+    }
+
+    #home-icon, #travel-icon, #pet-icon, #car-icon {
+        display: none !important;
+    }
+
+    table#convictions tr {
+        padding: 10px;
+    }
+
+    table#claimsSubform\:claims,
+    table#convictionsSubform\:convictions,
+    #convictions,
+    #claims {
+        font-size: 14px;
+    }
+
+    #convictions td,
+    #convictions td:before {
+        text-align: left;
+        padding: 0;
+    }
+
+    .dates input {
+        margin: 0 4px !important;
+        width: 3.3em !important;
+    }
+
+    ul.claim-conv-btns li, #claim-conv-btns li {
+        width: 44% !important;
+        margin: 0 5px;
+    }
+
+    #convictionsSubform\:convictions p {
+        background: #fff;
+    }
+
+    tr:nth-of-type(odd) {
+        background: #eaeaea;
+    }
+
+    .additional-info-table thead, .quote-claims-convictions thead {
+        background: transparent;
+    }
+
+    .c_code_e #commonStatus-status-customised {
+        left: 26em;
+        position: absolute;
+        top: 10em;
+    }
+
+.yui-skin-sam .container-close,
+.yui-skin-sam .container-close:focus,
+.yui-skin-sam .container-close:hover,
+    .yui-skin-sam .helpDialog .container-close,
+        .yui-skin-sam .helpDialog .container-close:focus,
+        .yui-skin-sam .helpDialog .container-close:hover {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/lightbox_close_invert.gif");
+        background-position: 0 3px !important;
+        color: #D82A15;
+        font-weight: normal;
+        padding: 0.1em 0.4em;
+        top: 3px;
+        right: 0;
+        width: 14px !important;
+    }
+
+    .helpDialog .yui-panel .hd {
+        height: 1em !important;
+    }
+
+    .recalc-modal .yui-panel .bd, .recalc-modal .yui-panel .ft {
+        border-color: #0971b0!important;
+    }
+
+    .recalc-modal .yui-panel .hd {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-color: #0971b0;
+    }
+
+    #recalcDialog {
+        border-color: #0971b0 !important;
+    }
+
+    .yui-skin-sam .annualSavings .container-close {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/mob_es_modal_help_close.png");
+    }
+
+    .helpDialog .mod-body {
+        border: none;
+    }
+
+    .contact-area h3 {
+        line-height: 1.2em;
+        font-size: 1.2em;
+        padding: 0.2em 0.5em;
+        font-weight: normal;
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/mob_call_phone.png") no-repeat 165px 0 transparent;
+    }
+
+    #menubar {
+        padding-top: 20px !important;
+    }
+
+    #hamburgerDialog-container .container-close {
+        margin-top: 20px !important;
+    }
+
+    #mob-menu,
+        .helpDialog .mod-hdr,
+        #quote-layout #displayPremium h2
+        .back-hdr,
+        #pages_general_siteFeedback h3 {
+        font-size: 1.5em;
+        font-weight: normal;
+    }
+
+    #content-area-bottom ul {
+        width: 98%;
+    }
+
+    .yui-skin-sam .yui-panel {
+        width: 98%;
+        margin: 0 1%;
+    }
+
+    #monthpremiumannualcost dl.top-premium-panels.left dt {
+        background: #8FA3CB;
+        -webkit-box-shadow: 0px 0px 0px 1px #466191;
+        -moz-box-shadow: 0px 0px 0px 1px #466191;
+        box-shadow: 0px 0px 0px 1px #466191;
+        -webkit-border-radius: 0 0 3px 3px;
+        -moz-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+        color: #FFFFFF;
+        height: 48px;
+        line-height: 47px;
+        width: 100%;
+    }
+
+    #monthpremiumannualcost dl.top-premium-panels.right dt {
+        background: #0971b0;
+        -webkit-box-shadow: 0px 0px 0px 1px #466191;
+        -moz-box-shadow: 0px 0px 0px 1px #466191;
+        box-shadow: 0px 0px 0px 1px #466191;
+        -webkit-border-radius: 0 0 3px 3px;
+        -moz-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+        color: #FFFFFF;
+        height: 48px;
+        line-height: 47px;
+        width: 100%;
+    }
+
+    #monthpremiumannualcost dl.top-premium-panels dd {
+        background: #fff;
+        -webkit-box-shadow: 0px 1px 0px 1px #ccc;
+        -moz-box-shadow: 0px 1px 0px 1px #ccc;
+        box-shadow: 0px 1px 0px 1px #ccc;
+        -webkit-border-radius: 0 0 3px 3px;
+        -moz-border-radius: 0 0 3px 3px;
+        border-radius: 0 0 3px 3px;
+        height: 47px;
+        line-height: 47px;
+        color: #0971b0;
+        width: 100%;
+    } 
+
+/* buttons */
+    #content-area-bottom input.back-btn,
+        #content-area-bottom input.back-btn:hover,
+        #content-area-bottom input.back-btn:focus,
+        #content-area-bottom input.edit-btn,
+        #content-area-bottom input.edit-btn:hover,
+        #content-area-bottom input.edit-btn:focus {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/but_arrow_back.png") no-repeat 3% 50% #0971b0;
+        border: solid 2px #fff;
+        box-shadow: 0px 0px 0pt 3px #0971b0;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        width: 47%;
+        height: 62px;
+        margin: 0 0.1em 0.5em;
+        padding-left: 0%;
+    }
+
+    #pages_product_home_container_yourQuote #content-area-bottom input.edit-btn {
+        margin-left: 2%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #content-area-bottom #back {
+        margin-left: 2%;
+        height: 62px;
+        margin-top: 0;
+    }
+
+    #content-area-bottom input.go-to-next,
+        .next-link-button #content-area-bottom input.go-to-next,
+        #content-area-bottom input.go-to-next:hover,
+        #content-area-bottom input.go-to-next:focus {
+        background-position: right 5px;
+        width: 48%;
+        height: 62px;
+        margin: 0 0.1em 0.5em;
+        padding-right: 0%;
+        border: 1px solid #fdf9f5;
+    }
+
+    input#next, input#add_driver_next_false {
+        border: none !important;
+    }
+
+    #content-area-bottom input.add-another-driver,
+        #content-area-bottom input.add-another-driver:hover,
+        .large_button,
+        .large_button:hover {
+        background-color: #0971b0;
+        width: 99%;
+    }
+
+    #content-area-bottom input.recalculate,
+        #content-area-bottom input.recalculate:hover {
+        width: 99%;
+        height: 62px;
+        margin: 0 0.1em 0.5em;
+    }
+
+    #content-area-bottom input#nextDisabled,
+        #content-area-bottom input#nextDisabled:hover {
+        display: none;
+    }
+
+    #content-area-bottom input#recalculateDisabled {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/but_recalc.png") no-repeat 1% 50%  #C7C7C7;
+        border: solid 2px #fff;
+        box-shadow: 0px 0px 0pt 3px #C7C7C7;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        width: 99%;
+        height: 62px;
+        margin: 0 0.1em 0.5em;
+    }
+
+    #pages_product_home_container_quoteDetails dl.conviction-conditions dd {
+        text-align: left;
+    }
+
+    #pages_product_home_container_yourQuote 
+    #quote-layout .content-area-centre .declarations ul li {
+        list-style: none;
+    }
+
+    .external-one {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_footer_external.gif") !important;
+    }
+
+    #mobRecalcButtonRegion {
+        width: 95%;
+        -webkit-transition: width 1s linear;
+        -moz-transition: width 1s linear;
+        -ms-transition: width 1s linear;
+        -o-transition: width 1s linear;
+        transition: width 1s linear;
+    }
+
+    input#mobRecalculate {
+        padding-left: 30px;
+        font-size: 1.4em;
+        text-shadow: 0 -1px 1px #970400;
+        width: 100%;
+    }
+    #context-help-possessionPopUp-panel table tr td {
+        text-align: left;
+    }
+    .mod-content table {
+        border: 1px solid #eee;
+    }
+
+    #contents-extra label, #buildings-extra label {
+        border:1px solid #e6f1f7;
+    }
+
+    #container dl.top-premium-panels dt {
+        margin: 0 !important;
+    }
+
+    .additional-info-table ul li input.edit,
+        .additional-info-table ul li input.delete,
+        .specified-info-table ul li input.edit,
+        .specified-info-table ul li input.delete,
+        input#findVehicle,
+        input#findAddress,
+        input#changeAddress,
+        input.add-section,
+        input.add-section-clear,
+        input.find-addr,
+        ul#claim-conv-btns input,
+        input.add-section:hover,
+        input.add-section-clear:hover,
+        input.find-addr:hover,
+        input.add-section:focus,
+        input.add-section-clear:focus,
+        input.find-addr:focus,
+        #content-area-main.one_col .content-area-centre input.orange_button,
+        #content-area-main.one_col .content-area-centre input.hint_button,
+        #content-area-main.one_col .content-area-centre input.orange_button:hover,
+        #content-area-main.one_col .content-area-centre input.hint_button:hover {
+        background: #f48e1e;
+        width: 90%;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    #content-area-main.one_col .content-area-centre input.login_button,
+        #content-area-main.one_col .content-area-centre input.login_button:hover {
+        width: 94%;
+    }
+
+    input#addSpecifiedItemsButton {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .back-button ul li input,
+        .back-button ul li a,
+        .back-button ul li input:hover,
+        .back-button ul li a:focus,
+        .back-button ul li a:hover {
+        background: #0971b0;
+        border-radius: 0 !important;
+        width: 80% !important;
+        height: auto;
+        margin: 0 0.1em 0.5em;
+        padding: 0.2em;
+    }
+
+    #xsell-right dl dd input,
+        #xsell-right dl dd input:focus,
+        #xsell-right dl dd input:hover {
+        width: 94%;
+        height: 45px !important;
+        color: #fff;
+        padding-bottom: 0;
+        font-weight: normal;
+        line-height: 1.8em;
+        text-decoration: none;
+        float: left;
+        font-size: 1.9em;
+    }
+
+    input#pwdReset, input#login, #submit input {
+        font-size: 16px;
+    }
+
+    #submit input, #submit input:hover {
+        width: 94% !important;
+        height: 34px !important;
+        color: #fff;
+        padding-bottom: 0;
+        font-weight: normal;
+        line-height: 1.8em;
+        text-decoration: none;
+        font-size: 1.6em;
+    }
+
+    .c_code_e #content-area-main.one_col .content-area-centre .progress_button,
+        .c_code_e #content-area-main.one_col .content-area-centre .progress_button:hover {
+        width: 94% !important;
+        height: 30px !important;
+        color: #fff;
+        padding-bottom: 0;
+        font-weight: normal;
+        line-height: 1.2em;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+
+    #pages_product_motor_container_aboutYourAdditionalDrivers .claim-conv-btns input {
+        width: 84%;
+        height: 45px;
+        margin-left: 0.4em;
+        color: #fff;
+        padding-bottom: 0;
+        font-weight: normal;
+        line-height: 1.8em;
+        text-decoration: none;
+        font-size: 2.4em;
+    }
+
+    #pages_product_home_container_yourQuote #quote-intro {
+        background: none;
+    }
+
+    #headline_direct {
+        display: none;
+    }
+
+    #pages_product_home_container_yourQuote #agg-message {
+        display: none;
+    }
+
+    .toolhover, .toolhover:active, .toolhover:focus {
+        background-color: #E2E8F1;
+    }
+
+    #pciframe #content-area-bottom input.go-to-next,
+        #pciframe #content-area-bottom input.go-to-next:hover,
+        #pciframe #content-area-bottom input.go-to-next:focus {
+        background: #89c33f;
+    }
+
+    #pciframe p {
+        padding: 0;
+    }
+
+    #paymentForm dt {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    #pciframe #content-area-bottom {
+        width: 88%;
+    }
+
+    #view-details {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_dyn_defaqto_logo.png") no-repeat center bottom;
+        padding-bottom: 140px !important;
+        height: auto;
+    }
+
+    h2.sub-titles {
+        padding: 10px !important;
+    }
+
+    .form-background select, #claimsSubform\:claimType select {
+        height: 3.7em !important;
+    }
+
+    .shorter-area .form-background, .form-background {
+        background: transparent !important;
+    }
+
+    .policy-area h1 {
+        font-size: 20px !important;
+        padding: 0 !important;
+    }
+
+    #pages_product_home_container_yourQuote .content-area-centre, 
+#pages_product_home_container_yourQuote .form-background {
+        padding: 0.2em;
+    }
+
+    dl.top-premium-panels dd {
+        width: 99.4% !important;
+    }
+
+    .c_code_e #extra-cover h1 {
+        text-indent: 0 !important;
+    }
+
+    .aside {
+        height: 105px;
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/defaqto_logo_listview_sm.png") no-repeat scroll center 10px transparent;
+    }
+
+    .one-col #content-area-bottom input.back-btn {
+        margin-left: 1% !important;
+    }
+
+    .helpDialog {
+        width: auto !important;
+    }
+
+    #quote-layout dl.premium-dl dd {
+        font-size: 14px !important;
+    }
+
+    ul.including li:not(:first-of-type) {
+        list-style: none;
+        width: 88% !important;
+        font-size: 14px !important;
+    }
+
+    #quote-layout #details-section ul li h2, #quote-layout ul li h2 {
+        padding-top: 0;
+        padding-right: 0;
+    }
+
+    #quote-layout .content-area-centre ul {
+        margin: 0 1%;
+    }
+
+    .noprint {
+        width: 100%;
+        background: none repeat scroll 0 0 #f48e1e;
+        position: relative;
+        display: block;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #quote-layout h2 a {
+        background: none;
+        margin: 0;
+        font-size: 14px !important;
+    }
+
+    #pages_product_home_container_quoteDetails dl.conviction-conditions dt {
+        float: none;
+    }
+
+    .p_code_HOME .conviction-conditions dt {
+        list-style: none !important;
+    }
+
+    #quote-layout #details-section {
+        width: 99% !important;
+    }
+
+    #quote-layout .content-area-centre ul {
+        margin: 0 !important;
+        padding: 0 10px !important;
+    }
+
+    #current-insurer dd {
+        width: 100% !important;
+    }
+
+    #quote-layout #details-section ul li h2, #quote-layout ul li h2 {
+        padding: 0 0.2em !important;
+        font-size: 1.4em !important;
+    }
+
+    #quote-layout .content-area-centre ul li span {
+        margin: 0;
+    }
+
+	fieldset fieldset label, 
+    fieldset.radio_stack label,
+	#label_billingAddrSameAsPolicyAddr_0, 
+	#label_billingAddrSameAsPolicyAddr_1, 
+	#label_cardOwnerPolicyHolder_0, 
+	#label_cardOwnerPolicyHolder_1 {
+        margin-left: 0.4em !important;
+    }
+
+    #pages_product_home_container_yourQuote #content-area-bottom input.go-to-next, #pages_product_home_container_yourQuote .next-link-button #content-area-bottom input.go-to-next {
+        padding-right: 0 !important;
+    }
+
+    img.cc-logo {
+        left: 0.9em !important;
+    }
+
+    #getAQuoteTravelLink, #getAQuotePetLink {
+        width: 100%;
+    }
+
+    #pages_general_restricted_customerQuotes .content-area-centre {
+        margin-bottom: 1.5em !important;
+    }
+
+    .c_code_e .error {
+        left: 0;
+        padding-left: 0.3em;
+        margin-top: 0;
+
+    }
+} 
+/*--------------------------------------------------
+end small media q
+----------------------------------------------------*/
+
+
+/*--------------------------------------------------
+MEDIUM(tablet)
+----------------------------------------------------*/
+
+@media only screen and (min-width:641px) and (max-width : 954px) {
+
+    #pages_product_common_cardInformation.pci input#amendCardDetailsButton {
+        right: 28%;
+        bottom: 30px;
+    }
+
+
+    .policy-area-motor {
+        padding-bottom: 3em;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    #header {
+        height: 105px;
+    }
+
+    #progress-bar {
+        display: block !important;
+        background: transparent;
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 5px 0;
+        margin: 0;
+    }
+
+    .listview-sections ul {
+        padding-right: 8em;
+    }
+
+    #pages_general_customerLoginHint #content-area-main,
+#pages_general_restricted_saveQuoteConfirmation #content-area-main,
+#pages_general_customerRegistration #content-area-main,
+#pages_general_saveQuote #content-area-main,
+#pages_general_restricted_customerQuotes #content-area-main,
+#pages_general_customerLogin #content-area-main,
+#content-area-main
+{width: 98% !important;}
+
+    #container,
+    #pre-footer {
+        width: 96%;
+        margin: 0 2%;
+    }
+
+    #hamburgerDialog-container .container-close {
+        left: 45% !important;
+    }
+
+    #mob-menu {
+        width: 45% !important;
+    }
+
+    fieldset fieldset label, .ncd-proection-radiobutton label, #specified-radio label, #label_billingAddrSameAsPolicyAddr_0, #label_billingAddrSameAsPolicyAddr_1, #label_cardOwnerPolicyHolder_0, #label_cardOwnerPolicyHolder_1 {
+        border-color: #e1e1e1 !important;
+    }
+
+
+
+    #pages_product_motor_container_aboutYou .declarations label, #home-abt-decs label {
+        border-radius: 0 !important;
+        border: 1px solid #e1e1e1;
+    }
+
+    .bundleContain.active .bottom .button h3, .bundleContain.chosen .bottom .button h3, .bundleContain.passive .bottom .button h3 {
+        color: #0971b0;
+    }
+
+    #footer {
+        width: auto;
+    }
+
+    .contact-area h3 {
+        line-height: 1.2em;
+        font-size: 1.2em;
+        padding: 0.2em 0.5em;
+        font-weight: normal;
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/mob_call_phone.png") no-repeat 8em 0 transparent;
+    }
+
+    #headline_direct {
+        display: none;
+    }
+
+    #pages_product_home_container_yourQuote #agg-message {
+        margin: 0 -3em;
+        text-align: right;
+        z-index: 1;
+    }
+
+    #pages_product_home_container_yourQuote  #brand-overlay {
+        float: none;
+        width: auto;
+        background-position: 60px 0;
+    }
+
+    #monthlySmallPrint {
+        color: #0971b0;
+    }
+
+    .policy-area-motor {
+        width: 100% !important;
+    }
+
+    .policy-area-motor ul.includes {
+        width: 32% !important;
+    }
+
+    .policy-area-motor p {
+        width: 100% !important;
+        position: relative;
+        bottom: -4.5em;
+    }
+
+    .third-party-logos {
+        display: none !important;
+    }
+
+    #display-option dd + dd {
+        padding-top: 19px !important;
+    }
+
+    img#commonStatus-status {
+        left: 190px !important;
+        top: 25px !important;
+    }
+
+    .bundleDetailsDialog .yui-panel h3 {
+        display: block !important;
+    }
+
+    #pages_product_home_container_yourQuote #brand-overlay {
+        background-position: 60px 13px;
+    }
+
+    #pages_product_home_container_yourQuote #agg-message + #brand-overlay {
+        top: -80px;
+    }
+
+    #brand-overlay {
+        background-position: 8% 50%;
+    }
+}
+/*--------------------------------------------------
+end medium media q
+----------------------------------------------------*/
+
+/*--------------------------------------------------
+LARGE(desktop)
+----------------------------------------------------*/
+
+@media only screen and (min-width : 955px) {
+
+
+
+    #pages_product_home_container_yourQuote #agg-message {
+        height: 46px;
+        position: relative;
+        width: 980px;
+        z-index: 1;
+        display: inline-block;
+        text-align: right;
+    }
+
+    #pages_product_home_container_yourQuote #agg-message + #brand-overlay {
+        top: -83px;
+    }
+
+    .contact-area h4 {
+        font-size: 1em;
+        padding: 0.2em 0.5em;
+        font-weight: normal;
+    }
+
+    .contact-area h3 {
+        line-height: 1.2em;
+        font-size: 1.2em;
+        padding: 0.2em 0.5em;
+        font-weight: normal;
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/mob_call_phone.png") no-repeat 7.75em 0 transparent;
+    }
+
+    .contact-area {
+        color: #fff;
+    }
+
+    .contact-area dd, .contact-area dt {
+        width: 50%;
+        float: left;
+        padding: 0;
+        margin: 0;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    .contact-area dl {
+        padding: 0.6em;
+    }
+
+    .contact-area {
+        background: #8C8C8C;
+        color: #FFF;
+    }
+
+    .contact-area span {
+        padding-left: 0.5em;
+    }
+
+    #mob-menu ul {
+        background: #444;
+    }
+
+    #mob-menu li {
+        border-bottom: 1px solid #888;
+    }
+
+    #mob-menu dt, #mob-menu dd {
+        text-align: left;
+        width: 35%;
+    }
+
+    #mob-menu .external-one {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_white_external_icon.gif") no-repeat scroll 95% center transparent;
+    }
+
+    #mob-menu .contact-open {
+        background: #0971b0;
+        line-height: 1.5em;
+        color: #FFF;
+        height: 1.5em;
+        line-height: 1.5em;
+        padding: 0.5em;
+        font-weight: 700;
+    }
+
+    #menubar {
+        z-index: 101;
+        width: 50px;
+        position: fixed;
+        color: #fff;
+        padding: 5px 0px 2px 0;
+        height: 3.5em;
+        text-align: right;
+        top: 0;
+    }
+
+    #burger {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat -40px 0 transparent;
+        cursor: pointer;
+        text-align: left;
+        float: left;
+        height: 44px;
+        width: 40px;
+        margin-top: 0px;
+    }
+
+    #burger.open {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat 0 0 transparent;
+    }
+
+    #mob-menu li a {
+        padding: 10px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #mob-menu {
+        background: #444;
+        left: 0;
+        position: fixed;
+        float: left;
+        text-align: left;
+        width: 75%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        top: 0;
+        z-index: -1;
+        font-size: 1.5em;
+    }
+
+    #hamburgerDialog-container .bd {
+        padding: 0;
+    }
+
+    #hamburgerDialog-container .hd, #hamburgerDialog-container .ft {
+        display: none;
+    }
+
+    #hamburgerDialog-container .container-close {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat 0 0 transparent;
+        cursor: pointer;
+        text-align: left;
+        float: left;
+        height: 44px;
+        width: 40px;
+        top: 0px;
+        left: 75%;
+        position: fixed;
+    }
+}
+
+#outer p.highlight {
+    display: block;
+    padding: 15px 2%;
+    margin: 20px 0;
+    background: #F3F0EC;
+    color: #494949;
+    border: 1px solid #E6E2DE;
+    width: 96%;
+}
+
+#pages_product_common_paymentConfirmation #outer p.highlight {
+    margin-top: 0;
+}
+
+#outer .content-area-centre dl dd p.info,
+#outer p.info,
+#outer .info p {
+    color: #89c33f;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/field_note_icon.png") no-repeat 10px 45% transparent; 
+    border: 1px solid #89c33f; 
+    padding:0.7em 0.3em 0.7em 3.25em; 
+    width: 88%;  
+    line-height: 1.3; 
+    left: 10px;
+    position: relative; 
+    margin-top: 10px; 
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#outer p.info,
+#outer .info p {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+}
+
+@media only screen and (max-width : 640px) {
+
+#outer p.highlight {
+    margin: 5% 2%;
+    padding: 15px 3%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}    
+
+}
+
+
+/* temp IQ payment page BAU change for Gabrielle ----------------------*/
+
+.xsell-home-img 
+{
+    height:100%;
+    width:auto;
+}
+.xsell-home-img  img
+{
+    max-width:100%; 
+    max-height:100%;
+    margin:auto;
+    display:block;
+}
+.paymentConfirmation + .content-area-centre .form-background {
+    border-color: transparent;
+}
+#homeIq {
+    background-color: #FDF9F5;
+    padding: 5px;
+    margin: 2% 1%;
+}
+.iq-boxes {
+    display: inline-block;
+    border: solid 1px #E7E4E0;
+    vertical-align: top;
+    padding: 1% 1.5%;
+    margin: 0.5%;
+    width: 31.9%;
+    line-height: 48px;
+    height: 65px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.iq-boxes.price {
+    line-height: 42px;
+}
+.iq-boxes:nth-of-type(3) {
+    line-height: 23px;
+}
+.xsell-renewal small {
+    line-height: 14px;
+    display: block;
+    padding: 0 1.5em 0.5em;
+}
+#xsell-iq h1 {display: none;}
+#xsell-iq .highlight h1 {display: block; padding-top: 15px;}
+#xsell-iq ul {
+    font-size: 100%;
+    margin: 0 1.5em 10px;
+    list-style: disc;
+}
+.iq-boxes.price {
+    font-size: 2em;
+    color: #0971b0;
+    font-family: "MuseoSansRounded-500", Arial, Verdana;
+    padding-top: 10px;
+}
+#container .xsell-renewal dt {
+ font-family: "MuseoSansRounded-500", Arial, Verdana;
+ font-size: 15px;
+}
+a.xsell, a.xsell:hover {
+    display: block;
+    margin: 0 auto;
+    width: 145px;
+    font-size: 18px;
+}
+a.xsell + h2 {
+    height: 20px;
+}
+#pages_product_common_paymentConfirmation.p_code_MOTOR #content-area-right {
+    background: transparent url("../../../../../../cs/groups/visual/@wcm/documents/webasset/esure_xsell_pcpage.png") no-repeat scroll 50% 95%;
+    padding-bottom: 570px;
+}
+#home-renewal {
+    padding: 0 20px;
+    border-top: 12px solid #9EC6DF;
+    border-left: 12px solid #9EC6DF;
+    border-right: 12px solid #9EC6DF;
+    margin-top: 25px;
+}
+.highlight fieldset {
+    padding: 0 20px;
+    border: 12px solid #9EC6DF;
+    border-left: 12px solid #9EC6DF;
+    border-right: 12px solid #9EC6DF;
+    border-top: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.highlight fieldset {
+    margin-top: -14px;
+}
+#container .xsell-renewal dl {
+    width: 86%;
+}
+#pages_product_common_paymentConfirmation.p_code_MOTOR #content-area-right {
+    padding-bottom: 663px;
+}
+@media only screen and (max-width : 830px) {
+    .iq-boxes {
+        height: auto;
+        display: block;
+        width: 99%;
+        padding: 10px;
+        line-height: inherit;
+    }
+    a.xsell, a.xsell:hover {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 98%;
+        margin: 0 1% !important;
+    }
+    a.xsell + h2 {
+        height: 0;
+    }
+    .highlight fieldset {
+        padding-bottom: 1em;
+    }
+}
+/* end temp for iq change for Gabs ----------------------*/
+
+fieldset#breakdownFlagMessageAnchor {
+    width: 100%;
+}
+
+/*------------------------
+ Green Flag Change Layout
+ -------------------------*/
+
+.breakdown-labels {
+    display: none;
+}
+
+@media only screen and (min-width:1024px) {
+
+    .full_breakdown fieldset label#label_breakdownCover_0 {
+        box-shadow: none;
+        border-left: 1px solid #ccc;
+    }
+     .full_breakdown fieldset label {
+        box-shadow: none !important;
+        border-right: 1px solid #ccc;
+     }
+    
+    fieldset#breakdownFlagMessageAnchor {
+        width: 100%;
+        padding: 5px 0 1.5em;
+    } 
+
+    #breakdownFlagMessageAnchor span.error {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      left: 0;
+    }
+
+    #label_breakdownCover_0, #label_breakdownCover_1, #label_breakdownCover_2, #label_breakdownCover_3 {
+      width:20.1%;
+  margin:0;
+  background-position: 55% 95%;
+	}
+
+    #label_breakdownCover_3 {
+        width: 12%;
+    margin: 0 0 0 1%;
+    min-height: 12.5em;
+    padding: 0;
+        border: solid 1px #ccc;
+    }
+
+	#label_breakdownCover_3 .bkRadio {
+    line-height: inherit;
+    font-size: 16px;
+    display: block;
+    padding: 0.8em;
+	}
+
+	#radio_breakdownCover_3 {
+	    position: absolute;
+        top: 148px;
+        left: 15%;
+	}
+
+    #label_breakdownCover_0 .description ul li, #label_breakdownCover_1 .description ul li, #label_breakdownCover_2 .description ul li{
+  		text-indent:-9999px;
+    }
+
+  .breakdown-labels {
+        display: inline-block;
+        float: left;
+        padding: 220px 5px 0;
+        width: 25%;
+        text-align: right;
+    }
+
+    .breakdown-labels li {
+        padding: 6px 5px 8px;
+        line-height: 1.5;
+        font-size: 14px;    
+ }
+
+ .full_breakdown .description{
+  padding: 0.2em 0!important;
+ }
+
+ .full_breakdown .description li {
+    padding-bottom: 1.5em;
+    }
+
+  .full_breakdown h2 {
+    font-size: 16px!important;
+    padding-right: 0.8em;
+    min-height: 12.5em;
+  }
+
+    .full_breakdown a {
+    position: absolute;
+    top: 7em;
+    margin-left: 0.8em;
+  }
+
+  .full_breakdown fieldset label {
+		height: 29em;
+    }
+
+ .description ul li {
+   background-position: center top!important;
+ }
+
+ .breakdown-price {
+    background-image: none;
+    background-color: #006BAB;
+    width: 100%;
+    right: 0;
+    height: 70px;
+    top: 7.5em;
+    }
+
+ .breakdown-price span{
+    width: 100%;
+    display: block;
+ }
+
+  .breakdown-price span span{
+    display: inline;
+ }
+
+ .breakdown-price div.radio{
+    left:30%;
+ }
+
+    .selected .breakdown-price {
+        background-color: #89C33F;
+    }
+}
+
+/* End -Green Flag Change Layout */
+
+/* CMA esure css */
+.ncd-table th {
+    background-color: #0971b0; /* darkblue */
+    color: #fff;
+}
+.ncd-table tr.sub-head {
+    background-color: #e6f1f7; /* liblue */
+    color: #0971b0;
+}
+
+    @media only screen and (max-width : 640px) {
+        label#ncdProtectionLabel {
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/ncd_icon_mob.png");
+        }
+    }
+ /* end CMA css */
+
+    /* free add on modal */
+    .free-addon {
+        background-color: #e6f1f7;
+    }
+    .free-addon label {
+        background-color: #0971b0;
+    }
+      #freeAddOnsPopup-panel a {
+        color: #0971b0;
+    }
+    #freeAddOnsPopup-panel ul li button {
+        font-family: 'MuseoSansRounded-500', Arial, Helvetica;
+    }
+
+    /* agg handover reviews */
+    .bazaar {
+        border: 1px solid rgb(231, 228, 224);
+        box-shadow: 0px 2px 3px rgb(221, 218, 214);
+    }
+    .bazaar .col h4 {
+        color: #0971b0;
+    }
+    .benefits {
+          background-color: #F8F8F8;
+    }
+
+	/* 	mlp modal specific */
+.bundleDetailsDialog.LGL-modal .mod-content h4 {
+	font-family: 'MuseoSansRounded-300', Arial, Helvetica;
+}
+.LGL-modal h4 span {
+	color: #0971b0; /* esure */
+}
+
+
+/* green flag optimizely bit */
+.breakdown-benefits ul li {
+	background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/tick_blue_es.gif") no-repeat 0 6px transparent;
+}
+	@media only screen and (min-width : 955px) {
+				
+		.bk-deal {
+			background: #F08A00;
+		}
+		#label_breakdownCover_2 h2 {
+			background-color: #006bab;
+		}
+		#label_breakdownCover_2.selected a {
+			color: #006bab;
+		}
+		#label_breakdownCover_2.selected h2 {
+			background-color: #f7c47f;
+			color: #494949;
+		}
+
+		#label_breakdownCover_2 {
+			border-top: 60px solid #006BAB;
+		}
+	}
+
+
+/* column bundles optimizely winner ---------------------------- */
+
+input#customiseButton,
+input#bundlesButton {
+  color: #006BAB;
+}
+
+#bundles > div#bundleOptionsInfo li:last-child span {
+  font-family: "MuseoSansRounded-700", Arial, Verdana; 
+}
+
+.cost-area .price,
+#bundles > div#bundleOptionsInfo li:last-child {
+  color: #006BAB; 
+}
+
+input#customiseButton,
+input#bundlesButton,
+#bundles > div h3 {
+  background-color: #ABCCE5;  
+}
+
+label.rad-label {
+  background-color: #F08A00; 
+}
+
+#bundles > div h3 span {
+  background-color: #006BAB; 
+  border: 1px solid #006BAB; 
+}
+
+.icon-mlp {
+   background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_mlp.png");
+}
+.icon-chc {
+   background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_chc.png");
+}
+.icon-kyc {
+   background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_kyc.png");
+}
+.icon-msf {
+   background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_mfc.png");
+}
+.icon-pib {
+   background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_pib.png");
+}
+.icon-exc {
+   background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_exc.png") ;
+}
+
+/* SMALL(phone) ----------- */
+
+@media only screen and (max-width : 640px) {
+
+    span.alt-title {
+        background-image:url(help_icon_es_2x.png);
+    }
+
+    #bundles > div li {
+        background-size: 62px;
+        background-position: 30px center;
+        cursor: pointer;
+    }
+
+    #bundles > div li:nth-child(1){
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_mlp_2x.png");
+    }
+    #bundles > div li:nth-child(2){
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_chc_2x.png");
+    }
+    
+    #bundles > div li:nth-child(3){
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_kyc_2x.png");
+    }
+
+   #bundles > div li:nth-child(4){
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_mfc_2x.png");
+    }
+
+   #bundles > div li:nth-child(5){
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_pib_2x.png");
+    }
+
+    #bundles > div li:nth-child(6){
+        background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/icon_exc_2x.png");
+    }
+
+}

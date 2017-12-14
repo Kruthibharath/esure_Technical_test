@@ -1,0 +1,1887 @@
+/* Mobile style sheet temporary in contrast.css
+ ----------------------------------------------------------------------------------------- */
+
+
+/* SMALL(phone) ----------- */
+
+		@media only screen and (max-width : 640px) {
+
+				#progressBarPanel li {
+					margin-left: 4px !important;
+		}
+
+/* upsell modal */
+		
+		.bundleDetailsDialog .upSell.yui-panel .hd {height:0em;}
+		.bundleDetailsDialog .upSell.yui-panel .bd {height: auto;overflow:auto;border:none;}
+		.bundleDetailsDialog .upSell.yui-panel .ft {height:0em;border:none;}
+
+		.bundleDetailsDialog.BK-modal .mod-content ul li,
+		.bundleDetailsDialog.LGL-modal .mod-content ul li,
+		.bundleDetailsDialog.PIB-modal .mod-content ul li,
+		.bundleDetailsDialog.CHC-modal .mod-content ul li,
+		.bundleDetailsDialog.MFC-modal .mod-content ul li,
+		.bundleDetailsDialog.EPC-modal .mod-content ul li,
+		.bundleDetailsDialog.KYC-modal .mod-content ul li
+		 {
+			margin:0;
+			background:url(mob_es_list_arrow.png) no-repeat scroll left 3px transparent !important;
+		}
+		
+		.bundleDetailsDialog.BK-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.LGL-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.PIB-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.CHC-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.MFC-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.EPC-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.KYC-modal .mod-content ul.select-bundle li {
+			background: none !important;
+		}
+
+
+		
+		.bundleDetailsDialog.BK-modal .mod-content ul,
+		.bundleDetailsDialog.LGL-modal .mod-content ul,
+		.bundleDetailsDialog.PIB-modal .mod-content ul,
+		.bundleDetailsDialog.CHC-modal .mod-content ul,
+		.bundleDetailsDialog.MFC-modal .mod-content ul,
+		.bundleDetailsDialog.EPC-modal .mod-content ul,
+		.bundleDetailsDialog.KYC-modal .mod-content ul {
+			width:94%;
+			margin:0 3% 1em;
+		}
+
+		.bundleDetailsDialog.MFC-modal .main-help-text ul li, 
+		.bundleDetailsDialog.KYC-modal .main-help-text ul li,
+		.bundleDetailsDialog.MFC-modal .mod-content h4, 
+		.bundleDetailsDialog.KYC-modal .mod-content h4 {
+			width:85%;
+		}
+
+
+		ul.select-bundle {width:100% !important; margin:0 !important;}
+		.bundleDetailsDialog .upSell.yui-panel .bd {min-height:auto;}
+
+		.LGL-modal-img, 
+		.PIB-modal-img, 
+		.BK-modal-img, 
+		.CHC-modal-img, 
+		.EPC-modal-img,
+		.MFC-modal-img,
+		.KYC-modal-img{
+			display:none;
+		}
+
+		.bundleDetailsDialog .mod-content ul.select-bundle a,
+		.bundleDetailsDialog .mod-content ul.select-bundle a:hover,
+		.bundleDetailsDialog .mod-content ul.select-bundle a:focus {
+			font-size:16px;
+		}
+
+
+		.bundleDetailsDialog.BK-modal .mod-content p,
+		.bundleDetailsDialog.LGL-modal .mod-content p,
+		.bundleDetailsDialog.PIB-modal .mod-content p,
+		.bundleDetailsDialog.CHC-modal .mod-content p,
+		.bundleDetailsDialog.EPC-modal .mod-content p,
+		.bundleDetailsDialog.MFC-modal .mod-content p,
+		.bundleDetailsDialog.KYC-modal .mod-content p {
+		width:100%;
+		margin:0.2em;
+		}
+
+		.yui-skin-sam .yui-panel .bd {padding:6px;}
+
+		.LGL-modal .upSell.yui-panel .bd {
+    background: none;
+}
+
+#progress-bar {
+	padding: 0.5em 0 0.4em;
+	margin-bottom: 10px;
+}
+
+#progress-bar tbody {
+	padding: 0;
+}
+
+#progress-bar ul li span,
+#progress-bar ul li span.active {
+	font-size: 0;
+}
+
+#progress-bar ul li {
+	margin: 0;
+}
+
+
+.bundleDetailsDialog.upSell .yui-panel {
+	width:auto;
+}
+/*error styles */
+.error {
+		padding: 0.6em 0.3em 0.6em 3.25em !important;
+		width: 80%;
+		margin-top: 10px !important;
+	}
+
+#bundleFlagMessage {
+  display: block;
+  clear: both;
+}
+
+#breakdownFlagMessageAnchor .error {
+		margin: 2%;
+		position: relative;
+		width: 96%;
+		box-sizing: border-box;
+	}
+
+#pages_product_motor_container_yourQuote .error {
+	margin: 2%;
+	width: 78%;
+}
+
+		label.error_selected {color: #b94a48}
+
+		.form-background select.error_selected,
+		.form-background input[type="text"].error_selected,
+		.form-background input[type="password"].error_selected,
+		.form-background input[type="number"].error_selected,
+		.form-background input[type="email"].error_selected,
+		.form-background input[type="tel"].error_selected,
+		.dates input.error_selected, .ban-points input.error_selected {border-color: #b94a48  }
+
+
+/* mob-menu  ----------- */	
+		.contact-area h4 {font-size:1em;padding:0.2em 0.5em;font-weight: normal;}
+		.contact-area h3 {line-height:1.2em; font-size:1.2em;padding:0.2em 0.3em;font-weight: normal;}
+		.contact-area {color:#fff;}
+		.contact-area dd, .contact-area dt {width:50% !important; float:left;padding:0; margin:0;font-size:1.2em;line-height: 1.2em;}
+	    .contact-area dl {padding:0.6em;}
+	    .contact-area {background: #8C8C8C; color: #FFF;padding: 0.2em 0;}
+	    .contact-area span {padding-left: 0.5em; }
+	    #mob-menu ul {background: #444}
+	    #mob-menu {display:block;}
+	    #mob-menu li {border-bottom: 1px solid #888;}
+	    #mob-menu ul ul li:last-child {border-bottom:none;}
+		#mob-menu .contact-open{line-height: 1.5em; color: #FFF; height: 1.5em; line-height: 1.5em; padding: 0.5em; font-weight: 700}
+		#menubar {z-index:100;width:50px; position: fixed; color: #fff; padding: 5px 0px 2px 0; height: 3.5em; text-align: right;top:0; left:0;}  
+		
+		#burger {z-index:1000; background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat -40px 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px; margin-top:0px;}
+		#burger.open {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat 0 0 transparent;}
+
+		.c_code_e #burger {z-index:1000; background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu_e.png") no-repeat -40px 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px; margin-top:0px;}
+		.c_code_e #burger.open {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu_e.png") no-repeat 0 0 transparent;}
+
+		#mob-menu li a {padding: 10px; display: block; color: #fff; text-decoration: none;}
+		#mob-menu {background:#444; left: 0; position: fixed; float:left; text-align:left; width: 75%; height: 100%; overflow-x: hidden; overflow-y: auto;top:0; z-index: -1;  }
+		ul.select-car {clear: both; left: 0.5em; position: relative; width: 100%;}
+		#hamburgerDialog-container .bd {padding: 0}
+		#hamburgerDialog-container .hd, #hamburgerDialog-container .ft {display: none;}
+		#hamburgerDialog-container .container-close {margin-top:5px;background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat 0 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px!important; top:0px; left: 75%; position: fixed;padding:0;}
+		.c_code_e #hamburgerDialog-container .container-close {margin-top:5px;background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu_e.png") no-repeat 0 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px; top:0px; left: 75%; position: fixed;}
+
+		.yui-skin-sam .mask {background-color: #000000;opacity: 0.75;}
+
+/* layout ----------- */
+
+		#yourquoteprintsave ul#print-save,
+		#call-us,
+		#navigation-area-left, 
+		#footer ul, 
+		#footer h3, 
+	/* 	#progress-bar,  */
+		#quote-call-us,
+		.content-area-centre.indicator {display:none}
+
+		ul.claim-conv-btns li{width: 10em}
+
+		#content-area-main {width: 100%; padding: 0;}
+		.content-area-centre {border:none;}
+		#header h1 {text-indent: -9999px;}
+		.displayBlock { display: block; }
+		body {overflow-x: hidden; overflow-y: auto; background: #2C2C2C }
+		input, input#registrationNumber,
+		span input, select#title {width:82%;}
+		input#bundlePriceMonthlyRadio_0,
+		input#bundlePriceMonthlyRadio_1 {width:14px;}
+		.form-background input {height: 2.5em;margin:0.2em !important;font-size: 1.4em;}
+		.form-background select, #claimsSubform\:claimType select{height: 2.9em; width: 84%!important; font-size:1.3em}
+		select#addressList  {height: 5.9em; margin-bottom:1.5em;}
+		.dates input {width:4em; text-align: center;}
+		dd {width: 100% !important; float: none; border:none; padding:0 2% 1em;}
+		#claimDetails dd {width: 97% !important;}
+		#claimsSubform\:claimDetails p {background: #fff}
+
+		dt {float: none; text-align: left; margin: 0 0 0 1em; width: 89%; font-size: 1.2em; font-weight: 300}
+		label span {line-height: 1.8em; padding: 0;}
+		dd a,  #contents-extra a, #information-pack ul li a {position: absolute;right: 5%; top: 0.9em;}
+		#content-area-bottom ul li,
+		#pages_product_motor_container_quoteDetails #content-area-bottom ul li {float:none;width:100%;}
+		#content-area-bottom ul li:after {content: none;}
+		input#next, input#add_driver_next_false {float:none}
+		#stImgForCarChangeAddress-status,
+		#stImgForCarFindAddress-status {position: relative; right: 0; top: 0.8em;}
+		#copyright {background: #2C2C2C; height:auto;}
+		#copyright p {color:#fff;}
+		#outer p {padding: 5px; margin:0; -webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;}
+		#outer {width: 100%; max-width: 100%;overflow:visible; position: relative;}/*Changed overflow to visible as hamburger was hiding on iphone 5s*/
+		.radio_label { background: none repeat scroll 0 0 #FFFFFF;  margin-left: 2%; padding: 1em 0;  width: 96%; margin-bottom: 1px}
+
+		#pages_product_motor_container_yourQuote #content-area-main.one_col {float: none; margin: 0; width: 100%;}
+		#pages_product_motor_container_yourQuote .premium-area {margin:0;}
+		dl.top-premium-panels.left {float:none;}
+		#monthpremiumannualcost dl.top-premium-panels.right {margin:0;}
+		#monthpremiumannualcost {width:auto;}
+		#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message p {margin: 0 0 0 0.625em; padding: 0; width: 90%;}
+		#pages_product_motor_container_yourQuote .bundle-area .form-background .quoteStepContainer h1 {padding:0;margin-top:0.4em;position:absolute;}	   
+		#display-option {width:100%; height:5em;}
+		#display-option fieldset {clear: none; float: left; margin-top: 5em;width: 100%;}
+		#monthlySmallPrint {float: left; height: 1em; left: 1em; position: relative; top: 8.2em;padding-bottom: 7.5em;}
+		
+		#context-help_KYC-panel-context-help, 
+		#context-help_CHC-panel-context-help, 
+		#context-help_EXC-panel-context-help,
+		#context-help_MLP-panel-context-help,
+		#context-help_MSF-panel-context-help, 
+		#context-help_PIB-panel-context-help {left:0; top:0 !important;z-index: 999;}
+
+		.quoteStep label {font-size: 16px}
+
+		.bottom .button label {text-align: left;}
+
+		#customizepaneladdons { background: none repeat scroll 0 0 #FFFFFF;
+		 border: none; border-radius: 0; float: left; width:100%;}
+		 #recalcButtonCustomiseRegion {padding-left:0;}
+
+		#confirmBackButton .bd {padding:0 10px}
+		#customiseButtonAddCoversPanel {line-height:1.2em}
+		#customiseButtonAddCoversPanel {color: #FFFFFF !important;font-size: 1em;font-weight: normal;}
+		#chooseoption {margin:0 auto;font-size:1em;}
+		
+		#listpricetotal {font-size:100%; padding-left:0.2em;}
+
+		ul#your-car {height:8.5em;margin: 0 0 0 0.625em;}
+
+		#context-help-claimsFlag-panel-helpButton, 
+		#context-help-convictionsFlag-panel-helpButton,
+		#context-help-afaultClaimFlag-panel-helpButton,
+		#context-help-noOfAdditionalDrivers-panel-helpButton {top: 11px;}
+
+		#context-help-existingCustomerRel-panel-helpButton {
+			top: 63px;
+		}
+
+		.carNotBoughtYetFlag {background: #fff}
+		#carNotBoughtYetFlag {width:25% !important;}
+		.carNotBoughtYetFlag {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border-radius: 3px;
+		height: 4em;
+		margin-left: 0.8em;
+		width: 84%;}
+
+		#settle-text { display: block; margin: 0 0.8em;}
+		ul#claim-conv-btns{ left: 0.5em; position: relative; padding-bottom: 8em;}
+		#claimsList {margin :0;}
+
+		.additional-info-table ul li a.edit:hover,
+		.additional-info-table ul li a.edit:focus,
+		.additional-info-table ul li a.delete:hover,
+		.additional-info-table ul li a.delete:focus,
+		.specified-info-table ul li a.edit:hover,
+		.specified-info-table ul li a.edit:focus,
+		.specified-info-table ul li a.delete:hover,
+		.specified-info-table ul li a.delete:focus {background-position: 0 0;}
+
+		#stImgForResetClaim-status,
+		#stImgForUpdateClaim-status,
+		#stImgForAddClaim-status,
+		#stImgForResetConviction-status,
+		#stImgForAddConviction-status,
+		#stImgForUpdateConviction-status,
+		.add-claims-convs { right: -3em; top: 3.7em;}
+
+		#pages_product_motor_container_aboutYourAdditionalDrivers select {
+			height: 52px;
+		}
+		#pages_product_motor_container_aboutYourAdditionalDrivers input {font-size: 1.3em; height: 32px}
+		#pages_product_motor_container_aboutYourAdditionalDrivers #content-area-bottom input {font-size:1.9em;}
+
+		#content-area-bottom ul li.add-driver-back,
+		#content-area-bottom ul li.add-driver-next {width:100%;}
+
+		.one-col #content-area-bottom ul li:first-child {width:100%}
+
+		#pages_product_motor_container_aboutYourAdditionalDrivers input[type="radio"] {
+		font-size: 100%;
+		height: 14px;
+		margin: 0.2em 0.3em 0 1em;
+		padding: 2px !important;
+		position: relative;
+		top: 0.15em;
+		width: 18px;}
+
+		#pages_product_motor_container_aboutYourAdditionalDrivers .content-area-centre {border:none;}
+	
+		ul#drivers li {
+		background: none repeat scroll 0 0 transparent;
+		border-left: 2px solid;
+		border-right: 2px solid;
+		border-top: 2px solid;
+		float: left;
+		height: 5em;
+		margin: 0;
+		position: relative;
+		width: 48%;
+		}
+		ul#drivers li.passive-driver {top:0;width:50%;left:0;background: none;}
+
+		.add-driver-claims h4, .add-driver-convictions h4, .active-drivers-name, .passive-drivers-name {bottom:32px;}
+
+		#pages_product_motor_container_aboutYourAdditionalDrivers .content-area-centre {
+		margin-top: 2.5em;}
+
+		#j_id52 {height:0;}
+		#j_id78 {clear:both;}
+		#j_id78 p{padding:1em;}
+
+		#pages_product_motor_container_aboutYourAdditionalDrivers .active-driver input{
+		height: 30px;
+		 text-indent: -999px; 
+		width: 30px;
+		margin-top: 5px;}
+
+		#pages_product_motor_container_aboutYourAdditionalDrivers .passive-driver input{
+		height: 30px;
+		text-indent: -999px;  
+		width: 30px;
+		margin-top: 5px;}
+		#pages_product_motor_container_aboutYourAdditionalDrivers .passive-driver .driver-switch {text-indent: 0;top: -5px;width:80%;}
+	
+		#settle-text p {background: none;}
+
+		#content-area-bottom ul li.add-driver-add {width:100%;}
+
+		input.add-another-driver {float:none;}
+	
+		#pages_product_motor_container_yourQuote dl.top-premium-panels {margin:0 auto;}
+		dl.top-premium-panels.right {float:none;}
+		#monthpremiumannualcost dl.top-premium-panels.right {margin:1em auto 0; float:none;}
+
+		
+		#monthpremiumannualcost dl.top-premium-panels.left dd,
+		#monthpremiumannualcost dl.top-premium-panels.right dd {
+		height: 47px;line-height: 35px;width: 100%;}
+
+		#pages_product_motor_container_yourQuote dl.top-premium-panels, #view-details {width:95%;}
+
+		 #monthpremiumannualcost dl.top-premium-panels dd {border:none;}
+
+		dl.top-premium-panels dd {border-radius: 0;}
+
+		#pages_product_motor_container_yourQuote .ncd-mlp.shorter-area.content-area-centre {margin:0;}
+
+		.quoteStep {left:7px}
+
+		#pages_product_motor_container_yourQuote dl.quote-extra-dl {margin-left: 0;margin-top: 0;width: 100%;}
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.ncd-proection, 
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.voluntary-excess, 
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.excess-protection {width:95%;}
+
+
+		#pages_product_motor_container_yourQuote #sales-overlay-one {display:none;}
+		#sales-overlay-bundle-one {display: none;}
+		fieldset, img {position:static;}
+		#pages_product_home_container_yourCover fieldset {position: relative;}
+		#customizepaneladdons img {position:relative;}
+
+/* ----------------------------------------------------------------------------------------- */
+
+		ul.select-car {clear: both; left: 0.5em; position: relative; width: 100%;}
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.ncd-proection-radiobutton,
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.voluntary-excess-radiobutton,
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.excess-protection-radiobutton {width:100%;}
+
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.ncd-proection-help-icon,
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.voluntary-excess-help-icon,
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.excess-protection-help-icon {float: right;position: absolute;right: 1em;}
+
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.ncd-proection-help-icon a,
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.voluntary-excess-help-icon a,
+		#pages_product_motor_container_yourQuote .quote-extra-dl dt.excess-protection-help-icon a {position: absolute;top: 3.3em;}
+
+		.volexcesstxt,
+		select#voluntaryExcessLimit {margin-left:0em;}
+		.one-col #content-area-bottom input.back-btn {margin-left:0}
+		.one-col #content-area-bottom ul {margin: 1em 0.1em;width: 100%;}		
+		.one-col #content-area-bottom p {margin:0;}
+		.one-col #content-area-bottom ul li {width:100%;}
+		.one-col #content-area-bottom ul li:last-child {width:100%;}
+		.one-col input#next, .one-col input#nextDisabled{margin:0;}
+		#content-area-bottom input#next {margin:0 0 0 2%; padding: 0;}
+		#content-area-bottom input#back {padding: 0;}
+		#content-area-bottom ul li input {margin:0.3em 0; float:left;}
+		
+		#pages_product_motor_container_youAndYourInsurance #content-area-bottom input.go-to-next {float:right;}
+
+		.section-titles h1,
+		#xsell-iq h1,
+		#quote-layout #displayPremium h2 {
+		line-height:1em !important;
+		margin-bottom: 0; 
+		padding: 0 0.5em 0.3em;}
+		.c_code_e #extra-cover h1{text-indent:3em}
+
+		#pages_product_motor_container_paymentOptionsSummaryView ul.payment-option, 
+		#pages_product_home_container_paymentOptionsSummaryView ul.payment-option {margin:0 auto;width:95%;}
+		#pages_product_motor_container_paymentOptionsSummaryView h2 {margin: 1em 0 0.625em 1.25em;}
+
+		#pages_product_motor_container_aboutYourClaims .form-background,
+		#pages_product_motor_container_aboutYourConvictions .form-background {padding-bottom: 0}
+
+		.helpDialog .mod-hdr {font-size: 1.2em;line-height: 1em;}
+		ul.select-car label {font-size: 1.2em; font-weight: 300;}
+		#carTypeLabel {margin-bottom: 0.3em}
+
+		fieldset fieldset label,
+		fieldset.radio_stack label, 
+		#specified-radio label,
+		#label_billingAddrSameAsPolicyAddr_0,
+		#label_billingAddrSameAsPolicyAddr_1,
+		#label_cardOwnerPolicyHolder_0,
+		#label_cardOwnerPolicyHolder_1 {
+		width: 40%; /* 80% */
+		text-align: center;
+		display: inline-block;
+		padding: 1.2em 0.5em; 
+		margin-left: 0.625em !important;
+		box-sizing: border-box;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+
+		
+
+		.form-background input[type="radio"],
+		#display-option input[type="radio"],
+		fieldset fieldset input[type="radio"] {
+			display: none;
+		}
+
+		.form-background #payment-optns input[type="radio"] {
+			display: block;
+		}
+
+		ul.select-car select {margin-bottom:1.5em;}
+
+		#label_bundlePriceMonthlyRadio_0, 
+		#label_bundlePriceMonthlyRadio_1 {
+		display: block; 
+		background: #fff; 
+		width: 80%; 
+		padding: 1em 0.5em; 
+		margin:0.2em 0 0 0.8em;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;}
+
+		#pages_product_motor_container_aboutYou .declarations fieldset label,
+		#pages_product_home_container_aboutYou .declarations fieldset label,
+		#pages_product_motor_container_quoteDetails .declarations fieldset label,
+		#pages_product_home_container_quoteDetails .declarations fieldset label,
+		#home-abt-decs label{
+		display: inline-block;
+		width: 38%; 
+		padding: 1em 0.2em 1em 0.5em; 
+		margin-left: 0.8em; 
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: none;
+		text-align: center;}
+
+		#pages_product_motor_container_quoteDetails .declarations fieldset label,
+		#pages_product_home_container_quoteDetails .declarations fieldset label {
+			width: 100%;
+			text-align: left;
+		}
+
+		#pages_product_motor_container_quoteDetails .declarations input[type="checkbox"], 
+		#pages_product_home_container_quoteDetails .declarations input[type="checkbox"] {
+			position: relative;
+			top: 30px;
+		}
+
+		.section-titles h1,
+    h1.sub-titles {
+      font-size: 20px;
+    }
+
+
+		.external-one {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_white_external_icon.gif") no-repeat scroll 100% center transparent; font-weight:normal;}		
+		#mob-menu .external-one { background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_white_external_icon.gif") no-repeat scroll 95% center transparent;}
+		.mobileHeading {display: block!important; text-indent:0;/* text-align: center; width:100%;margin-bottom:0.5em; CR3711 */}
+		.normalHeading {display: none;}
+
+		.priceTag {display: block;}
+		.priceTag + label .label-heading {text-indent: 90px;}
+		#pages_product_motor_container_yourQuote .listview-bundle-sections .label-heading {
+			font-size: 15px;
+		}
+		.priceTag label.saveText {padding:12px;} 
+
+		#pre-footer img {
+		left: 50px;
+		position: absolute;
+		top: 113px;}
+
+		#pages_product_home_container_yourQuote #pre-footer img,
+		#pages_product_home_container_quoteDetails #pre-footer img, 
+		#pages_product_home_container_quoteDetailsSummaryView #pre-footer img {
+		 left: -9%;
+		padding-bottom: 1em;
+		position: inherit;
+		top: 130px;
+		z-index: 20;}
+
+		#info-declarations a {display: block; margin: 1em 0.5em 0; color:#000; background-color:#fff; padding:0.5em;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;}
+		#info-declarations a.pdf {background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/pdf_icon_small.gif");padding-left: 2em;background-position: 0.4em center}
+		#pages_product_home_container_quoteDetails .declarations p {display: block; clear:both;}
+		#pages_product_motor_container_yourQuote #agg-message-logo img{width:auto; height: auto;}
+
+/* modals ---------------- */
+		.helpDialog .mod-content {height:auto;max-height: 400px;}
+		.helpDialog {background: none repeat scroll 0 0 #FFFFFF;
+		border-radius: 0;
+		text-align: left;
+	    margin-top: 2em;}
+	   .helpDialog .mod-body {margin: 10px 0;}
+		.helpDialog .yui-panel .hd {height:0.6em;}
+		.helpDialog .yui-panel .hd h3, .bundleDetailsDialog .yui-panel h3, .yui-panel .back-hdr {display:none;}
+		.helpDialog .yui-panel .hd, .helpDialog .yui-panel .bd, .helpDialog .yui-panel .ft{background: none; border:none;overflow:auto;padding:0;}
+		.helpDialog .yui-panel .bd {margin: 0.5em; padding: 15px 5px;}
+		.helpDialog .mod-content {padding:0; overflow:auto;}
+		.yui-skin-sam .yui-panel {border-width: 3px;}
+		.helpDialog .mod-hdr {width: 100%; display:block;}
+		#recalcDialog_c, #nextDialog_c {width: 100%;left:0 !important; }
+		#recalcDialog, #nextDialog {
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		border-width: 1px;
+		width:auto;
+		box-shadow: none;
+		position: relative;}
+
+		.bundleDetailsDialog .yui-panel-container.shadow {width: 100%; left:0px !important;}
+
+		#err-msg ul {width:75%;}
+		#confirmBackButton, .back-button .yui-panel {background: none repeat scroll 0 0 #FFFFFF; 
+		border-radius: 0 0 0 0;
+	    border-style: solid;
+	    border-width: 3px;
+	    text-align: left;
+	    width: 96%;}
+
+		#confirmBackButton_h, 
+		.back-button .yui-panel .hd,
+		#confirmBackButton .bd,
+		.back-button .yui-panel .bd,
+		#confirmBackButton .ft,
+		.back-button .yui-panel .ft {border:none;background:none;}
+
+		.back-hdr {color:#444;}
+		.back-button ul li input,
+		.back-button ul li a,
+		.back-button ul li input:hover,
+		.back-button ul li a:focus{
+		width:5em;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;}
+	 
+	   .yui-skin-sam .helpDialog .container-close:focus,
+	    .yui-skin-sam .helpDialog .container-close:hover,
+	    .yui-skin-sam .bundleDetailsDialog .container-close:hover,
+	     .yui-skin-sam .bundleDetailsDialog .container-close:focus {background-position: 0 0;}
+
+		.yui-skin-sam .helpDialog .container-close,
+		.yui-skin-sam .bundleDetailsDialog .container-close {width:90px;}
+
+		#pages_product_motor_container_yourQuote #monthpremiumannualcost #agg-message,
+		#view-details {padding: 0.7em;margin:0;}
+
+		#view-details {width:95%}
+		label.viewprice {margin-left:1em;}
+		
+		#priceSwitchRegion\:status {display:block;height:0;}
+		.excludeinterest {font-size: 0.7em;}
+
+		#mobRecalcButtonRegion {width: 80%; display: block; top: -60px; transition: top 1s; -webkit-transition: top 1s ; /* Safari */} 
+
+		#mobRecalcButtonRegion.mobRecalcVisible {top: 0; margin-left: 10px;}
+		#content-area-right {display: none;}
+
+		#payment-optns fieldset {padding-bottom:1.2em;}
+		#context-help-winterSportsPolicyDetails-panel-container table tr td + td, 
+		#context-help-travelPolicyDetails-panel-container table tr td + td {width: 90%;}
+			
+
+/* quote-details */
+		* #quote-layout .content-area-centre {padding:0;}
+		#quote-layout .content-area-centre p {margin:0 3px 0 0;}
+		#quote-layout #displayPremium h2 {color:#fff;font-size:1.2em;margin:0;}
+		#quote-layout span.prem-title {width:68%;}
+		#quote-layout dl.premium-dl dt, #quote-layout dl.monthly-dl dt {width:98%; margin:0;padding:0.3em 0.5em;}
+		#quote-layout dl.premium-dl dd {width:100%;padding:0 0.6em;font-size:1.1em;}
+		#quote-layout dl.monthly-dl dd {padding:0;height:0;}
+		#quote-layout dl.premium-dl, #quote-layout dl.premium-dl dt, #quote-layout dl.monthly-dl dt {font-weight:400}
+		#quote-layout dl.premium-dl {padding-bottom:0.7em;}
+		#quote-layout .hr-one {height:0;position: fixed;}
+		#quote-layout .content-area-centre ul.including {padding: 0.2em 1em;}
+		.with-bullets {list-style:disc inside none}
+		#quote-layout .content-area-centre ul.including h2 {left:-1.1em; color:#444; font-size:1.5em;}
+		#quote-layout #details-section {width:95%; margin: 0;}
+		#quote-layout #car-details {width:95%; margin: 0;}
+		#quote-layout #details-section ul li h2, #quote-layout ul li h2 {font-size: 1.6em;font-weight: normal;}
+		.content-area-centre h2{font-size: 1em;font-weight: normal;margin: 0.4em 1em;padding:0.5em 0;}
+		#quote-layout #claims h2, 	#quote-layout #convictions h2 {padding: 0 0.2em; width:95%; -webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;}
+		#quote-layout .declarations ul, #quote-layout ul#claims, #quote-layout ul#convictions, #quote-layout #claim-details{margin:0;}
+		#quote-layout .content-area-centre ul {width:98%; padding: 0 1.5em;}
+		#general-questions dl dd {margin-left:23px; font-weight:700;margin-bottom:1em;}
+		#general-questions dl dt {margin-bottom:0 ; margin-left: 0.5em;text-align: left;width: 90%;padding:0 0.2em;}
+		#quote-layout .declarations p {background:none;}
+		#quote-layout .declarations ul {padding:0;}
+		#quote-layout .declarations span input {width:10%;}
+		#general-questions dl dt {display: list-item;list-style-type: disc;margin-left:23px;}
+		#pre-footer p {width:100%; padding:0 1em;}
+		#pages_product_motor_container_quoteDetails #pre-footer, #pages_product_motor_container_quoteDetailsSummaryView #pre-footer {margin-right: 1em;}
+		#quote-layout .content-area-centre .declarations ul li span {color:#444; font-weight:700;}
+		#pages_product_motor_container_quoteDetails tr {background:none;}
+		table.quote-claims-convictions  {display:table}
+		.quote-claims-convictions thead {display: none}
+	
+/* payment options page */
+		#secure_logos {display:none;}
+		img.cc-logo {left: 0.5em;position: absolute;top: 33px;}
+		#payment-optns {padding-top: 1em}
+		#payment-optns h2 {font-size: 0.9em;margin-top: 1.5em;}
+		#payment-optns label {background: #fff; height:auto; width:95%;padding:0.5em;display:block;
+		border-radius: 5px;}
+		#pages_product_common_paymentOptions #payment-optns li ul {list-style: disc outside none;}
+		#payment-optns li ul li {padding-left: 0;}
+		#paymentPanel h1{padding: 0 0.5em 0.3em;}
+		#paymentModesRegion\:status span {margin-left:1.5em;display:block;}
+	    #information-pack ul li a {top:0; right:-5px;}
+		ul#information-pack li ul li {width:85%; padding-right:1em;}
+		#email-pack li {padding:0.5em; line-height: 1.8em}
+		#info-declarations {padding:0.1em; color: #444}
+		#info-declarations ul li {padding:0.5em;}
+		input#confirmInformation{width:30px;height:30px;}
+		label#confirmInformationLabel {color:#444;}
+		 #information-pack ul li a {right:-10px !important}
+		 #pciframe select[name="exp_month"], 
+		 #pciframe select[name="exp_year"] {width:28% !important;}
+
+/* credit card details */
+		#pages_product_common_cardInformation img.cc-logo {top:40px;}
+		#pages_product_common_cardInformation .left p {margin:3em auto 0;}
+		select#cardStartDateMonth, select#cardStartDateYear, select#cardExpiryDateMonth, select#cardExpiryDateYear {width:40% !important}
+		#payment-optns h2 {font-size: 0.9em;margin-top: 2.2em;}
+		#pages_product_common_cardInformation .content-area-centre {margin: 0;}
+		#billingAddrRegion dd {margin:0 2em;}
+		#manualAddressPanel dd {margin:0; padding:0 0.5em;}
+		#context-help-cardSecurityCode-panel-context-help  img{left:25em}
+		#current-address-is p {margin:0;padding:0;}
+		#postCodeMessageAnchor, #manualAddressPanel div dt label{background: none;border:none;margin:0;padding:0;}
+		#addressListMessageAnchor {background: none;border:none;padding:0;}
+		input#enterMyAddress, input#searchForMyAddress {font-size:1.6em;padding-bottom:0%;margin: 0 1.2em 1em;}
+
+/* breakdown new */
+    .one-col span.price {display:inline-block; position: static;}
+        .full_breakdown  fieldset label {display:block;width:100%;height:auto;padding:0 0 40px;margin: 0;border-radius:0;border:none;}
+		.full_breakdown  fieldset {margin-top:0;}
+		.full_breakdown .description {display: block; width: 73%;font-weight: normal;font-size: 0.8em;padding: 0.2em 1em;margin: 0.6em;}
+		.full_breakdown a {margin-left:1.2em;}
+        .full_breakdown label span input[type="radio"] {padding:0; line-height: 1.4em;margin:0 0 0 -0.5em;}
+        #breakdownFlagMessageAnchor {margin:0;}
+        span.bkRadio span {float:none;}
+
+/* payment confirmation */
+		#pages_product_common_paymentConfirmation #content-area-bottom input.go-to-next{width:96%;}
+		#pages_product_common_paymentConfirmation .content-area-centre h2 {margin: 0.5em 0 0 0.5em;text-indent:0;}
+		#pages_product_common_paymentConfirmation #outer p {display: inline-block;padding: 0.5em 0.5em;}
+		#xsell-left p {clear:none;}
+		#xsell-left, #xsell-two-left, #xsell-two-right, #xsell-right {width:100%;min-height: 8em;margin:0 0 0.2em 0;}
+		#pages_product_common_paymentConfirmation .content-area-centre {margin-bottom:0.5em;} 
+		#xsell-right {width:100%;min-height: 8em; background: #fff;margin:00.1em 0;}
+		#home-icon, #travel-icon, #pet-icon, #car-icon {display: inline-block;float: right;margin-right: 1em; width: 104px;height: 91px;}
+		#xsell-left p {width:52%;}
+		#xsell-right dl dd {width: 100%;}
+
+/* HCS CR3848 */
+		a.xsell, a.xsell:hover,
+		#container .xsell-renewal dd {
+			margin-left:0.5em;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		
+		input#renewalCaptureButtonForHome.add-section {
+			float: none;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+/* cookies menu*/
+		#slideMenu {display: none;padding: 0.5em 0.5em 1em 45px; height:auto;z-index:1;}
+		#slideMenu p { float: left;font-size: 0.7em;margin: 0;padding: 0;width: 80%;clear:both;}
+		#slideMenu button {background: none repeat scroll 0 0 #C2C2C2; border: medium none;
+		margin:0;
+		-webkit-border-radius: 14px 14px 14px 14px;
+		-moz-border-radius: 14px 14px 14px 14px;
+		border-radius: 14px 14px 14px 14px;
+		color: #444444;
+		font-size: 22px;
+		font-weight: bold;
+		height: 28px;
+		width: 28px ; 
+		cursor: pointer;
+		padding:1px 0 0 1px;
+		}
+
+/*save retreive */
+	    #content-area-main.one_col .content-area-centre input.login_button,
+	    #content-area-main.one_col .content-area-centre input.login_button:hover,
+	    #content-area-main.one_col .content-area-centre input.login_button:focus{
+	    margin:0.5em;
+	    height:3.4em;
+	    }
+
+	 #content-area-main.one_col .content-area-centre .progress_button {right: -1%;top: 0.5em;}
+
+	 #pages_general_restricted_saveQuoteMaximum .orange_button {margin: 0.5em;position: static;}
+
+     .max_quotes_warning {background: none repeat scroll 0 0 #CA0000; border-radius: 5px; height:auto;}
+
+     .max_quotes_choice {float: left; margin-top: 0.8em; text-align: center; width: 100%;}
+
+     #pages_general_restricted_saveQuoteMaximum .form-background {min-height:auto;}
+
+	table#addon tr {background:none;}
+	td.first {width:30%;}
+	#pages_product_common_threeDSecure  {width:527px!important; overflow-x:auto }
+	/*HCC iframe */
+
+	#pages_product_common_cardInformation.pci #cardDetailsFrame {width: 100%;  left:0; height: 1120px;}
+	#pages_product_common_cardInformation.pci .form-background {padding-bottom: 1010px; margin-bottom:15px;}
+	#pages_product_common_cardInformation.pci #content-area-bottom input.back-btn {margin-bottom: 75px; }
+	#pciframe {width: 99%; text-align: left;}
+	#pciframe #content-area-bottom input.go-to-next,
+	#pciframe #content-area-bottom input.go-to-next:hover,
+	#pciframe #content-area-bottom input.go-to-next:focus { bottom: -3px;left: 0;width: 98%;}
+	#pciframe #content-area-bottom {width:100%;}/*added temp 4 green buttopn*/
+	#pciframe #content-area-bottom ul li {margin:0 2%; width:98%;}/*added temp 4 green buttopn*/
+	#pages_product_common_cardInformation.pci input#amendCardDetailsButton { position: relative; left: 1em; bottom: 0;width:auto;}
+	#pciframe img {margin-left: 1em;}
+
+	/*modifications accordian CR3509*/
+			.yui-accordion-content ul {float:left;	width:98%; margin:1%;}	
+			.yui-accordion-content label {
+				margin:10 5px 5px;
+				padding:10px 5px 5px;
+				width:75%;
+				height:30px;
+				text-align: left;
+			}
+			.yui-accordion-content  {padding:0; width:98% !important;}
+			a.yui-accordion-toggle {height:43px !important;line-height: 31px;background-position: 5px 50% !important;text-indent:40px;}
+			#modsAccordianPanel a.active {background-position: 5px 50%;}
+			.yui-accordion-content ul li {border-bottom: solid 1px #ccc;float:none;width:100%;}
+			.yui-accordion-content ul li:last-child {border:none;}
+			.yui-accordion-content input {margin-top:10px !important;}
+
+	/* Online Journey */
+
+		#bundlePanel.oneOption .slides {background: none;}
+		#bundlePanel.twoOptions .slides {background: none;}
+		#bundlePanel.threeOptions .slides {background: none;}
+		#bundlePanel.fourOptions .slides {background: none;}
+
+	/* mobile enhacements */
+	#content-area-bottom ul li #recalculateDisabled,
+	#content-area-bottom ul li #recalculateDisabled:hover,
+	#pages_product_motor_container_yourQuote input#nextDisabled {display: none;}
+
+	#content-area-bottom input.recalculate, 
+	#content-area-bottom input.recalculate:hover {margin:0 0 0 2%;width:48%;font-size: 18px;}
+	.yui-skin-sam .yui-panel-container {left:0 !important; width: 100%;}
+	.spec-indicator {right:2em;top:3.2em;}
+	#content-area-bottom input {
+		font-size:18px;
+	}
+
+ul.including li {
+		width:95%;
+		float:none;
+		margin-right: 0;
+		height: auto;}
+
+		/* buy now temp button*/
+					#pciframe #content-area-bottom input.go-to-next,
+					#pciframe #content-area-bottom input.go-to-next:hover,
+					#pciframe #content-area-bottom input.go-to-next:focus {
+					float:right;
+					height:62px; 
+					margin: 0 0.1em 0.5em;
+					padding-right:0% !important;
+					}
+
+					#pciframe #content-area-bottom input.go-to-next{position: static;}
+					#pciframe #content-area-bottom ul li {width:94%;margin: 0 2%;}
+
+					/*end temp*/
+
+					#content-area-bottom input.add-another-driver, #content-area-bottom input.add-another-driver:hover {
+					width:48%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;}
+
+		/*star rating*/
+		#starRating dl {padding:0;}
+		#starRating dt,#starRating dd {width:96%; margin:2% 4%; font-weight: 700;}
+		#submitRating, #renewalCaptureButtonForCar, #renewalCaptureButtonForHome {margin:8px 5% !important; font-size: 1.2em;}
+		#submitRating {
+			float: none;
+			margin: 0.5em 1em !important;
+			width: auto;
+		}
+
+
+		/* tables ----------- */
+		<!--[if !IE]>-->  
+		/*fallback - ie 9 < does not like displaying table as block*/
+
+		/* Zebra striping */
+		tr:nth-of-type(odd) {background: #eee;}
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {display: block;padding-bottom:0.8em;}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {position: absolute; top: -9999px; left: -9999px;}
+
+		tr {border: none;}
+
+		/* Behave  like a "row" */
+		td {border: none; border:none; position: relative;padding-left: 1em}
+
+		/* Now like a table header */
+		td:before {/* Top/left values mimic padding */top: 6px;	left: 6px; width: 45%; padding-right: 10px; padding-left: 10px; white-space: nowrap;}
+
+		/*
+		claims accidents losses table
+		*/
+		#claims td:nth-of-type(1):before { content: "Date:"; font-weight: 700}
+		#claims td:nth-of-type(2):before { content: "Type:"; font-weight: 700}
+		#claims td:nth-of-type(3):before { content: "Fault:"; font-weight: 700}
+		.additional-info-table {border:none;}
+		.additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;}
+
+
+		#claims.specified-info-table td:nth-of-type(1):before { content: "Item type:"; font-weight: 700}
+		#claims.specified-info-table td:nth-of-type(2):before { content: "Item description:"; font-weight: 700}
+		#claims.specified-info-table td:nth-of-type(3):before { content: "Item value:"; font-weight: 700}
+		.additional-info-table {border:none;}
+		.additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;}
+
+
+		#convictions td:nth-of-type(1):before { content: "Conviction date:"; font-weight: 700}
+		#convictions td:nth-of-type(2):before { content: "Conviction code:"; font-weight: 700}
+		#convictions td:nth-of-type(3):before { content: "Penalty points:"; font-weight: 700}
+		#convictions td:nth-of-type(4):before { content: "Ban length:"; font-weight: 700}
+		.additional-info-table {border:none;}
+		.additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;}
+
+		#claimsSubform\:claims td:nth-of-type(1):before { content: "Date:"; font-weight: 700}
+		#claimsSubform\:claims td:nth-of-type(2):before { content: "Type:"; font-weight: 700}
+		#claimsSubform\:claims td:nth-of-type(3):before { content: "Fault:"; font-weight: 700}
+		.additional-info-table {border:none;}
+		.additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;}
+
+		#convictionsSubform\:convictions p {background: #fff}
+
+		#convictionsSubform\:convictions td:nth-of-type(1):before { content: "Conviction date:"; font-weight: 700}
+		#convictionsSubform\:convictions td:nth-of-type(2):before { content: "Conviction code:"; font-weight: 700}
+		#convictionsSubform\:convictions td:nth-of-type(3):before { content: "Penalty points:"; font-weight: 700}
+		#convictionsSubform\:convictions td:nth-of-type(4):before { content: "Ban length:"; font-weight: 700}
+		.additional-info-table {border:none;}
+		.additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;width:100%;}
+	
+		
+		.quote-claims-convictions td:nth-of-type(1):before { content: "Name:"; font-weight: 700}
+		.quote-claims-convictions td:nth-of-type(2):before { content: "Date:"; font-weight: 700}
+		.quote-claims-convictions td:nth-of-type(3):before { content: "Description:"; font-weight: 700}
+		.quote-claims-convictions td:nth-of-type(4):before { content: "Was this a fault claim:"; font-weight: 700}
+		.additional-info-table {border:none;}
+		.additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;}
+
+		#convictions + .quote-claims-convictions td:nth-of-type(1):before { content: "Name:"; font-weight: 700}
+		#convictions + .quote-claims-convictions td:nth-of-type(2):before { content: "Conviction date:"; font-weight: 700}
+		#convictions + .quote-claims-convictions td:nth-of-type(3):before { content: "Conviction code:"; font-weight: 700}
+		#convictions + .quote-claims-convictions td:nth-of-type(4):before { content: "Penalty points:"; font-weight: 700}
+		#convictions + .quote-claims-convictions td:nth-of-type(5):before { content: "Ban length:"; font-weight: 700}
+		.additional-info-table {border:none;}
+	    .additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;} 
+
+		
+
+		.large_button {margin-top: 1em;}
+
+
+		a#manualAddressToggle2 input, a#manualAddressToggle input {margin:0 0 1em 1.5em}
+
+/*drop3 tables in modals !!!need to change key to thead so we can hide and look at rest of james table????!!!!!!!!*/
+#context-help-winterSportsPolicyDetails-panel-container td:nth-of-type(2):before { content: "Policy Limit:"; font-weight: 700}
+#context-help-winterSportsPolicyDetails-panel-container td:nth-of-type(3):before { content: "Excess:"; font-weight: 700}
+
+#context-help-travelPolicyDetails-panel-container td:nth-of-type(2):before { content: "Policy Limit:"; font-weight: 700}
+#context-help-travelPolicyDetails-panel-container td:nth-of-type(3):before { content: "Excess:"; font-weight: 700}
+#context-help-winterSportsPolicyDetails-panel-container table tr td+td,
+#context-help-travelPolicyDetails-panel-container table tr td+td,
+/* .mod-content table tr td+td */ {width:85%;
+padding-left: 18px;
+text-indent: -18px;}
+
+#context-help-policyCover2-panel-container td:nth-of-type(2):before { content: ""; font-weight: 700}
+#context-help-policyCover2-panel-container td:nth-of-type(3):before { content: ""; font-weight: 700}
+		
+		<!--<![endif]-->
+/*  ------------------------------------------------------------
+
+Small for CR3711 list view
+
+ ------------------------------------------------------------*/
+
+.qtip-motor-quotepage {
+	margin: 0;
+	width: 100%;
+	padding: 3.5em 1em 1.5em;
+	-moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+#quote-contact-us {
+	display: none;
+}
+.aside {
+	float:none;
+	width:100%;
+	margin-bottom: 1em;
+}
+.premium-display,
+#cover-details,
+.policy-area-motor{
+	width: 98%;
+	margin: 0 1%;
+}
+#policy-cover-motor{
+	width: 92%;
+	margin: 3% 2% 0;
+	padding: 2%;
+}
+#pages_product_motor_container_yourQuote #agg-message p {
+	padding: 0;
+	margin: 0 3%;
+	width: 94%;
+}
+.details-area {
+	margin-top: 0;
+	padding-top:0;
+}
+.policy-area-motor p {
+	margin: 1.5em 0 0;
+}
+.premium-display dl {
+	width: 100%;
+	margin: 0 0 0.5em 0;
+}
+.premium-display dt {
+	margin:0;
+}
+.policy-area-motor ul.includes {
+	list-style: disc outside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/policy_tick.png");
+	width:85%;
+	float:none;
+	margin:0 0 0 40px;
+}
+.policy-area-motor .includes li {
+	font-size:1.3em;
+	height: auto;
+}
+.policy-area-motor .includes li:last-child {
+	border-bottom: 1px solid #F0F0F0;
+}
+.policy-area-motor h1 {
+	margin-bottom: 0.5em;
+}
+.third-party-logos {
+	display: none;
+}
+#display-option {
+	margin: 0 0 0.8em;
+}
+#display-option fieldset {
+	margin-top:0;
+}
+.listview-sections {
+	clear:both;
+}
+#pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_0, 
+#pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_1 {
+	border-bottom: none;
+	width:100%;
+	display:inline;
+	margin:0;
+	padding:1.5em 0;
+	text-align: center;
+
+}
+
+#display-option label.selected span {
+	font-weight: 700;
+}
+#pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_0.selected,
+#pages_product_motor_container_yourQuote #label_bundlePriceMonthlyRadio_1.selected {
+	background: none;
+}
+#pages_product_motor_container_yourQuote #display-option fieldset {
+	text-align: left;
+	margin-top: -1em;
+}
+#pages_product_motor_container_yourQuote label span {
+	padding:0;
+}
+#pages_product_motor_container_yourQuote .label-heading {
+	font-size:17px;
+	padding:1em 6em 1em 95px;
+}
+/* .listview-bundle-sections span.noPriceTag {
+	text-indent: 0;
+} */
+label#excessProtectionLabel span {
+	padding:0.8em 8em 0.8em 0.8em;
+}
+#pages_product_motor_container_yourQuote label.viewprice {
+	margin-left: 0.5em;
+}
+#pages_product_motor_container_yourQuote #monthlySmallPrint {
+	padding-bottom: 0;
+	top: 3px;
+	font-size: 1.7em;
+	left:0.3em;
+}
+#display-option dd {
+	padding-bottom:0.2em;
+}
+#priceSwitchRegion\:status {
+	width: 100%;
+}
+#pages_product_motor_container_yourQuote #commonStatus-status {
+	left: 285px;
+	top: 0.5em;
+}
+.prd-mlp, .prd-chc, .prd-kyc, .prd-msf, .prd-pib, .prd-exc {
+	position: absolute;
+	right:5px;
+	bottom:5px;
+}
+.listview-sections label {
+	margin-left: 0.6em;
+	font-size:1.2em;
+	padding-right: 4em;
+}
+#pages_product_motor_container_yourQuote .listview-sections p {
+	margin-left: 0.5em;
+}
+.listview-sections > h3:first-of-type,
+.listview-sections > h3 {
+	margin-left: 0.9em;
+	margin-bottom:0.7em;
+	padding-right: 7.5em;
+}
+.listview-sections > h3 {
+	padding-right: 0;
+}
+
+.listview-sections ul {
+	margin-left:3em;
+	margin-bottom: 2em;
+}
+.listviewannualmonth {
+	right:10px;
+}
+.help-arrow, .voluntartexcesslink {
+	margin-left:0.9em;
+}
+ #pages_product_motor_container_yourQuote .selectownaddons {
+	display: block;
+	margin-right:0;
+}
+#selectcustomaddons {
+	margin:1%;
+	width:92%;
+	padding:2% 3%;
+}
+#pages_product_motor_container_yourQuote .selectownaddons,
+#pages_product_motor_container_yourQuote #listviewtotal {
+	font-size:95%;
+	vertical-align: middle;
+}
+.breakdown-price {
+	right:0.8em;
+}
+.one-col label span {
+	line-height: 1.1;
+}
+.one-col .priceType {
+	font-size: 11px;
+}
+
+#pages_product_motor_container_yourQuote .listviewannualmonth {
+	padding-top: 10px;
+}
+.full_breakdown h2 {
+	padding-right: 6em;
+	font-size: 17px;
+}
+#label_breakdownCover_3 {
+	width: 96%;
+	margin:2%;
+}
+#label_breakdownCover_0, #label_breakdownCover_1, #label_breakdownCover_2 {
+	background-size:110px auto;
+}
+label#ncdProtectionLabel {
+	padding-right: 0;
+	padding-top: 100px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 90px auto;
+}
+#pages_product_motor_container_yourQuote .quote-extra-dl dt {
+	width:100%;
+	margin: 0 !important;
+}
+.ncd-protection-radiobutton, .excess-protection-radiobutton {
+	right:0.8em;
+}
+#excessProtectionLabel {
+	margin-top: 1em;
+	display:block;
+}
+#pages_product_motor_container_yourQuote .excessprotect {
+	padding-top:8.5em;
+	background-size: 62px auto;
+	background-position: 1.8em 22%;
+	background-repeat: no-repeat;
+}
+
+#excessProtectionLabel p {
+	width: 100%;
+	padding:0;
+}
+.quote-step {
+	position: relative;
+	margin: 0 0 16px 0;
+	text-align: center; 
+	padding: 0;
+	width: 100%;
+}
+.quote-step p { 
+	margin: 0;
+	line-height: 35px;
+	height:35px;
+	padding:0 !important;
+}
+.step-arrow {
+	background-size: 50% auto;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+ 	width: 80px; 
+ 	height: 41px; 
+ 	position: absolute; 
+	/* top: 33px; */ 
+	left: 50%;
+ 	margin-left: -20px;
+	text-indent: -9999px;
+	border: none;
+}
+.prd-mlp, .prd-chc, .prd-kyc, .prd-msf, .prd-pib, .prd-exc {
+	background-size: 74px auto;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+select#voluntaryExcessLimit {
+	float:left;
+}
+#pages_product_motor_container_yourQuote .quote-extra-dl dd {
+	text-align: left
+}
+
+ .full_breakdown h2, #excessProtectionLabel > span {
+	text-indent: 0;
+}
+.listview-sections p, .listview-sections ul {
+	margin-top:2.6em;
+	padding-right:1em;
+}
+
+h1.sub-titles, h2.sub-titles {
+	padding: 0 10px;
+}
+.listview-sections .prd-mlp, 
+.listview-sections .prd-chc, 
+.listview-sections .prd-kyc, 
+.listview-sections .prd-msf, 
+.listview-sections .prd-pib, 
+.listview-sections .prd-exc {
+	display: none;
+}
+
+#label_breakdownCover_3 .bkRadio {
+	font-size: 12px;
+	line-height: 4em;
+}
+/*end list view small */
+
+/* small CMA */
+table.ncd-table {
+	display: table;
+	margin-top: 5px;
+}
+ .ncd-table tbody {
+ 	display: table-row-group;
+ }
+.ncd-table tr {
+	display: table-row;
+}
+.ncd-table td, .ncd-table th {
+	display: table-cell;
+}
+.ncd-table thead {
+	display: table-header-group;
+}
+.ncd-table thead tr {
+	position: static;
+}
+/* end small CMA */
+
+/* column bundles optimizely winner ------------------------------------  */
+
+	input#customiseButton, 
+	input#bundlesButton {
+		width: 96%;
+		margin: 1% 2% 5%;
+		float: none;
+	}
+
+	#bundleOptionsInfo,
+	li.not-included {
+	  display: none; /* show on mobile only */
+	}
+
+	#bundles {
+		overflow: inherit;
+	}
+
+	#bundles > div {
+		width: 96%;
+		margin: 1% 2% 5%;
+		background-color: #ffffff;
+		-webkit-box-shadow: 0 2px 3px #dddad6;
+		-moz-box-shadow: 0 2px 3px #dddad6;
+		box-shadow: 0 2px 3px #dddad6;
+	}
+
+	.alt-title {
+		display: block;
+		padding: 30px 25px 0 105px;
+		text-align: left;
+		font-size: 1.4em;
+		line-height: 1.2;
+    background-position: 98% 100%;
+    background-repeat: no-repeat;
+    background-size: 26px;
+	}
+
+	.cost-area .bundlePercent {
+		top: 30px;
+		right: 15px;
+		height: 50px;
+		width: 60px;
+		padding-top: 12px;
+	}
+	 
+	.cost-area .price span {
+		font-size: 14px;
+	}
+
+	#bundles > div h3 {
+		min-height: auto;		
+	}
+
+	#bundles > div h3 span {
+    margin: 5px 30px 0;
+  }
+
+  #bundles > div li.cost-area {
+    background-image: none;
+	}
+
+	#bundles .bestValueBundle li {
+	    background-color: #fff;
+	}
+
+	#bundles > div li:nth-child(odd) {
+	    background-color: #fff;
+	}
+
+}
+
+		/* MEDIUM(tablet) ----------- */
+
+@media only screen and (min-width:641px) and (max-width : 954px) {
+
+
+	/* column bundles optimizely winner ------------------------------------  */
+
+	#bundles > div h3 {
+    min-height: 4.2rem;
+    font-size: 14px;
+  }
+
+  #bundles > div#bundleOptionsInfo p {
+  	font-size: 10px;
+  }
+	
+	#bundles > div h3 span {
+		padding: 5px 0;
+	}
+  /* end column */
+
+		#context-help-claimsFlag-panel-helpButton, 
+		#context-help-convictionsFlag-panel-helpButton,
+		#context-help-afaultClaimFlag-panel-helpButton,
+		#context-help-noOfAdditionalDrivers-panel-helpButton {top: 13px;}
+
+	/* HCS CR3448 */
+	#xsell-iq h1 {
+		margin-bottom: 1.5em;
+	}
+
+	/* optimizely */
+
+  #pages_product_motor_container_yourQuote label.rad-label span {
+		font-size: 12px;
+	}
+
+	.cost-area .bundlePercent {
+		top: -40px;
+		right: -10px;
+		z-index: 100;
+	}
+
+	#bundles > div h3 span {
+		font-size: 10px;
+	}
+
+
+	#mobRecalcButtonRegion {
+		width:97%;
+		margin-left:40px;
+		-webkit-transition: width 1s linear;
+		-moz-transition: width 1s linear;
+		-ms-transition: width 1s linear;
+		-o-transition: width 1s linear;
+		transition: width 1s linear;
+	}
+
+	#display-option {
+		float:none;
+		height:2em;
+		width:100%;
+		top:-15px;
+	}
+	#display-option fieldset{
+		text-align: left;
+	}
+	#display-option dd {
+		padding-top:0;
+	}
+	#display-option dd + dd {
+		padding-top:11px;
+		width:50%;
+	}
+	#monthlySmallPrint {
+		float:left;
+	}
+	img#commonStatus-status {
+		left:210px;
+		top:15px;
+	}
+	#quote-contact-us {
+		display: none;
+	}
+	#cover-details {
+		width:100%;
+	}
+	.policy-area-motor {
+		width :72%;
+	}
+	.third-party-logos {
+		height: 190px;
+	}
+	.policy-area-motor ul.includes {
+		width:24%;
+
+	}
+	.third-party-logos{
+		width:20%;
+	}
+	.third-party-logos img {
+		height:90%;
+		width:90%;
+	}
+	.premium-display dt, .premium-display dd {
+		font-size: 19px;
+		-webkit-transition: font-size 1s linear;
+		-moz-transition: font-size 1s linear;
+		-ms-transition: font-size 1s linear;
+		-o-transition: font-size 1s linear;
+		transition: font-size 1s linear;
+	}
+	.policy-area-motor .includes li {
+		height:auto;
+	}
+	#label_breakdownCover_0, #label_breakdownCover_1, #label_breakdownCover_2 {
+		background-size:130px auto;
+	}
+	#label_breakdownCover_3 {
+		min-height: 3em;
+	}
+	.qtip {
+		z-index: 900 !important;
+	}
+	.priceTag {
+		display:block;
+	}
+	h1.sub-titles, h2.sub-titles {
+		padding: 0 10px;
+	}
+	#content-area-main {padding-left:0;}
+	.premium-display {width:100%;text-align: center}
+	.aside {
+		float:none;
+		width: 100%;
+	}
+	.exint {padding-top: 6px;}
+	#display-option dd {width:295px;
+	}
+	#label_breakdownCover_3 .bkRadio {
+		font-size: 80%;
+	}
+	#uniform-breakdownCover_3, #uniform-breakdownCover_3 span, #uniform-breakdownCover_3 input {
+		height: 33px !important;
+	}
+
+	/* end med CR3711 list view-----------------*/
+
+
+	/* Main changes */
+	.displayBlock { display: block;}
+	#progress-bar, #navigation-area-left, #content-area-right {display: none;}
+	#container #content-area-main {width: 98%; margin: 0 1%;}/*CR3711*/
+	#container #header {background: none;}
+	#header h1 {text-indent: -9999px;}
+
+	#pages_product_motor_container_aboutYou .declarations label, #home-abt-decs label  { 
+		border-radius: 3px 3px 3px 3px; display: block; float: left; 
+		margin-left: 15px; padding: 7px; width: 90px; color:#444444;
+	}
+	
+	#pre-footer img {top:70px;}
+	#footer ul {display: none;}
+	dd a, .custom-sections .help-icon, #contents-extra a, #information-pack ul li a, #buildings-extra li a {right: 1%;}
+	#pages_product_motor_container_youAndYourInsurance fieldset { padding-left: 1%; width: 98%}
+	input#changeAddress, input#findAddress, input.add-section, input.add-section-clear, input.find-addr {width: auto;}
+	#context-help-afaultClaimFlag-panel-helpButton, #context-help-jointPolicyHolder-panel-helpButton, #context-help-doorLocksFlag-panel-helpButton, #context-help-contentsSpecifiedItems-panel-helpButton {
+	    right: 0.4%;}
+
+	#content-area-bottom ul li input#recalculate, #content-area-bottom ul li input#recalculateDisabled {margin-right: 20%}
+
+	/* mob-menu  ----------- */
+	.external-one {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_white_external_icon.gif") no-repeat scroll 100% center transparent; font-weight:normal;}
+	.contact-area h4 {font-size:1em;padding:0.2em 0.5em;font-weight: normal;}
+	.contact-area h3 {line-height:1.6em; font-size:1.2em;padding:0.2em 1em 0 0.5em;font-weight: normal;}
+	#mob-menu .contact-area h3 a[href^=tel] {padding:0;}/*ios fix*/
+	.contact-area {color:#fff;}
+	.contact-area dd, .contact-area dt {width:50%; float:left;padding:0; margin:0;font-size:1.2em;line-height: 1.2em;}
+	.contact-area dl {padding:0.6em;}
+	.contact-area {background: #8C8C8C; color: #FFF}
+	.contact-area span {padding-left: 0.5em; }
+	#mob-menu ul {background: #444}
+	#mob-menu li {border-bottom: 1px solid #888;}
+	#mob-menu dt, #mob-menu dd {text-align: left; width: 50%}
+	#mob-menu .external-one {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_white_external_icon.gif") no-repeat scroll 95% center transparent}
+	#mob-menu .contact-open{line-height: 1.5em; color: #FFF; height: 1.5em; line-height: 1.5em; padding: 0.5em; font-weight: 700}
+	#menubar {z-index: 101; width:50px; position: fixed; color: #fff; padding: 5px 0px 2px 0; height: 3.5em; text-align: right;top:0; }  
+	#burger {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat -40px 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px; margin-top:0px;}
+	#burger.open {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat 0 0 transparent;}
+
+	.c_code_e #burger {z-index:1000; background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu_e.png") no-repeat -40px 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px; margin-top:0px;}
+		.c_code_e #burger.open {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu_e.png") no-repeat 0 0 transparent;}
+
+	#mob-menu li a {padding: 10px; display: block; color: #fff; text-decoration: none;}
+	#mob-menu {background:#444; left: 0; position: fixed; float:left; text-align:left; width: 75%; height: 100%; overflow-x: hidden; overflow-y: auto;top:0; z-index: -1; font-size: 1.5em;  display: block;}
+	ul.select-car {clear: both; left: 0.5em; position: relative; width: 100%;}
+
+	#hamburgerDialog-container .bd {padding: 0}
+	#hamburgerDialog-container .hd, #hamburgerDialog-container .ft {display: none;}
+	#hamburgerDialog-container .container-close {background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu.png") no-repeat 0 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px; top:0px; left: 75%; position: fixed;margin-top: 5px}
+	.c_code_e #hamburgerDialog-container .container-close {margin-top:5px;background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/slide_menu_e.png") no-repeat 0 0 transparent; cursor:pointer; text-align: left; float:left; height:44px; width: 40px; top:0px; left: 75%; position: fixed;}
+
+
+	#pages_product_motor_container_yourQuote #sales-overlay-one,
+	#quote-call-us,
+	#yourquoteprintsave
+	{display: none;} 
+
+	#sales-overlay-bundle-one {display: none;}
+
+	/* Medium Bundles */
+
+	#pages_product_motor_container_yourQuote .bundle-area .form-background .quoteStepContainer h1 {padding:0;margin-top:0.4em;position:absolute;}	
+
+	.bottom .button label {text-align: left; background: none;}
+
+	fieldset.radio_stack label {
+		width: 70%;
+		float: none;
+	}
+
+	.ncd-proection-radiobutton label, 
+	.excess-protection-radiobutton label  
+	{width: 60%; margin-bottom: 0.5em;}
+
+	#display-option label.viewprice {border: none;}
+
+	#postCodeMessageAnchor, #manualAddressPanel label{
+	background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    display: inline;
+    float: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+    width: auto;}
+
+	.spec-indicator {right:6em;}
+	#monthlySmallPrint {margin-top: 0.2em;}
+
+	/* Breakdown tweeks */
+
+	.bkRadio span {height: 3em}/* CR3711 change*/
+	.full_breakdown fieldset label {min-height: 19em;height:auto;}
+
+	#pages_product_motor_container_yourQuote span.bkRadio {width: 55%}
+	.full_breakdown .description {width: 73%}
+	.full_breakdown a {right: 0.5em}
+
+	.mobileHeading {display: block!important;}
+	.normalHeading {display: none;}
+	
+	/*3D Secure iframe */
+	#pages_product_common_threeDSecure iframe {width:90%!important;}
+
+	/*HCC iframe */
+
+	#pages_product_common_cardInformation.pci #cardDetailsFrame {width: 100%; min-width: 641px;}
+	#pages_product_common_cardInformation.pci #billingDetails {width: 90%}
+	#pages_product_common_cardInformation.pci #billingDetails dt {width: 50%}
+	#pages_product_common_cardInformation.pci #billingDetails dd {width: 40%; margin: 5px 0 0 2em}
+	#pciframe {width: 85%}
+	#pciframe #content-area-bottom input.go-to-next {left: auto; right: 5px;}
+
+	/* Online Journey */
+
+	#bundlePanel.oneOption .slides {background: none;}
+	#bundlePanel.twoOptions .slides {background: none;}
+	#bundlePanel.threeOptions .slides {background: none;}
+	#bundlePanel.fourOptions .slides {background: none;}
+
+	/*Just In Case*/
+
+	#pages_product_home_container_yourQuote #content-area-bottom ul li {width:35.6%;}
+
+	/* upsell modal */
+		
+		.bundleDetailsDialog .upSell.yui-panel .hd {height:0em;}
+		.bundleDetailsDialog .upSell.yui-panel .bd {height: auto;overflow:auto;border:none;}
+		.bundleDetailsDialog .upSell.yui-panel .ft {height:0em;border:none;}
+
+		.bundleDetailsDialog.BK-modal .mod-content ul li,
+		.bundleDetailsDialog.LGL-modal .mod-content ul li,
+		.bundleDetailsDialog.PIB-modal .mod-content ul li,
+		.bundleDetailsDialog.CHC-modal .mod-content ul li,
+		.bundleDetailsDialog.MFC-modal .mod-content ul li,
+		.bundleDetailsDialog.EPC-modal .mod-content ul li,
+		.bundleDetailsDialog.KYC-modal .mod-content ul li
+		 {
+			margin:0;
+			background:url(mob_es_list_arrow.png) no-repeat scroll left 3px transparent !important;
+			/* padding-left:1.2em; */
+		}
+		
+		.bundleDetailsDialog.BK-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.LGL-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.PIB-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.CHC-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.MFC-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.EPC-modal .mod-content ul.select-bundle li,
+		.bundleDetailsDialog.KYC-modal .mod-content ul.select-bundle li {
+			background: none !important;
+		}
+
+
+		
+		.bundleDetailsDialog.BK-modal .mod-content ul,
+		.bundleDetailsDialog.LGL-modal .mod-content ul,
+		.bundleDetailsDialog.PIB-modal .mod-content ul,
+		.bundleDetailsDialog.CHC-modal .mod-content ul,
+		.bundleDetailsDialog.MFC-modal .mod-content ul,
+		.bundleDetailsDialog.EPC-modal .mod-content ul,
+		.bundleDetailsDialog.KYC-modal .mod-content ul {
+			width:94%;
+			margin:0 3% 1em;
+		}
+
+		.bundleDetailsDialog.MFC-modal .main-help-text ul li, 
+		.bundleDetailsDialog.KYC-modal .main-help-text ul li,
+		.bundleDetailsDialog.MFC-modal .mod-content h4, 
+		.bundleDetailsDialog.KYC-modal .mod-content h4 {
+			width:85%;
+		}
+
+
+		ul.select-bundle {width:100% !important; margin:0 !important;}
+		.bundleDetailsDialog .upSell.yui-panel .bd {min-height:auto;}
+
+		.LGL-modal-img, 
+		.PIB-modal-img, 
+		.BK-modal-img, 
+		.CHC-modal-img, 
+		.EPC-modal-img,
+		.MFC-modal-img,
+		.KYC-modal-img{
+			display:none;
+		}
+
+		.bundleDetailsDialog .mod-content ul.select-bundle a,
+		.bundleDetailsDialog .mod-content ul.select-bundle a:hover,
+		.bundleDetailsDialog .mod-content ul.select-bundle a:focus {
+			font-size:16px;
+		}
+
+		.bundleDetailsDialog.BK-modal .mod-content p,
+		.bundleDetailsDialog.LGL-modal .mod-content p,
+		.bundleDetailsDialog.PIB-modal .mod-content p,
+		.bundleDetailsDialog.CHC-modal .mod-content p,
+		.bundleDetailsDialog.EPC-modal .mod-content p,
+		.bundleDetailsDialog.MFC-modal .mod-content p,
+		.bundleDetailsDialog.KYC-modal .mod-content p {
+		width:100%;
+		margin:0.2em;
+		}
+
+		.yui-skin-sam .yui-panel .bd {padding:6px;}
+		.bundleDetailsDialog.upSell .yui-panel  {width:450px;} 
+
+}
+/*end medium*/
+
+@media only screen and (min-width : 955px) {
+
+} 
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) { 
+
+}
+
+
+
+/*! Tablesaw - v2.0.2 - 2015-10-28
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2015 Filament Group; Licensed  */
+
+table.tablesaw {
+  empty-cells: show;
+  max-width: 100%;
+  width: 100%;
+}
+
+.tablesaw {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Structure */
+
+.tablesaw {
+  border: 0;
+  padding: 0;
+}
+
+.tablesaw th,
+.tablesaw td {
+  box-sizing: border-box;
+  padding: .5em .7em;
+}
+
+.tablesaw thead tr:first-child th {
+  padding-top: .9em;
+  padding-bottom: .7em;
+}
+
+/* Table rows have a gray bottom stroke by default */
+
+.tablesaw-stack tbody tr {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.tablesaw-stack td .tablesaw-cell-label,
+.tablesaw-stack th .tablesaw-cell-label {
+  display: none;
+}
+
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+
+@media only all {
+  /* Show the table cells as a block level element */
+
+  .tablesaw-stack td,
+  .tablesaw-stack th {
+    text-align: left;
+    display: block;
+  }
+
+  .tablesaw-stack tr {
+    clear: both;
+   /*  display: table-row; */
+   overflow: auto;
+  }
+
+  /* Make the label elements a percentage width */
+
+  .tablesaw-stack td .tablesaw-cell-label,
+  .tablesaw-stack th .tablesaw-cell-label {
+    display: block;
+    padding: 0 .6em 0 0;
+    width: 50%;
+    display: inline-block;
+  }
+
+  /* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+
+  .tablesaw-stack th .tablesaw-cell-label-top,
+  .tablesaw-stack td .tablesaw-cell-label-top {
+    display: block;
+    padding: .4em 0;
+    margin: .4em 0;
+  }
+
+  .tablesaw-cell-label {
+    display: block;
+  }
+
+  /* Avoid double strokes when stacked */
+
+  .tablesaw-stack tbody th.group {
+    margin-top: -1px;
+  }
+
+  /* Avoid double strokes when stacked */
+
+  .tablesaw-stack th.group b.tablesaw-cell-label {
+    display: none !important;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .tablesaw-stack thead td,
+  .tablesaw-stack thead th {
+    display: none;
+  }
+
+  .tablesaw-stack tbody td,
+  .tablesaw-stack tbody th {
+    clear: left;
+    float: left;
+    width: 100%;
+  }
+
+  .tablesaw-cell-label {
+    vertical-align: top;
+  }
+
+  .tablesaw-cell-content {
+    max-width: 67%;
+    display: inline-block;
+  }
+
+  .tablesaw-stack td:empty,
+  .tablesaw-stack th:empty {
+    display: none;
+  }
+}
+
+/* Media query to show as a standard table at 560px (35em x 16px) or wider */
+
+@media (min-width: 40em) {
+  .tablesaw-stack tr {
+    display: table-row;
+  }
+
+  /* Show the table header rows */
+
+  .tablesaw-stack td,
+  .tablesaw-stack th,
+  .tablesaw-stack thead td,
+  .tablesaw-stack thead th {
+    display: table-cell;
+    margin: 0;
+  }
+
+  /* Hide the labels in each cell */
+
+  .tablesaw-stack td .tablesaw-cell-label,
+  .tablesaw-stack th .tablesaw-cell-label {
+    display: none !important;
+  }
+}

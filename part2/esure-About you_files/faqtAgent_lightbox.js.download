@@ -1,0 +1,280 @@
+function trace(s){if("console" in self&&"log" in console){console.log(s)
+}}var fa_width=850;
+var fa_height=575;
+var synthetix_url="http://help.esure.com/";
+var synthetix_url_mobile="http://help.esure.com/mobile/";
+var lc_width=0;
+var lc_height=0;
+var livechat_url="";
+var livechat_url_mobile="";
+var lc_name="";
+var lc_email="";
+var asWidth=200;
+var mobile_redirection=true;
+var enable_for_chat=true;
+var agent_id="FAQTAGENT-ESURE-MASTER";
+var logging_id="FAQTAGENT-ESURE-ESURE";
+var rss_num=7;
+var fa_view="ES";
+var category="All";
+var vertical_offset=16;
+var esure_knowledge_centre_timeout=3000;
+var esure_knowledge_centre_spinnerOpts={lines:11,length:0,width:5,radius:11,corners:1,rotate:0,direction:1,color:"#000",speed:10,trail:60,shadow:false,hwaccel:false,className:"spinner"};
+var isMobile={Android:function(){return navigator.userAgent.match(/Android/i)
+},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)
+},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)
+},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)
+},Windows:function(){return navigator.userAgent.match(/IEMobile/i)
+},any:function(){return(isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows())
+}};
+if(!sb_windowTools){var sb_windowTools=new Object()
+}sb_windowTools={scrollBarPadding:17,centerElementOnScreen:function(element){var pageDimensions=this.updateDimensions();
+if(element){element.style.top=((this.pageDimensions.verticalOffset()+this.pageDimensions.windowHeight()/2)-(this.scrollBarPadding+element.offsetHeight/2))+vertical_offset+"px";
+element.style.top=element.style.top.substring(0,element.style.top.length-2);
+if(element.style.top<0){element.style.top="20px"
+}element.style.left=((this.pageDimensions.windowWidth()/2)-(this.scrollBarPadding+element.offsetWidth/2))+"px";
+element.style.position="absolute"
+}},updateDimensions:function(){this.updatePageSize();
+this.updateWindowSize();
+this.updateScrollOffset()
+},updatePageSize:function(){var viewportWidth,viewportHeight;
+if(window.innerHeight&&window.scrollMaxY){viewportWidth=document.body.scrollWidth;
+viewportHeight=window.innerHeight+window.scrollMaxY
+}else{if(document.body.scrollHeight>document.body.offsetHeight){viewportWidth=document.body.scrollWidth;
+viewportHeight=document.body.scrollHeight
+}else{viewportWidth=document.body.offsetWidth;
+viewportHeight=document.body.offsetHeight
+}}this.pageSize={viewportWidth:viewportWidth,viewportHeight:viewportHeight}
+},updateWindowSize:function(){var windowWidth=null,windowHeight=null;
+if(self.innerHeight){windowWidth=self.innerWidth;
+windowHeight=self.innerHeight
+}else{if(document.documentElement&&document.documentElement.clientHeight){windowWidth=document.documentElement.clientWidth;
+windowHeight=document.documentElement.clientHeight
+}else{if(document.body){windowWidth=document.body.clientWidth;
+windowHeight=document.body.clientHeight
+}}}this.windowSize={windowWidth:windowWidth,windowHeight:windowHeight}
+},updateScrollOffset:function(){var horizontalOffset=null,verticalOffset=null;
+if(self.pageYOffset){horizontalOffset=self.pageXOffset;
+verticalOffset=self.pageYOffset
+}else{if(document.documentElement&&document.documentElement.scrollTop){horizontalOffset=document.documentElement.scrollLeft;
+verticalOffset=document.documentElement.scrollTop
+}else{if(document.body){horizontalOffset=document.body.scrollLeft;
+verticalOffset=document.body.scrollTop
+}}}this.scrollOffset={horizontalOffset:horizontalOffset,verticalOffset:verticalOffset}
+},pageSize:{},windowSize:{},scrollOffset:{},pageDimensions:{pageWidth:function(){return sb_windowTools.pageSize.viewportWidth>sb_windowTools.windowSize.windowWidth?sb_windowTools.pageSize.viewportWidth:sb_windowTools.windowSize.windowWidth
+},pageHeight:function(){return sb_windowTools.pageSize.viewportHeight>sb_windowTools.windowSize.windowHeight?sb_windowTools.pageSize.viewportHeight:sb_windowTools.windowSize.windowHeight
+},windowWidth:function(){return sb_windowTools.windowSize.windowWidth
+},windowHeight:function(){return sb_windowTools.windowSize.windowHeight
+},horizontalOffset:function(){return sb_windowTools.scrollOffset.horizontalOffset
+},verticalOffset:function(){return sb_windowTools.scrollOffset.verticalOffset
+}}};
+var server_answers="secureanswers.faq-help.com/"+agent_id;
+var server_rss="securefaqs.faq-help.com/"+logging_id;
+var lockTimer;
+var lock_count=0;
+var result_count=0;
+var http_search_lock=false;
+var http_search_queue=new Array();
+var allow_autosuggest_hide=true;
+var rss_popular_content="";
+var agent_on=false;
+$(function(){var rx=/INPUT|SELECT|TEXTAREA/i;
+$(document).bind("keydown keypress",function(e){if((e.which==8)&&(agent_on==true)){if(!rx.test(e.target.tagName)||e.target.disabled||e.target.readOnly){e.preventDefault()
+}}})
+});
+function handlerMM(){if(agent_on==true){sb_windowTools.centerElementOnScreen(document.getElementById("faqtAgent_content"));
+sb_windowTools.centerElementOnScreen(document.getElementById("livechat_content"));
+sb_windowTools.centerElementOnScreen(document.getElementById("livechat_close"));
+document.getElementById("faqtAgent_lightbox").style.height=sx_pageHeight()+"px"
+}}customJQuery(window).bind("resize",function(){handlerMM()
+});
+function show_server_autosuggest_results(){http_search_lock_false();
+if(server_search_results.length>0){document.getElementById("fa_autosuggest").scrollTop=0;
+show_autosuggest();
+aslist="<table width=100% cellpadding=0 cellspacing=0 border=0>";
+for(var x=0;
+x<server_search_results.length;
+x++){search_resultsA=server_search_results[x].split("|");
+aslist+="<tr><td width=4></td><td valign=center class='as_padding' onClick='fa_faq=\""+search_resultsA[1]+'";faqtAgent_lightbox(escape(fa_faq),"label");\' onmouseover=\'this.className = "as_padding_over";\' onmouseout=\'this.className = "as_padding";\'>'+search_resultsA[0]+"</td><td width=4></td></tr>"
+}aslist+="</table>";
+document.getElementById("fa_autosuggest").innerHTML=aslist
+}if(http_search_queue.length>0){http_search_lock_true();
+http_temp=http_search_queue[http_search_queue.length-1];
+http_search_queue=new Array();
+dataAction(http_temp)
+}}function lock_increment(){clearTimeout(lockTimer);
+if(lock_count<10){lock_count++;
+lockTimer=setTimeout("lock_increment()",600)
+}else{http_search_lock=false
+}}function http_search_lock_true(){http_search_lock=true;
+lock_count=0;
+lock_increment()
+}function http_search_lock_false(){clearTimeout(lockTimer);
+http_search_lock=false
+}function hide_autosuggest(){as_on=false;
+document.getElementById("fa_autosuggest").style.visibility="hidden"
+}function show_autosuggest(){as_on=true;
+document.getElementById("fa_autosuggest").style.visibility="visible"
+}function autosuggest(e){if(document.getElementById){var obj=document.getElementById("fa_autosuggest_input");
+if(obj.setAttribute){obj.setAttribute("autocomplete","off")
+}}if(isIE()){document.getElementById("fa_autosuggest").style.width=asWidth+2
+}else{document.getElementById("fa_autosuggest").style.width=asWidth
+}var unicode=e.keyCode?e.keyCode:e.charCode;
+if(unicode!=13){keystring=document.getElementById("fa_autosuggest_input").value;
+if(keystring!=""){if(result_count>0){document.getElementById("fa_autosuggest").scrollTop=0;
+show_autosuggest()
+}}else{if(keystring==""){server_search_results=new Array()
+}hide_autosuggest()
+}if(keystring!=""){if(http_search_lock==false){http_search_lock_true();
+http_search_queue=new Array();
+server_search_results=new Array();
+dataAction("https://"+server_answers+"/fa_autosuggest.php?query="+escape(keystring)+"&category=All&view="+fa_view)
+}else{http_search_queue.push("https://"+server_answers+"/fa_autosuggest.php?query="+escape(keystring)+"&category=All&view="+fa_view)
+}}}}function isIE(){return/msie/i.test(navigator.userAgent)&&!/opera/i.test(navigator.userAgent)
+}function show_popular_cat_rss(){rss_array=rss_popular_content.split("|");
+rss_length=rss_array.length-1;
+if(rss_length>0){faqlist="";
+for(var x=0;
+x<rss_length;
+x+=3){if(rss_array[x]!=""){faqlist+="<li><a href='javascript:void(0)' onClick=\"faqtAgent_lightbox('"+rss_array[x]+"','knowledgeWidget')\">"+rss_array[x+1]+"</a></li>"
+}}document.getElementById("synthetix_widget").innerHTML=faqlist
+}}function get_synthetix_widget_data(){dataAction("https://"+server_answers+"/fa_popular_cat_by_label.php?server_rss="+server_rss+"&preview_length=0&rss_num="+rss_num+"&category="+category)
+}function rand(x,y){return Math.floor(Math.random()*(y-x+1))+x
+}function dataAction(durl){var script=document.createElement("script");
+script.src=durl+"&rand="+rand(1,99999);
+script.type="text/javascript";
+script=document.getElementsByTagName("head")[0].appendChild(script)
+}function faqtAgent_lightbox(fa_query,argument){if(enable_for_chat==true){lc_allowed=false
+}if(fa_query==undefined){fa_query=""
+}if(argument==undefined){argument=""
+}if((isMobile.any())&&(mobile_redirection==true)){if((fa_query=="")&&(argument=="")){window.open(synthetix_url_mobile,"_blank")
+}else{window.open(synthetix_url_mobile+"?"+argument+"="+fa_query,"_blank")
+}}else{if(((fa_query=="")&&(argument==""))||((fa_query=="")&&(argument=="search"))){if(document.all&&!window.opera&&!window.XMLHttpRequest){window.open(synthetix_url+"faqtAgent.html","faqtAgent","top=150,left=350,width="+fa_width+",height="+fa_height+",scrollbars=no,menubar=no,toolbar=no,resizable=no")
+}else{agent_on=true;
+document.getElementById("faqtAgent_lightbox").style.display="block";
+document.getElementById("faqtAgent_lightbox").style.height=sx_pageHeight()+"px";
+document.getElementById("faqtAgent_lightbox").onclick=function(evt){esure_close_faqtAgent_lightbox(evt)
+};
+document.getElementById("faqtAgent_content").style.display="block";
+sb_windowTools.centerElementOnScreen(document.getElementById("faqtAgent_content"));
+document.getElementById("faqtAgent_content").innerHTML="";
+var parentEl=document.getElementById("faqtAgent_content");
+clearContents(parentEl);
+makeFaqtAgent_close(parentEl);
+makeFaqtAgent_frame(parentEl,synthetix_url+"faqtAgent.html",err_url,synthetix_timeout);
+esureClearCkcInput()
+}}else{if(document.all&&!window.opera&&!window.XMLHttpRequest){window.open(synthetix_url+"faqtAgent.html?"+argument+"="+fa_query,"faqtAgent","top=150,left=350,width="+fa_width+",height="+fa_height+",scrollbars=no,menubar=no,toolbar=no,resizable=no")
+}else{agent_on=true;
+document.getElementById("faqtAgent_lightbox").style.display="block";
+document.getElementById("faqtAgent_lightbox").style.height=sx_pageHeight()+"px";
+document.getElementById("faqtAgent_lightbox").onclick=function(evt){esure_close_faqtAgent_lightbox(evt)
+};
+document.getElementById("faqtAgent_content").style.display="block";
+sb_windowTools.centerElementOnScreen(document.getElementById("faqtAgent_content"));
+var parentEl=document.getElementById("faqtAgent_content");
+clearContents(parentEl);
+makeFaqtAgent_close(parentEl);
+makeFaqtAgent_frame(parentEl,synthetix_url+"faqtAgent.html?"+argument+"="+fa_query,err_url,synthetix_timeout);
+esureClearCkcInput()
+}}}}function prefill_lc_cust_details(nm,em){lc_name=encodeURIComponent(nm);
+lc_email=encodeURIComponent(em)
+}function liveChat_lightbox(trigger_text){if(enable_for_chat==true){lc_allowed=false
+}if((isMobile.any())&&(mobile_redirection==true)){window.open(livechat_url_mobile+"lC.html?trigger="+escape(trigger_text)+"&lc_name="+lc_name+"&lc_email="+lc_email,"_blank")
+}else{if(document.all&&!window.opera&&!window.XMLHttpRequest){window.open(livechat_url+"lC.html","liveChat","top=150,left=350,width="+lc_width+",height="+lc_height+",scrollbars=no,menubar=no,toolbar=no,resizable=no")
+}else{agent_on=true;
+document.getElementById("livechat_lightbox").style.height=sx_pageHeight()+"px";
+document.getElementById("livechat_lightbox").style.display="block";
+document.getElementById("livechat_content").style.display="block";
+document.getElementById("livechat_close").innerHTML="<a href='javascript:void(0)' onClick='close_livechat_lightbox()'><img src='"+livechat_url+"images/close_lightbox.png' border=0></a>";
+document.getElementById("livechat_close").style.display="block";
+sb_windowTools.centerElementOnScreen(document.getElementById("livechat_content"));
+sb_windowTools.centerElementOnScreen(document.getElementById("livechat_close"));
+document.getElementById("livechat_content").innerHTML="";
+document.getElementById("livechat_content").innerHTML="<iframe id='livechat_frame' frameborder=0 width="+lc_width+" height="+lc_height+" scrolling=no allowtransparency='true' src='"+livechat_url+"lC.html?trigger="+escape(trigger_text)+"&lc_name="+lc_name+"&lc_email="+lc_email+"'></iframe>"
+}}}function sx_pageHeight(){$.getDocHeight=function(){var D=document;
+return Math.max(Math.max(D.body.scrollHeight,D.documentElement.scrollHeight),Math.max(D.body.offsetHeight,D.documentElement.offsetHeight),Math.max(D.body.clientHeight,D.documentElement.clientHeight))
+};
+return($.getDocHeight())
+}function esure_open_faqtAgent_lightbox(event,aFunction){event=event||window.event;
+faqtAgent_lightbox(escape(document.getElementById("fa_autosuggest_input").value),"search");
+try{if(aFunction!=undefined&&customJQuery.isFunction(aFunction)){aFunction.call(e)
+}else{}}catch(err){}}function esure_close_faqtAgent_lightbox(event){event=event||window.event;
+if(esure_is_outside_faqtAgent_lightbox_content(event)){close_faqtAgent_lightbox()
+}}function esure_is_outside_faqtAgent_lightbox_content(event){event=event||window.event;
+var jqEvt=jQuery(event.target);
+var jqContentAncestor=jqEvt.closest("#faqtAgent_content");
+return !jqContentAncestor.length
+}function esure_close_fa_autosuggest(event){event=event||window.event;
+if(esure_is_outside_fa_autosuggest(event)){hide_autosuggest()
+}}function esure_is_outside_fa_autosuggest(event){event=event||window.event;
+var jqEvt=jQuery(event.target);
+var isAncestorOf_fa_autosuggest_input=jqEvt.closest("#fa_autosuggest_input").length;
+var isAncestorOf_fa_autosuggest=jqEvt.closest("#fa_autosuggest").length;
+return !isAncestorOf_fa_autosuggest_input&&!isAncestorOf_fa_autosuggest
+}function close_faqtAgent_lightbox(){agent_on=false;
+document.getElementById("faqtAgent_frame").src=synthetix_url+"faqtAgent.html";
+document.getElementById("faqtAgent_lightbox").style.display="none";
+document.getElementById("faqtAgent_content").style.display="none";
+document.getElementById("faqtAgent_close").style.display="none"
+}function close_livechat_lightbox(){agent_on=false;
+document.getElementById("livechat_frame").src=livechat_url+"lC.html";
+document.getElementById("livechat_lightbox").style.display="none";
+document.getElementById("livechat_content").style.display="none";
+document.getElementById("livechat_close").style.display="none"
+}function clearContents(parent){parent.innerHTML=""
+}function makeFaqtAgent_close(parent){var div_close=document.createElement("div");
+div_close.setAttribute("id","faqtAgent_close");
+div_close.setAttribute("class","faqtAgent_close");
+var anchor_close=document.createElement("a");
+anchor_close.setAttribute("href","javascript:void(0);");
+if(anchor_close.addEventListener){anchor_close.addEventListener("click",function(){close_faqtAgent_lightbox()
+},false)
+}else{if(anchor_close.attachEvent){anchor_close.attachEvent("onclick",function(){close_faqtAgent_lightbox()
+})
+}}var span_close=document.createElement("span");
+span_close.setAttribute("class","close");
+span_close.appendChild(document.createTextNode("x"));
+anchor_close.appendChild(span_close);
+div_close.appendChild(anchor_close);
+parent.appendChild(div_close)
+}function makeFaqtAgent_frame(parent,url,altUrl,timeoutVal){esure_knowledge_centre_timeout=timeoutVal||esure_knowledge_centre_timeout;
+var ifrm=document.createElement("iframe");
+ifrm.setAttribute("id","faqtAgent_frame");
+ifrm.setAttribute("frameborder","0");
+ifrm.setAttribute("width",fa_width);
+ifrm.setAttribute("height",fa_height);
+ifrm.setAttribute("scrolling","no");
+ifrm.setAttribute("allowtransparency","true");
+ifrm.setAttribute("src",url);
+parent.appendChild(ifrm);
+var jqFaqtAgent_frame=customJQuery(ifrm);
+try{var ifrmDocument=ifrm.contentWindow.document;
+var elLoading=ifrmDocument.createElement("div");
+elLoading.setAttribute("id","loading");
+var jqLoading=customJQuery(elLoading);
+ifrmDocument.body.appendChild(elLoading);
+jqLoading.css("height","100%");
+jqLoading.css("width","100%")
+}catch(err){}jqFaqtAgent_frame.ready(function(){try{var jqTarget=jqFaqtAgent_frame.contents().find("#loading");
+new Spinner(esure_knowledge_centre_spinnerOpts).spin(jqTarget[0])
+}catch(err){}});
+var hasLoaded=false;
+jqFaqtAgent_frame.load(function(){hasLoaded=true
+});
+setTimeout(function(){if(!hasLoaded){ifrm.setAttribute("src",altUrl);
+jqFaqtAgent_frame.load(function(){jqFaqtAgent_frame.contents().find("a[href^='/']").on("click",function(e){e.preventDefault();
+close_faqtAgent_lightbox();
+window.location.href="/"
+})
+})
+}},esure_knowledge_centre_timeout);
+try{customJQuery("#faqtAgent_content")[0].focus()
+}catch(err){}}function openKnowledgeCentreNoSiteCatalyst(){faqtAgent_lightbox("","search")
+}function openKnowledgeCentre(searchTerm){searchTerm="Ask a question...".toUpperCase()===searchTerm.toUpperCase()?"":searchTerm;
+var fa_autosuggest_input_val=escape(searchTerm||"");
+faqtAgent_lightbox(fa_autosuggest_input_val,"search");
+try{knowledgeCentreSiteCatalyst()
+}catch(err){}}function esureClearCkcInput(){try{var jq_fa_autosuggest_input=customJQuery("#fa_autosuggest_input");
+var el_fa_autosuggest_input=jq_fa_autosuggest_input[0];
+el_fa_autosuggest_input.value=""
+}catch(err){}};

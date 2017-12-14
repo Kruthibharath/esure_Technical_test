@@ -1,0 +1,2 @@
+function showHomeClaimsSelectOptionModal(flagYesComp,size){if(customJQuery("#"+flagYesComp).val()==0&&size>0){ESURE.modals.displayModalWindow(selectOptionClaimsModal_Widget)
+}};

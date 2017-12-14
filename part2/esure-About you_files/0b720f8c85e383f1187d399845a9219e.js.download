@@ -1,0 +1,1 @@
+Bootstrapper.bindDOMParsed(function(){var Bootstrapper=window["Bootstrapper"];var ensightenOptions=Bootstrapper.ensightenOptions;window._qevents=window._qevents||[];Bootstrapper.insertScript((document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js");_qevents.push({qacct:"p-gnRpDPc-DwyNV",source:"ENS"})},2123113,498159);

@@ -1,0 +1,92 @@
+/*safari stylesheet*/
+
+
+#general-questions dl dt	{width: 84%}
+
+.c_code_e #pre-footer p{padding-right: 65px;}
+ 
+/*.c_code_l input.add-section, 
+.c_code_l input.add-section-clear, 
+.c_code_l input.add-section:hover, 
+.c_code_l input.add-section-clear:hover, 
+.c_code_l input.add-section:focus,
+.c_code_l input.add-section-clear:focus, 
+.c_code_l  input#changeAddress, 
+.c_code_l  input#findAddress, 
+.c_code_l  ul#claim-conv-btns input 
+ {width: 163px; height: 28px}*/
+ 
+
+ select#cardStartDateYear,
+ select#cardExpiryDateYear
+ {width: 5.3em!important}
+ 
+ .dates input, .ban-points input	{width: 2.8em}
+ 
+ .c_code_l #content-area-main.one_col .content-area-centre input.login_button, 
+ .c_code_f #content-area-main.one_col .content-area-centre input.login_button  
+ {width: 137px}
+ 
+ .c_code_e #content-area-main.one_col #pwdHint, 
+ .c_code_e #content-area-main.one_col #login
+ {width: 132px}
+ 
+.c_code_e #buildings-extra #context-help-select-buildingsAccidentalCoverRequired-panel-helpButton,
+.c_code_e #buildings-extra #context-help-select-buildingsCoverRequired-panel-helpButton
+{right: 0.8em;} 
+.c_code_e #contents-extra #context-help-select-contentsAccidentalCoverRequired-panel-helpButton,
+.c_code_e #contents-extra #context-help-select-contentsCoverRequired-panel-helpButton
+{right: 0.95em}
+
+#payment-optns h2	{margin-bottom: 2em}
+
+.c_code_f #content-area-right ul li a, 
+.c_code_f #content-area-right ul li input, 
+.c_code_f #content-area-right ul li a:hover, 
+.c_code_f #content-area-right ul li input:hover, 
+.c_code_f #content-area-right ul li a:focus, 
+.c_code_f #content-area-right ul li input:focus
+{width: 174px; height: 31px}
+
+#quote-layout hr + ul	{width: 48%; margin-right: 0.625em}
+
+.home-extras	{top: -1em}
+
+#property-dets dl.conviction-conditions dt,
+#general-qs dl.conviction-conditions dt
+{text-align: left; width: 90%}
+
+#property-dets dl.conviction-conditions dd,
+#general-qs dl.conviction-conditions dd
+{padding: 0; width: 5%; text-align: right}
+#xsell-right dl dd input 	{}
+#xsell-right dl dt	{width: 37%}
+
+.c_code_f input.add-section, 
+.c_code_f input.add-section:hover, 
+.c_code_f input.add-section, 
+.c_code_f input.add-section:focus, 
+.c_code_f input.add-section-clear, 
+.c_code_f input.add-section-clear:hover, 
+.c_code_f input.add-section-clear:focus, 
+.c_code_f input#changeAddress, 
+.c_code_f input#findAddress, 
+.c_code_f ul#claim-conv-btns input, 
+.c_code_f ul.claim-conv-btns li input 
+{width: 163px}
+
+input#changeCar	{left: 3px; position: relative;}	
+a#legalOwner-panel-helpButton,
+a#securityDevice-panel-helpButton,
+a#annualMileage-panel-helpButton	{top: 3px; position: absolute}
+a#registeredKeeper-panel-helpButton	{top: 3px}
+.view-details-additional-text	{width: 97.6%}
+
+/*Breakdown cover reasons style*/
+.breakDown.bundleDetailsDialog .breakDownReasons ul li{margin:0px;}
+.breakDown.bundleDetailsDialog .breakDownReasons ul li{margin:12px 0 0 8px;}
+/*CR3323 - END*/
+
+/* HCC changes */
+#pages_product_common_cardInformation.pci dd, #pciframe dd {padding: 0; }
+/*end HCC changes*/

@@ -1,0 +1,1490 @@
+/*================================================================================================================================
+HOME QUOTE CSS
+================================================================================================================================*/
+
+#pages_product_home_container_aboutYourHome .form-background {min-height: 23.8em}
+
+#pages_product_home_container_moreDetailsAboutYourCover .content-area-centre.shorter-area .form-background,
+#pages_product_home_container_aboutYourClaims .content-area-centre.shorter-area .form-background    
+{min-height: 7em}
+
+#pages_product_home_container_aboutYourClaims .content-area-centre .form-background             
+{min-height: 14.5em}
+
+#pages_product_home_container_moreDetailsAboutYourCover .content-area-centre .form-background
+{min-height: 14.5em}
+
+#pages_product_home_container_excessesAndEndorsements .form-background,
+#pages_product_home_container_paymentOptionsSummaryView .form-background
+{min-height:  24.6em}
+
+#home-abt-decs      {width: 97%;  color: #FFF; margin: 1em auto; padding: 0.625em 0;}
+#home-abt-decs a    {color: #FFF}
+
+/* ================================================================================================================================
+error messages
+================================================================================================================================*/
+
+#pages_product_home_container_quoteDetails #quote-layout .declarations .error   {width: 93%; top: -1em; margin-bottom: 2em} 
+#pages_product_motor_container_renewal_confirmDetails .declarations .error      {width: 41.6em}
+#home-abt-decs .error   {width: 90%; margin: 0.9em 2%; font-size: 0.68em}
+
+* html #home-abt-decs .error    {top: 0}
+
+/*================================================================================================================================
+more details page
+================================================================================================================================*/
+
+#manualAddressPanel dd      {float: right; width: 47%;}
+#manualAddressPanel p       {padding: 0.625em 0}
+#manualAddressToggle a      {text-decoration: none}
+#manualAddressPanel dt                  {clear: both}
+#manualAddressPanel input#findAddress   {margin-top: 2em}
+
+#pages_product_home_container_moreDetailsAboutYourCover #manualAddressPanel dd  {margin-top: 0}
+#pages_product_home_container_moreDetailsAboutYourCover #manualAddressPanel input#findAddress   {margin-top: 0}
+
+* html #manualAddressPanel .address-lookup      {height: 1%; clear: both;width: 100%}
+* html #manualAddressPanel dt   {width: 45%; }
+* html #manualAddressPanel dd   {width: 45%; position: relative; top: -20px; left: 50%}
+* html #manualAddressPanel p    {margin: 0}
+
+#pages_product_home_container_yourJointPolicyholder .form-background    {min-height: 22.55em}
+#pages_product_home_container_aboutYourClaims #claimDetails dt          {width: 30%; clear: left}
+#pages_product_home_container_aboutYourClaims #claimDetails dd          {width: 66%;}
+
+input#claimAmount   {width: 32%}
+
+input#clearClaimButton,
+input#updateClaimButton, 
+input#addClaimButton    
+{width: 43.5%}
+
+.c_code_l input#clearClaimButton,
+.c_code_l input#updateClaimButton, 
+.c_code_l input#addClaimButton
+{width: 44%}
+
+/*family protection*/
+dl.dl-home-one          {margin: 20px}
+.dl-home-one dt input   {width: 1em; float: left; margin: 0 10px 0 0}   
+.dl-home-one dt         {width: 70%; height: 2em; text-align: left}
+.dl-home-one dd         {width: 25%}
+
+/*current insurer */
+dl#current-insurer          {width: auto;}
+#current-insurer dt         {float: left; width: 40%}
+#current-insurer dd         {width: 55%; float: left}
+/* #current-insurer dd select  {width: 90%} */
+
+/*current insurer - i am a first time buyer*/
+/* #firstTimeBuyerPanel dl dt  {width: 30%} */
+/* #firstTimeBuyerPanel dl dd  {width:  67%} */
+
+/*sorts out the fact that an anchor is in the dd*/
+a#manualAddressToggle2 input,
+a#manualAddressToggle input 
+{margin: 2% 2% 2% 3%; width: 11.9em}/*OK FF*/
+
+a#manualAddressToggle2,
+a#manualAddressToggle               
+{position: relative; height: inherit; width: 22em; right: 0}
+
+.c_code_l a#manualAddressToggle2 input, 
+.c_code_l a#manualAddressToggle input{ padding-top: 3px;width: 164px;}	
+
+#pages_product_home_container_protectYourHome .form-background  {min-height: 20em}
+
+#pages_product_home_container_yourQuote .content-area-centre:after,
+#pages_product_home_container_yourQuote .form-background:after  
+{content: "."; display: block; height: 0; clear: both; visibility: hidden}
+
+* html #pages_product_home_container_yourQuote .shorter-area .form-background       {height: 9em}
+#pages_product_home_container_yourQuote .shorter-area .content-btm-right            {display: none!important}
+#pages_product_home_container_yourQuote .content-area-centre .content-btm-right     {display: inherit}
+#pages_product_home_container_yourQuote .content-area-centre                        {margin-bottom: 0.625em; margin-left: 5px;}
+#pages_product_home_container_yourQuote #content-area-bottom ul                     {margin-top: 0; padding: 0}
+
+#buildingsCoversExtras              {display: block; position: relative; padding-bottom: 1em; height: 1%}
+#buildingsCoversExtras p            {position: relative;}
+#buildingsCoversExtras fieldset     {height: 8.4em}
+
+#pages_product_home_container_quoteDetails .conviction-conditions       {clear: both; width: 89%;}
+#pages_product_home_container_quoteDetails dl.conviction-conditions dt  {font-weight:400; margin:-6px 1em 0pt 0pt; text-align:left; width:87%; line-height: 130%; padding: 8px 0}
+#pages_product_home_container_quoteDetails dl.conviction-conditions dd  {text-align: center; width: 9%}
+
+#container {margin: 1em auto 0}
+
+/*buttons that look like links*/
+input#excessesButton    {width: 17.6em}
+input#excessesButton:hover,
+input#excessesButton:focus{text-decoration: none}
+
+/*================================================================================================================================
+specified items table
+================================================================================================================================*/
+#specifiied-items  dt   {clear:left;}
+#itemValueLabel         {display: block}
+#itemValueLabel + span  {font-weight: 400;}
+
+.specified-info-table               {float:left;clear: both; width: 66%; border: 1px solid #EAEAEA; margin: 1em auto}
+.specified-info-table tr td         {vertical-align: middle; text-align: center; border-right: 1px solid; border-bottom: 1px solid; border-color: #EAEAEA; padding: 5px 0}
+.specified-info-table thead         {background: #EAEAEA; height: 2.5em}
+.specified-info-table thead th      {vertical-align: middle; font-weight: 700; text-align: center}
+.specified-info-table .left-col     {width: 11em}
+.specified-info-table .mid-col      {width: 142px; vertical-align: middle; padding: 5px;}
+.specified-info-table .mid-col-2    {width: 50px}
+.specified-info-table .right-col    {width: 130px; vertical-align: middle;}
+
+.specified-info-table .right-col ul     {margin-left: 25px; width: auto;}
+.specified-info-table .right-col ul li  {float: left; margin: 0 0.3125em 0 0}
+
+.specified-info-table ul li input.edit, 
+.specified-info-table ul li input.delete { 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: block; 
+    height: 1.8em;
+    padding-top:2px;
+    width: 5em; 
+    text-align: center; 
+    text-decoration:none;  
+    margin: 2px 5px 0 0; 
+    font-size: 1.7em;
+    color:#fff;}
+
+    .additional-info-table ul li a.delete,
+    .additional-info-table ul li a.edit {
+        width: 96%;
+        padding: 5px;
+        color: #fff;
+        display: block;
+        box-sizing: border-box;
+
+    }
+
+    table#claims td {
+        text-align: left;
+    }
+
+    table#claims td::before {
+        padding-left: 0;
+    }
+
+    .specified-info-table ul li input.edit:hover, 
+    .specified-info-table ul li input.delete:hover,
+    input.add-section:hover{
+      text-decoration:underline;
+      cursor:pointer;}
+
+      #contents-extra label,
+      #buildings-extra label{display: inline-block; font-weight: 700; text-align: right;  width: 23%}
+
+      #contents-extra li,
+      #buildings-extra li{margin: 0.5% 0; position: static; width: 99%;}
+
+      .home-protection        {text-align: right; width: 60.8%; margin-top: 0.5em; font-size: 1.0625em;}
+      dt p                    {font-weight: 400}
+      .quote-extra-dl dt      {width: 60%}
+      .quote-extra-dl dd      {width: 35%}
+
+      #contents-extra li span input, 
+      #buildings-extra span input 
+      {position: relative; left: 2%}
+
+      .home-extras                {padding-top: 0.312em; font-weight: 400; position: relative; top: -0.4em}
+      span#contentsCoversExtras   {padding-bottom: 1em; display: block; height: 1%}
+      a#linkWhatIsASpecfiedItem   {position: relative; left: 0; float: right}
+
+      /*percent cos the em calculations was a well hard*/
+      .c_code_e a#context-help-select-contentsCoverRequired-panel-helpButton,
+      .c_code_e a#context-help-select-contentsAccidentalCoverRequired-panel-helpButton
+      {right: 2.2%}/*good sw home*/
+
+      * html .c_code_e a#context-help-select-contentsCoverRequired-panel-helpButton,
+      * html .c_code_e a#context-help-select-contentsAccidentalCoverRequired-panel-helpButton
+      {right: 2.9%}/*good sw home*/
+
+/*================================================================================================================================
+joint policy holder page
+================================================================================================================================*/
+.joint-policy {width: 235px; height: 42px; display: block; background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_buttons.jpg") no-repeat -5px -373px; font-size: 2.2em; 
+    font-weight: 400; text-decoration: none; color: #FFF; padding-bottom: 0.1875em; text-indent: 0; float: right; cursor: pointer; border: none; text-align: center}
+    .joint-policy:hover {background: transparent url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_buttons.jpg") no-repeat scroll -244px -373px; text-decoration: underline}
+
+/* ================================================================================================================================
+more details page
+================================================================================================================================*/
+#pages_product_home_container_moreDetailsAboutYourCover #stImgForCarFindAddress-status  {top: 2.6em}
+#pages_product_home_container_moreDetailsAboutYourCover .current-address-is-display     {margin-bottom: 1.625em}
+
+/*================================================================================================================================
+specified items
+================================================================================================================================*/
+#item-type select           {width: 15.25em}
+* html #item-type select    {width: 15.5em}
+
+/*this is for the ajax animation next to the specified item radio buttons in the main page*/
+.spec-indicator                 {position: absolute; top: 0.1em; right: 13em} 
+#stImgForCarFindAddress-status  {top: 0.8em}
+
+.home-spec-items    {position: absolute; right: 6em}
+
+img#stImgForUpSpecifiedItems-status, 
+img#stImgForAddSpecifiedItems-status
+{top: 0.2em}
+
+/*================================================================================================================================
+home about you
+================================================================================================================================*/
+#pages_product_home_container_aboutYou .home-spec-items {top: 5px;left:17em;}
+
+#buildingVoluntaryExcess    {width: 30%}
+#context-help-buildingVoluntaryExcess-panel-helpButton,
+#context-help-buildingUnlimited-panel-helpButton
+{right: 0.8em}
+#pages_product_home_container_aboutYou #next {
+    float: right;
+}
+
+/*================================================================================================================================
+excesses and endorsements
+================================================================================================================================*/
+#pages_product_home_container_excessesAndEndorsements .form-background ul   {margin: 0.625em; padding-bottom: 15px;}
+#security-reqs          {list-style: disc; margin-left: 40px}
+#security-reqs li       {margin: 10px 0 0 20px; line-height: 135%; border-bottom: none!important}
+#security-reqs li ol    {margin: 5px 0 10px 25px}
+#security-reqs li ol li {margin: 4px 0; line-height: 135%; list-style: lower-alpha} 
+
+#alarms         {list-style: disc; margin-left: 40px; z-index: 150; }
+#alarms li      {margin: 10px 0 0 20px; line-height: 135%; border-bottom: none!important;}
+#alarms li ol   {list-style: lower-alpha; margin: 5px 0 10px 25px}
+
+/*================================================================================================================================
+quote dettails
+================================================================================================================================*/
+
+/*confirm my details page*/
+#pages_product_motor_container_renewal_confirmDetails .declarations dl          {width: 100%; margin: 10px auto; height: 17em}
+#pages_product_motor_container_renewal_confirmDetails .declarations dl dt input {width: 1em; }  
+#pages_product_motor_container_renewal_confirmDetails .declarations dl dt       {width: 5%; margin: 0.625em 0}
+#pages_product_motor_container_renewal_confirmDetails .declarations dl dd       {width: 95%; margin: -30px 0 0 32px}
+
+.full-span-list     {clear: both; width: 100%;}
+.quote-h4           {font-weight: 700; font-size: 1.3em; color: #025E8D; margin: 0 0 0.5em 1.25em}
+
+#pages_product_home_container_yourQuote #agg-message                {width: 100%; clear: both; position: relative; top: 0; padding-left: 0}
+.c_code_l#pages_product_home_container_yourQuote #agg-message       {min-height: 4em}
+.c_code_l#pages_product_common_paymentOptions #email-pack input:hover   {color: #f69!important}
+/*fixes a dodgy couple of id's on the home claims page*/
+#claimAmountMessage,
+#claimDateMessage{display: block}
+
+#property-dets h2,
+#general-qs h2{margin-bottom: 0.5em}
+
+/* 3324 changes */
+.c_code_e #pages_product_common_paymentOptions #footer,
+.c_code_e #pages_product_common_cardInformation #footer,
+.c_code_e #pages_product_common_directDebitInformation #footer{background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/eshome_footer.png") no-repeat right bottom #FFFFFF;}
+#benefits{color:#FFFFFF; height: auto;}
+
+#benefits p{margin: 0 7px;}
+#benefits ul {margin: 10px 7px 4px;}
+
+#pages_product_home_container_yourQuote #contents-extra li,#pages_product_home_container_yourQuote #buildings-extra li{margin-bottom:5px;}
+
+#pages_product_home_container_yourQuote #benefits ul li,
+#pages_product_home_container_yourCover #benefits ul li{background: none repeat scroll 0 0 transparent;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-bottom: 0;
+    margin-left: 14px;
+    margin-top: 5px;
+    padding: 0; }
+
+    #content-area-main {padding: 0}
+    #navigation-area-left {display:none;}
+
+/*--------------------------------------------------
+Drop 3 home Travel Add-On CR3448
+----------------------------------------------------*/
+
+/*tables in modals styling*/
+.mod-content table {border: solid 1px #BDCADF;}
+.mod-content thead {padding:0;}
+.mod-content table td {border:0;}
+.mod-content table tr td+td {font-weight: 700; width:40%;padding:0.625em;}
+.mod-content table tr:nth-of-type(odd) {background: #BDCADF;}
+.mod-content table th {border: none;background:#fff;font-size: 1.1em;}
+
+.error {float:left;width:75%;position: static;}
+#pages_product_home_container_yourCover .error {width:45%;}
+
+
+#your-details dd, #your-cover dd {-ms-word-break: break-all;word-break:break-all;}
+
+#content-area-right {margin: 0 10px;}
+#content-area-main {width: 77%;}
+
+input[type="checkbox"] {width:auto;height:auto;}
+input#printQuote, input#saveQuote, #content-area-right ul li input {height:38px;width:178px;}
+
+
+/*--------------------------------------------------
+header agg and headline changes
+----------------------------------------------------*/
+#header .aggimage {margin-top:1.5em;}
+/* #agg-message > img {margin-top:1.5em;} */
+
+/*--------------------------------------------------
+headline text
+----------------------------------------------------*/
+#headline {width:100%;float:right;text-align: right;font-size:80%;}
+#headline_direct {
+    float: left;
+    font-size: 80%;
+    position: relative;
+    text-align: left;
+    top: -38px;
+    width: 60%;
+    visibility: hidden}/*direct temp*/
+
+    .message-one {padding: 17px 35px 5px;}
+    .message-two {padding:0;}
+
+    #pages_product_home_container_yourQuote #headline {padding-right:265px;}
+    #pages_product_home_container_yourQuote .message-one-agg {background: none;  padding: 10px 25px 5px;}
+    #agg-image-sm {text-align: center}/*agg quote page only*/
+
+/*--------------------------------------------------
+hover and dialog styles/changes to other pages
+----------------------------------------------------*/
+
+#buildings-extra label, #contents-extra label  {float:left;text-align:center;line-height: 1.2;}
+
+#radio_buildingsCovers_0, #radio_contentsCovers_0,
+#radio_buildingsCovers_1, #radio_contentsCovers_1,
+#radio_buildingsCovers_2,  #radio_contentsCovers_2{display: block;height: 2.5em;}
+
+#description_buildingsCovers_0, #description_contentsCovers_0,
+#description_buildingsCovers_1, #description_contentsCovers_1,
+#description_buildingsCovers_2, #description_contentsCovers_2{display: block;height: 4em;}
+
+.toolhover:before {
+    content:" ";
+    position:absolute;
+    z-index:-1px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border:1px solid #fff;}
+
+    .toolhover, .toolhover:active, .toolhover:focus {
+        position:relative;
+        border-top:1px solid #F5F5F5;
+        margin:0;
+        padding:8px 5px;
+        background-color:#Fff;
+        -moz-transition:all .2s ease-out;
+        -webkit-transition:all .2s ease-out;
+        -o-transition:all .2s ease-out;
+        transition:all .2s ease-out;
+        cursor: pointer;}
+
+        #pages_product_home_container_yourCover fieldset {
+            cursor:pointer;
+        }
+        #pages_product_home_container_yourCover label {
+            cursor:pointer;
+        }
+
+        #specified-radio label {
+         border-radius: 4px;
+         padding:1.5em 3em;
+
+     }
+
+     .declarations, #renewal-declarations, #home-abt-decs {-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+
+     #tooltip_bsi, #tooltip_si, #tooltip_fwl, #tooltip_iv, #tooltip_wpv, #tooltip_creda, #tooltip_paya, #tooltip_icbsap, #tooltip_joint_dob {border-bottom: 1px solid #F5F5F5;}
+
+     .toolhover:focus {
+        cursor:pointer;
+        -moz-transition:all .2s ease-in;
+        -webkit-transition:all .2s ease-in;
+        -o-transition:all .2s ease-in;
+        transition:all .2s ease-in;}
+
+        .on {cursor:pointer;}
+
+        .shorter-area .form-background,.form-background {
+            background:none repeat scroll 0 0 #FFF !important;}
+
+            .qtip_content {display:none;}
+            .qtip_content p {font-size:1em;}
+            .qtip_content h2{font-size:1em; margin-right: 0.5em;font-family:Verdana,Arial,Helvetica,sans-serif;font-weight: 900;}
+            .qtip-esure .qtip-icon {display:none;} 
+
+            .c_code_l .tooltip {
+                background:url(sw_help_i.png) no-repeat scroll 98% 10% transparent;
+   /*  height:21px;
+    position:absolute;
+    right:1%;
+    top:10%;
+    width:21px; */
+}
+
+.c_code_e .tooltip {
+    background:url(help_i.png) no-repeat scroll 98% 10% transparent;
+   /*  height:21px;
+    position:absolute;
+    right:1%;
+    top:10%;
+    width:21px; */
+}
+
+/*below was in master but as home is changing it may as well go in home css*/
+input#changeAddress, 
+input#findAddress,  
+input.add-section-clear,
+input.find-addr {width: 40%;}
+input.add-section {width: 56%;}
+select#sourceCode {width:57%;}
+input, input#itemDescription,input#itemValue, input#contentAway, input#contentHome {width:55%;} 
+select#contentVolExcess, select#buildingVoluntaryExcess, #item-type select {width: 57%;}
+input#addSpecifiedItemsButton {margin: 0.8em 0 0 0.8em !important ;}
+
+dt.si_button {margin:0;}
+dt {width: 40%; clear:both;}
+dd {width: 40%;}
+select {width: 45%;} 
+#pages_product_home_container_yourCover select {width: 57%;}
+.content-area-centre.shorter-area.home-prem {border: medium none;}
+
+#specified-radio + dt {
+	font-size: 90%;
+	font-weight: 400;
+	padding-left: 10px;
+	width: 39%;
+	text-align:right;
+	clear:both;}
+
+    /*HCC iframe */
+/* 
+#pages_product_common_cardInformation.pci #cardDetailsFrame {width: 100%; left:0; height: 693px;position:absolute;} */
+#pages_product_common_cardInformation.pci #content-area-bottom input.back-btn {margin-bottom: 75px; }
+
+/*     #pciframe {width: 100% !important; text-align: left;} */
+
+
+#pciframe #content-area-bottom input.go-to-next {left: 0}
+#pages_product_common_cardInformation.pci #billingDetails dd {margin: 3px 12px;}
+#pages_product_common_cardInformation.pci input#amendCardDetailsButton { position: relative; left:70%; bottom: 4em}
+#pciframe img {margin-left: 1em;}
+#picframe {width: 100%;}
+#pciframe #paymentForm fieldset {width: 100%;}
+#pciframe select {width: 85%;}
+#pciframe input {width: 83%;} 
+#pciframe select[name="exp_month"], #pciframe select[name="exp_year"] {
+    width: 41% !important;}
+
+    /* pci buy button */
+    #pciframe #content-area-bottom input.go-to-next {
+        bottom: 20px !important;
+        left: 57%;
+        position: absolute;
+        padding-right: 2%;}
+
+/*--------------------------------------------------
+new quote page intro styles
+----------------------------------------------------*/
+#pages_product_home_container_yourQuote #quote-intro {
+    height: auto;
+    min-height: 175px;
+    padding: 0;
+    margin-bottom: 0.5em;}
+
+    .intro-area h1 {
+        padding-bottom:0;
+        margin-bottom: 0.2em;
+        padding-right: 165px;}
+
+        .intro-area p {padding-right: 165px;margin:0;}
+
+/*--------------------------------------------------
+new quote page policy area styles
+----------------------------------------------------*/
+.policy-area h1 {
+    padding-bottom:0;
+    margin-bottom: 0.2em;}
+    .policy-area p {;margin:0; color: #444;}
+    .policy-link {border-bottom: 1px solid #D2D6D8;
+        float: right;
+        text-align: right;
+        width: 100%;
+        margin: 1% 0;
+        padding:0 0 8px;}
+        .policy-link a {margin-right:3%;}
+
+/*--------------------------------------------------
+new quote page policy includes/boost/inputs
+----------------------------------------------------*/
+
+#extra-cover.section-titles {clear:both;position: relative;}
+#extra-cover.section-titles h1, #extra-cover.section-titles p {margin:0.2em 0; padding-left:14%;}
+
+ul.includes {width: 45%; float:left;list-style: disc outside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/policy_tick.png");margin: 0 0 0 5%;color: #444;}
+.includes li {border-bottom:1px solid #F0F0F0;padding:6px 0;height: 3.3em;}
+
+/* #view-details {padding:0 !important;} */
+p#prem-small-print {margin-top:3px;}
+dl.top-premium-panels {margin-bottom: 10px;}
+
+#home-addons h2 , #home-addons h3{
+    text-align: left;
+    padding: 12px 7px;
+    margin: 0;
+    font-size:1em;
+    min-height: 1.2em;
+    height:auto;}
+
+    #tile-area h2 label, #tile-area h3 label {cursor: pointer;}
+
+    #home-addons h3 {font-size: 0.9em;height: 1em;}
+    #home-addons h2 .price, #home-addons h3 .price {float: right;}
+    #home-addons {background: none; color: #444;}
+
+    #home-addons #travel,
+    #home-addons #pest,
+    #home-addons #flp,
+    #home-addons #home-emergency,
+    #home-addons #winter {
+        float: left;
+        margin: 0.5%;
+        width: 49%;
+        background-repeat: no-repeat;
+        background-position: 0.4em bottom;}
+
+        #home-addons #winter { 
+            width:49%;
+            min-height: 10.5em;
+            clear:left;
+            position: relative;}
+
+            #home-addons #travel {
+                background-position: left 8em;
+                float:left;
+                margin:0.5% 0.5% 0 0.5%;
+                width:49%;}
+
+                #home-addons fieldset div#pest {float:right;} 
+                #home-addons #flp, #home-addons #home-emergency, #home-addons #travel, #home-addons #pest{min-height: 400px;}
+                #home-addons #extra-tile {float:left;position:relative;display:none;}
+                #home-addons #extra-tile h3 {background: transparent;}
+                #home-addons #winter{clear: left;}
+
+                #price-recal {
+                    background:#F4F4F4;
+                    -webkit-border-radius:3px;
+                    -moz-border-radius:3px;
+                    border-radius:3px;
+                    padding:5px;
+                    margin:10px 3px 10px;}
+
+                    #price-recal label {
+                        background: #fff;
+                        border-radius: 4px;
+                        margin-right: 0.5em;
+                        font-size:.7em;
+                        padding:0 2em 0 0;
+                        display:block;
+                        float: left;
+                        /* For IE 7 this can be moved to the ie 7 stylesheet with merge*/
+                        zoom:1;}
+
+                         #price-recal label input[type="radio"] {
+                            display: inline-block;
+
+                         }
+
+                        input#topRecalculateDisabled, input#topRecalculateActive {
+                            float:right;
+                            font-size:1em;
+                            height:30px;
+                            color:#fff;
+                            width:125px;
+                            border:none;
+                            cursor:pointer;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            border-radius: 5px;}
+
+                            input#topRecalculateActive{
+                                background: #D82A15; /* Old browsers */
+                                background: -moz-linear-gradient(top,  #D82A15 0%, #EC5746 100%); /* FF3.6+ */
+                                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D82A15), color-stop(100%,#EC5746)); /* Chrome,Safari4+ */
+                                background: -webkit-linear-gradient(top,  #D82A15 0%,#EC5746 100%); /* Chrome10+,Safari5.1+ */
+                                background: -o-linear-gradient(top,  #D82A15 0%,#EC5746 100%); /* Opera 11.10+ */
+                                background: -ms-linear-gradient(top,  #D82A15 0%,#EC5746 100%); /* IE10+ */
+                                background: linear-gradient(to bottom,  #D82A15 0%,#EC5746 100%); /* W3C */
+                                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D82A15', endColorstr='#EC5746',GradientType=0 ); /* IE6-9 */
+                                border:1px solid #9A5452;
+                                -webkit-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                -moz-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                box-shadow: 0 1px 0 0 #F4F4F4 inset;}
+
+                                input#topRecalculateActive:hover {
+                                    background: #D82A15; /* Old browsers */
+                                    background: -moz-linear-gradient(top,  #EC5746 0%, #D82A15 100%); /* FF3.6+ */
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EC5746), color-stop(100%,#D82A15)); /* Chrome,Safari4+ */
+                                    background: -webkit-linear-gradient(top,  #EC5746 0%,#D82A15 100%); /* Chrome10+,Safari5.1+ */
+                                    background: -o-linear-gradient(top,  #EC5746 0%,#D82A15 100%); /* Opera 11.10+ */
+                                    background: -ms-linear-gradient(top,  #EC5746 0%,#D82A15 100%); /* IE10+ */
+                                    background: linear-gradient(to bottom,  #EC5746 0%,#D82A15 100%); /* W3C */
+                                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EC5746', endColorstr='#D82A15',GradientType=0 ); /* IE6-9 */}
+
+                                input#topRecalculateDisabled, #nextDisabled, #recalculateDisabled {
+                                    background: #dddddd; /* Old browsers */
+                                    background: -moz-linear-gradient(top,  #dddddd 0%, #c3c3c3 100%); /* FF3.6+ */
+                                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#c3c3c3)); /* Chrome,Safari4+ */
+                                    background: -webkit-linear-gradient(top,  #dddddd 0%,#c3c3c3 100%); /* Chrome10+,Safari5.1+ */
+                                    background: -o-linear-gradient(top,  #dddddd 0%,#c3c3c3 100%); /* Opera 11.10+ */
+                                    background: -ms-linear-gradient(top,  #dddddd 0%,#c3c3c3 100%); /* IE10+ */
+                                    background: linear-gradient(to bottom,  #dddddd 0%,#c3c3c3 100%); /* W3C */
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#c3c3c3',GradientType=0 ); /* IE6-9 */
+                                    border:1px solid #aaa;
+                                    -webkit-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                    -moz-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                    box-shadow: 0 1px 0 0 #F4F4F4 inset;}
+
+                                    input#topRecalculateDisabled:hover, #nextDisabled:hover, #recalculateDisabled:hover {
+                                        background: -moz-linear-gradient(top,  #c3c3c3 0%, #ddd 100%); /* FF3.6+ */
+                                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3c3c3), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+                                        background: -webkit-linear-gradient(top,  #c3c3c3 0%,#ddd 100%); /* Chrome10+,Safari5.1+ */
+                                        background: -o-linear-gradient(top,  #c3c3c3 0%,#ddd 100%); /* Opera 11.10+ */
+                                        background: -ms-linear-gradient(top,  #c3c3c3 0%,#ddd 100%); /* IE10+ */
+                                        background: linear-gradient(to bottom,  #c3c3c3 0%,#ddd 100%); /* W3C */
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c3', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */}
+
+                                    #topRecalcButtonRegion {position: absolute; right: 0;}
+
+                                    @media only screen and (max-width:640px) {
+                                      #topRecalcButtonRegion {
+                                        position: static
+                                      }
+                                    }
+                                     /* temp fix for mobile when prices replaced FREE */
+                                    #home-addons .price .per-value {font-size:11px;margin-left:1px;}
+
+                                    #tile-area ul {
+                                        color:#444;
+                                        line-height:1.9em;
+                                        font-size:.7em;
+                                        list-style:disc outside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/small_tick.png");
+                                        margin:0 2% 0 40%;
+                                        margin:0 2% 0 40%;}
+
+                                        #tile-area #travel ul{line-height: 1.6em;}
+                                        p.attention{margin: 3% 2% 12% 38% !important;font-weight: 700;}
+                                        p.attention-travel{margin: 7% 2% 4% 3% !important;font-weight: 500;}
+                                        span.intro {font-weight: normal;}
+                                        #tile-area {width: 100%;height:425px}
+
+                                        #home-addons p.intro {padding-left: 0;}
+                                        #home-addons fieldset div#pest {float:right;position: relative;}
+                                        #home-addons fieldset div#travel, 
+                                        #home-addons fieldset div#home-emergency,
+                                        #home-addons fieldset div#flp{float:left;position: relative;}
+                                        #home-addons fieldset div#winter {background-position: 0.8em 3.5em; background-repeat: no-repeat;}
+                                        #winter > p {margin-left:70px;}
+
+                                        p.policy-details,
+                                        p.policy-details-travel {
+                                            margin: 0.75em !important;
+                                            position: absolute;
+                                            bottom: 0;
+                                            right: 0;}
+
+                                            p.policy-details a, p.policy-details-travel a, .tile-link {font-weight: 500;font-size:100%;}
+                                            #tile-area input{cursor:pointer;}
+
+                                            /*modals*/
+                                            .yui-skin-sam .yui-panel .hd {font-size:100%;}
+
+                                            #home-addons .helpDialog  h3 {
+                                                background: none;
+                                                font-size: 1.3em;
+                                                line-height: 1.1em;}
+
+                                                #home-addons .helpDialog  h4 {
+                                                    background: none;
+                                                    font-size: 0.8em;
+                                                    line-height: 0.8em;
+                                                    font-weight: normal;}
+
+                                                    ul#btn-area  {height:4.5em;}
+
+                                                    #btn-area .right-but,  #btn-area .left-but {
+                                                     background-color: #fff;
+                                                     margin: 1em 0;}
+
+                                                     #btn-area .right-but {float:right;}
+                                                     #btn-area .left-but {float:left;}
+
+                                                     .right-but a.close-btn {
+                                                        background: #D82A15; /* Old browsers */
+                                                        background: -moz-linear-gradient(top,  #D82A15 0%, #EC5746 100%); /* FF3.6+ */
+                                                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D82A15), color-stop(100%,#EC5746)); /* Chrome,Safari4+ */
+                                                        background: -webkit-linear-gradient(top,  #D82A15 0%,#EC5746 100%); /* Chrome10+,Safari5.1+ */
+                                                        background: -o-linear-gradient(top,  #D82A15 0%,#EC5746 100%); /* Opera 11.10+ */
+                                                        background: -ms-linear-gradient(top,  #D82A15 0%,#EC5746 100%); /* IE10+ */
+                                                        background: linear-gradient(to bottom,  #D82A15 0%,#EC5746 100%); /* W3C */
+                                                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D82A15', endColorstr='#EC5746',GradientType=0 ); /* IE6-9 */
+                                                        text-shadow: 0px -1px 1px #970400; width: 7.2em; height: 1.9em;
+                                                        -webkit-border-radius: 5px;
+                                                        -moz-border-radius: 5px;
+                                                        border-radius: 5px;
+                                                        border:1px solid #aaa !important;
+                                                        -webkit-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                                        -moz-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                                        box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                                        display: block;
+                                                        text-align: center;
+                                                        font-size:1.6em;
+                                                        line-height:1.9em;
+                                                        height:1.9em;
+                                                        text-decoration: none;
+                                                        color:#fff;
+                                                        width:8.5em;}
+
+                                                        .right-but a.close-btn:hover,
+                                                        .right-but a.close-btn:focus {
+                                                            background: #D82A15; /* Old browsers */
+                                                            background: -moz-linear-gradient(top,  #EC5746 0%, #D82A15 100%); /* FF3.6+ */
+                                                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EC5746), color-stop(100%,#D82A15)); /* Chrome,Safari4+ */
+                                                            background: -webkit-linear-gradient(top,  #EC5746 0%,#D82A15 100%); /* Chrome10+,Safari5.1+ */
+                                                            background: -o-linear-gradient(top,  #EC5746 0%,#D82A15 100%); /* Opera 11.10+ */
+                                                            background: -ms-linear-gradient(top,  #EC5746 0%,#D82A15 100%); /* IE10+ */
+                                                            background: linear-gradient(to bottom,  #EC5746 0%,#D82A15 100%); /* W3C */
+                                                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EC5746', endColorstr='#D82A15',GradientType=0 ); /* IE6-9 */}
+
+
+                                                        .right-but a.continue-btn {
+                                                            background: #a5c89f; /* Old browsers */
+                                                            background: -moz-linear-gradient(top,  #a5c89f 0%, #78ae71 100%); /* FF3.6+ */
+                                                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5c89f), color-stop(100%,#78ae71)); /* Chrome,Safari4+ */
+                                                            background: -webkit-linear-gradient(top,  #a5c89f 0%,#78ae71 100%); /* Chrome10+,Safari5.1+ */
+                                                            background: -o-linear-gradient(top,  #a5c89f 0%,#78ae71 100%); /* Opera 11.10+ */
+                                                            background: -ms-linear-gradient(top,  #a5c89f 0%,#78ae71 100%); /* IE10+ */
+                                                            background: linear-gradient(to bottom,  #a5c89f 0%,#78ae71 100%); /* W3C */
+                                                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5c89f', endColorstr='#78ae71',GradientType=0 ); /* IE6-9 */
+                                                            -webkit-border-radius: 4px;
+                                                            -moz-border-radius: 4px;
+                                                            border-radius: 4px;    
+                                                            color: #FFFFFF;
+                                                            height: 33px;
+                                                            width: 160px;
+                                                            display: block;
+                                                            text-align: center;
+                                                            font-size:2em;
+                                                            padding-top: 4px;
+                                                            text-decoration: none;
+                                                            border:1px solid #aaa;
+                                                            -webkit-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                                            -moz-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                                            box-shadow: 0 1px 0 0 #F4F4F4 inset;}
+
+                                                            .right-but a.continue-btn:hover {
+                                                               background: #78ae71; /* Old browsers */
+                                                               background: -moz-linear-gradient(top,  #78ae71 0%, #a5c89f 100%); /* FF3.6+ */
+                                                               background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78ae71), color-stop(100%,#a5c89f)); /* Chrome,Safari4+ */
+                                                               background: -webkit-linear-gradient(top,  #78ae71 0%,#a5c89f 100%); /* Chrome10+,Safari5.1+ */
+                                                               background: -o-linear-gradient(top,  #78ae71 0%,#a5c89f 100%); /* Opera 11.10+ */
+                                                               background: -ms-linear-gradient(top,  #78ae71 0%,#a5c89f 100%); /* IE10+ */
+                                                               background: linear-gradient(to bottom,  #78ae71 0%,#a5c89f 100%); /* W3C */
+                                                           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78ae71', endColorstr='#a5c89f',GradientType=0 ); /* IE6-9 */}
+
+                                                           .right a {
+                                                            background: #a5c89f; /* Old browsers */
+                                                            background: -moz-linear-gradient(top,  #a5c89f 0%, #78ae71 100%); /* FF3.6+ */
+                                                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5c89f), color-stop(100%,#78ae71)); /* Chrome,Safari4+ */
+                                                            background: -webkit-linear-gradient(top,  #a5c89f 0%,#78ae71 100%); /* Chrome10+,Safari5.1+ */
+                                                            background: -o-linear-gradient(top,  #a5c89f 0%,#78ae71 100%); /* Opera 11.10+ */
+                                                            background: -ms-linear-gradient(top,  #a5c89f 0%,#78ae71 100%); /* IE10+ */
+                                                            background: linear-gradient(to bottom,  #a5c89f 0%,#78ae71 100%); /* W3C */
+                                                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5c89f', endColorstr='#78ae71',GradientType=0 ); /* IE6-9 */
+                                                            -webkit-border-radius: 4px;
+                                                            -moz-border-radius: 4px;
+                                                            border-radius: 4px;    
+                                                            color: #FFFFFF !important;
+                                                            display: inline-block;
+                                                            font-size: 1.3em;
+                                                            height: 26px;
+                                                            margin-right: 0.5em;
+                                                            padding-top: 4px;
+                                                            text-align: center;
+                                                            text-decoration: none;
+                                                            width: 160px;
+                                                            border:1px solid #aaa;
+                                                            -webkit-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                                            -moz-box-shadow: 0 1px 0 0 #F4F4F4 inset;
+                                                            box-shadow: 0 1px 0 0 #F4F4F4 inset;}
+
+                                                            .right a:hover {
+                                                                background: #78ae71; /* Old browsers */
+                                                                background: -moz-linear-gradient(top,  #78ae71 0%, #a5c89f 100%); /* FF3.6+ */
+                                                                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78ae71), color-stop(100%,#a5c89f)); /* Chrome,Safari4+ */
+                                                                background: -webkit-linear-gradient(top,  #78ae71 0%,#a5c89f 100%); /* Chrome10+,Safari5.1+ */
+                                                                background: -o-linear-gradient(top,  #78ae71 0%,#a5c89f 100%); /* Opera 11.10+ */
+                                                                background: -ms-linear-gradient(top,  #78ae71 0%,#a5c89f 100%); /* IE10+ */
+                                                                background: linear-gradient(to bottom,  #78ae71 0%,#a5c89f 100%); /* W3C */
+                                                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78ae71', endColorstr='#a5c89f',GradientType=0 ); /* IE6-9 */}
+
+                                                            .helpDialog .mod-body {
+                                                                margin:3px;padding:10px;
+                                                                -webkit-border-radius: 10px;
+                                                                -moz-border-radius: 10px;
+                                                                border-radius: 10px;} 
+
+                                                                .helpDialog ol {color: #444444;font-size: 0.68em;}
+                                                                /*modal pdf style*/
+                                                                #btn-area .doc-pdf{margin-top: 2.5em;}
+                                                                li.doc-pdf{list-style:disc inside url("../../../../../../cs/groups/visual/@wcm/documents/webasset/pdf_icon.gif")}
+                                                                .helpDialog .mod-content{overflow-y:auto;}
+                                                                .helpDialog {width:40em;}
+                                                                .helpDialog .yui-panel .hd {border:none;margin:0;padding:0;}
+                                                                .helpDialog .yui-panel .bd {padding:0.5em !important;}
+                                                                .helpDialog .yui-panel .bd, .helpDialog .yui-panel .ft {border:none;margin:0;background-color: #fff;border-radius:0 !important;}
+                                                                .helpDialog .yui-panel .ft {height:0;}
+
+/*------------------------------------------------------
+your-details, your-cover menu
+------------------------------------------------------*/
+#your-details, #your-cover, #your-excesses {
+    position: relative;
+    width: 100%; 
+    padding:0.5em 0 1.5em;
+    margin: 0.5em 0;
+    -webkit-box-shadow: 1px 1px 1px #B2B2B2;
+    -moz-box-shadow: 1px 1px 1px #B2B2B2;
+    box-shadow: 1px 1px 1px #B2B2B2;}
+
+    #your-details dl, #your-cover dl, #your-excesses dl {padding:0 5px; width: auto;}
+    #your-details dt, #your-cover dt, #your-excesses dt{text-align: left; font-weight: normal;}
+    #your-details dd, #your-cover dd, #your-excesses dd {font-weight: 700;}
+    #your-details dd, #your-details dt, #your-cover dd, #your-cover dt, #your-excesses dd, #your-excesses dt {width: 96%;}
+    #your-details dt,  #your-cover dt, #your-excesses dt {padding:4px 0.312em 0;}
+    #your-details p, #your-cover p, #your-excesses p {font-size: 0.6em; margin: 3px 0; padding: 0 9px;}
+
+    #your-details h3, #your-cover h3, #your-excesses h3{
+        height: 29px;
+        margin: 0 5% 5px;
+        width: 90%;
+        color: #fff;
+        line-height: 29px;
+        text-align: center;
+        font-size: 1em;}
+
+        #your-details h4, #your-cover h4, #your-excesses h4{
+            font: 400 0.8em Verdana,Arial,Helvetica,sans-serif;
+            margin: 10px 7px 5px;}
+
+            #your-details img {padding:0; margin: 0 5px;}
+
+            a.edit-details {
+                bottom: 7px;
+                font-size: 0.7em;
+                position: absolute;
+                right: 7px;
+                color: #D82A13;
+                font-weight: 500;}
+
+                hr.hr-one {background: none repeat scroll 0 0 #D2D6D8;color: #D2D6D8;}
+                #getAQuoteMotorCrossSellTextLink {font-weight: 700}
+                input#changeCar:hover, 
+                input#viewPaymentOptionsButton:hover, 
+                input#yourPolicyCoverButton:hover, 
+                input#yourQuoteDetailsButton:hover, 
+                input#customiseButton:hover, 
+                input#emaillink:hover {text-decoration: none}
+
+                input#edit{ color: #FFFFFF;
+                    display: block;
+                    font-size: 2.2em;
+                    font-weight: 400;
+                    height: 1.9em;
+                    width:7.3em;}
+
+                    input#renewalMonth {color: #888888;margin-left: 1.2em;text-align: center;}
+                    input#renewalMonth:focus {color: #000;}
+                    #renewalMonthMessage.error {width: 60%;}
+                    #home-addons label span {font-weight: 400; line-height: 1.2em}
+                    .helpDialog .main-help-text ul {margin: 1em;}
+
+                    /* fix quote page button alignment home quote page*/
+                    #pages_product_home_container_yourQuote #content-area-bottom ul li:last-child {width: 23%; padding-left:1em;}
+                    #pages_product_home_container_yourQuote #content-area-bottom ul li {/* float: left; */height: auto;margin-left:0.5em;width: 36.6%;}
+
+                    /* Travel comparison modal */
+                    #travel_compare_context_help-panel .mod-content {height: 380px;}
+                    #travel_compare_context_help-panel p {text-align: left;}
+                    #travel_compare_context_help-panel #interested {margin-top: 20px}
+                    #travel_compare_context_help-panel #interested p {text-align: left; width: 49%; float: left;}
+                    #travel_compare_context_help-panel #interested label {margin-left: 20px; text-align: right; display: block;}
+
+                    /* Travel Modal */
+                    #travel_context_help-panel img {float: left; margin: 10px 20px 0 0 }
+                    /* .dates input, .ban-points input go in home-qb */
+                    .form-background .dates input, .ban-points input {width:2.3em;}
+
+                    /* Uniform Checkbox big tick */
+
+                    .p_code_HOME.c_code_l div.checker span,
+                    .p_code_HOME.c_code_l div.radio span {
+                      background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/ticks_tiles_sw.png");
+                      background-repeat: no-repeat;
+                  }
+
+                  .p_code_HOME.c_code_e div.checker span,
+                  .p_code_HOME.c_code_e div.radio span {
+                      background-image: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/ticks_tiles.png");
+                      background-repeat: no-repeat;
+                  }
+
+
+                  div.checker span {
+                      background-repeat: no-repeat !important;
+                      background-color: transparent;
+                      -webkit-font-smoothing: antialiased;}
+
+                      .checker {
+                          display: -moz-inline-box;
+                          display: inline-block;
+                          *display: inline;
+                          zoom: 1;
+                          vertical-align: middle; }
+
+                          .checker input:focus {outline: 0;}
+                          .checker,.checker * {margin: 0;padding: 0; }
+                          /* Checkbox */
+                          .p_code_HOME div.checker,
+                          .p_code_HOME div.checker span,
+                          .p_code_HOME div.checker input {
+                            width: 40px !important;
+                            height: 40px !important;
+                            position: relative;
+                            top: -6px;}
+
+                            .p_code_HOME div.checker {
+                                width: 38px !important;
+                                overflow: hidden;
+                                top: -8px;
+                            }
+                            div.checker,
+                            div.checker span,
+                            div.checker input {
+                                width: 40px !important;
+                                height: 40px !important;
+                                position: relative;
+                                top: -10px;}
+
+
+                                #uniform-checkboxwin.checker {
+                                    position: relative;
+                                    top:-13px;}
+
+                                    .p_code_HOME #uniform-checkboxwin.checker {
+                                        position: relative;
+                                        top:-8px;}
+
+                                        div.checker span {
+                                            display: -moz-inline-box;
+                                            display: inline-block;
+                                            *display: inline;
+                                            zoom: 1;
+                                            text-align: center;
+                                            background-position:  left top;}
+
+                                            div.checker input {
+                                                top:9px;
+                                                opacity: 0;
+                                                filter: alpha(opacity=0);
+                                                -moz-opacity: 0;
+                                                border: none;
+                                                background: none;
+                                                display: -moz-inline-box;
+                                                display: inline-block;
+                                                *display: inline;
+                                                zoom: 1;}
+
+                                                div.checker:active span,
+                                                div.checker.active span {
+                                                    background-position: right top}
+
+                                                    div.checker.focus span,
+                                                    div.checker:hover span {
+                                                        background-position: left top }
+
+                                                        div.checker.focus:active span,
+                                                        div.checker:active:hover span,
+                                                        div.checker.active:hover span,
+                                                        div.checker.focus.active span {
+                                                            background-position: right top}
+
+                                                            div.checker span.checked {
+                                                                background-position:  right top}
+
+                                                                div.checker:active span.checked,
+                                                                div.checker.active span.checked {
+                                                                    background-position: right top }
+
+                                                                    div.checker.focus span.checked,
+                                                                    div.checker:hover span.checked {
+                                                                        background-position: right top }
+
+                                                                        div.checker.focus:active span.checked,
+                                                                        div.checker:hover:active span.checked,
+                                                                        div.checker.active:hover span.checked,
+                                                                        div.checker.active.focus span.checked {
+                                                                            background-position: left top }
+
+                                                                            div.checker.disabled span,
+                                                                            div.checker.disabled:active span,
+                                                                            div.checker.disabled.active span {
+                                                                                background-position: -40px top }
+
+                                                                                div.checker.disabled span.checked,
+                                                                                div.checker.disabled:active span.checked,
+                                                                                div.checker.disabled.active span.checked {
+                                                                                    background-position: -40px top }
+
+                                                                                    /* Checker */
+                                                                                    div.checker {float:left;}
+                                                                                    /* end checkbox big tick */
+
+                                                                                    /*style other pages to mimic new one*/
+                                                                                    #pages_product_home_container_aboutYourHome dl,
+                                                                                    #pages_product_home_container_aboutYou dl,
+                                                                                    #pages_product_home_container_moreDetailsAboutYourCover dl,
+                                                                                    #pages_product_home_container_yourJointPolicyholder dl {
+                                                                                        border-bottom: 1px solid #F5F5F5;
+                                                                                        height: 100%;
+                                                                                        margin: 0 0 0.5em; 
+                                                                                        padding: 8px 5px;}
+                                                                                        #pages_product_home_container_aboutYourHome dd,
+                                                                                        #pages_product_home_container_aboutYou dd,
+                                                                                        #pages_product_home_container_moreDetailsAboutYourCover dd,
+                                                                                        #pages_product_home_container_yourJointPolicyholder dd {
+                                                                                            width: 56%;
+                                                                                            padding:0 0 0.312em 0.312em;}
+
+/* dd a, .custom-sections .help-icon, #contents-extra a, #information-pack ul li a, #buildings-extra li a,
+#context-help-afaultClaimFlag-panel-helpButton, #context-help-jointPolicyHolder-panel-helpButton, 
+#context-help-doorLocksFlag-panel-helpButton, #context-help-contentsSpecifiedItems-panel-helpButton {
+    right: 0;
+    } */
+
+    #call-us dl{border-bottom:none;}
+    .content-area-centre p {clear: both;}
+    .helpDialog .mod-body {border: solid 1px;}
+    /* .c_code_e .helpDialog .yui-panel .hd h3 {color: #526fa7;}  */
+
+    /*ie 7 hack for es home logo different position to motor for some ballbxxs reason*/
+    .c_code_e #brand-overlay{*top: -40px !important;}
+
+    /*defaqto logo */
+    .c_code_l #content-area-right, .c_code_e #content-area-right {
+        background: none;
+        padding-bottom: 0;
+    }
+
+    .c_code_e #content-area-right{
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_dyn_defaqto_logo_home.png") no-repeat 50% 95%;
+        padding-bottom: 155px;
+    }
+
+    .c_code_l #content-area-right{
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/sw_logos_sidebar_home.png") no-repeat 50% 570px;
+        padding-bottom: 265px;
+    }
+
+    #pages_product_home_container_yourCover.c_code_l #content-area-right{
+        background-position: 50% 308px;
+    }
+
+
+    #pages_product_home_container_excessesAndEndorsements.c_code_l #content-area-right,
+    #pages_product_home_container_quoteDetailsSummaryView.c_code_l #content-area-right {
+        background-position: 50% 620px;
+    }
+
+    #pages_product_home_container_paymentOptionsSummaryView.c_code_l #content-area-right{
+        background-position: 50% 320px;
+    }
+
+/* .c_code_l #content-area-right .rightSourceBanner{
+    padding-top: 305px;
+    } */
+
+    #pages_product_common_cardInformation.c_code_l #content-area-right .rightSourceBanner, #pages_product_common_paymentOptions.c_code_l #content-area-right .rightSourceBanner{
+        padding-top: 0;
+    }
+
+    #pages_product_home_container_yourQuote.c_code_e #content-area-right > ul#print-save, #pages_product_common_paymentOptions.c_code_e  #secure_logos, #pages_product_common_cardInformation.c_code_e #secure_logos{
+        padding-top: 127px;
+    }
+
+
+    #pages_product_home_container_yourQuote.c_code_l #content-area-right > ul#print-save{
+        margin-top: 300px;
+        background: #FFF;
+    }
+
+/* #pages_product_home_container_yourQuote.c_code_l .rightSourceBanner {
+    padding-top: 174px;
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/sw_dyn_defaqto_logo_home.png") no-repeat 50% -143px;
+    } */
+
+    #pages_product_home_container_yourCover.c_code_l #content-area-right #benefits{
+        top:295px;
+        position: relative;
+    }
+
+    #pages_product_home_container_yourCover .rightSourceBanner{
+        padding-top: 303px;
+    }
+
+    #pages_product_home_container_quoteDetails.c_code_l #content-area-right{
+        background-position: 50% 615px;
+    }
+
+    #pages_product_home_container_yourQuote.c_code_e #content-area-right, #pages_product_common_paymentOptions.c_code_e #content-area-right, #pages_product_common_cardInformation.c_code_e #content-area-right {
+        background-position: 50% 256px;
+    }
+    /*-defaqto logo ends-*/
+
+    .c_code_e #view-details {
+        background: none;
+        height:auto;
+    }
+    #view-details {
+        width:100%;
+    }
+
+
+
+    /* ----------------------------------------------------------------------------------------- */
+    /* SMALL(phone) ----------- */
+
+    @media only screen and (max-width : 640px) {
+
+
+        
+                    #price-recal label {
+                      width: 100%;
+                      -webkit-box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+                      text-align: center;
+                    margin-bottom: 3px;
+                    }
+
+                    #topRecalcButtonRegion {
+                        margin: 0;
+                           width: 100%;
+                           float: none !important;
+               
+                    }
+                    #topRecalcButtonRegion input {
+                        width: 100%;
+                        margin: 0 !important; 
+                    }
+
+                    #home-addons fieldset div#pest {
+                        min-height: auto;
+                    }
+
+                    #contents-extra label, #buildings-extra label {
+                        padding: 5px;
+                    }
+
+                    #contents-extra label span, #buildings-extra label span {
+                        height: 100%;
+                    }
+
+
+        input#addSpecifiedItemsButton {margin: 0 !important;}
+        #container {margin: 0 auto !important;}
+        #footer {height: 0; width: 100%; padding-top: 9em;}
+        .c_code_l #footer {background: none no-repeat scroll center bottom #FFFFFF;height: 0; width: 100%; padding-top: 0em;}
+        body {background: none}
+        #pages_product_home_container_yourQuote .content-area-centre {margin:0}
+        #agg-message p {width:95%;}
+        #view-details {padding:0;}
+        dl.top-premium-panels {clear: none; margin: 0 auto 1em; position: relative; width: 95%;}
+        #contents-extra label, #buildings-extra label {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border-bottom: 1px solid #E2E8F1;
+            border-radius: 2px 2px 2px 2px;
+            display: block;
+            margin-left: 0.8em;
+            padding: 1em 0.5em;
+            width: 82%;}
+            #pages_product_home_container_yourQuote #contents-extra li,
+            #pages_product_home_container_yourQuote #buildings-extra li {margin:0;}
+            #contents-extra li span input, #buildings-extra span input {left:-45%}
+            span#description_buildingsCovers_2,
+            span#description_buildingsCovers_1,
+            span#description_buildingsCovers_0,
+            span#description_contentsCovers_0,
+            span#description_contentsCovers_1,
+            span#description_contentsCovers_2{width:70%; display: inline-block; text-align: left}
+            /*  .form-background select {margin-left:0.2em} */
+            #context-help-buildingVoluntaryExcess-panel-helpButton, 
+            #context-help-buildingUnlimited-panel-helpButton {right:2.2em;}
+            #context-help-buildingUnlimited-panel-helpButton {top:-2em;}
+            .home-protection {width:100%;text-align: left;margin: 0.5em 0.8em !important;}
+            .quote-extra-dl dt {width: 95%;}
+            .quote-extra-dl dd {width: 100%;}
+            .c_code_e a#context-help-select-contentsCoverRequired-panel-helpButton,
+            .c_code_e a#context-help-select-contentsAccidentalCoverRequired-panel-helpButton {right: 3.4%;}
+            dd a {right:7% !important}
+            dd .home-extras a {right:5% !important;}
+
+            label#label_contentsSpecifiedItems_1, label#label_contentsSpecifiedItems_0,
+            label#label_riskAddressSameAsInsuredAddressFlag_1, label#label_riskAddressSameAsInsuredAddressFlag_0,
+            label#label_movingToInsuredAddressFlag_1, label#label_movingToInsuredAddressFlag_0
+             {
+                text-align: center;
+                border-radius: 3px;
+                display: inline-block;
+                padding: 1em 0.5em;
+                margin-left: 0.8em;
+                width: 40%;}
+
+                #context-help-contentsSpecifiedItems-panel-helpButton {right:2em;}
+                #pages_product_home_container_quoteDetails #pre-footer p,
+                #pages_product_home_container_yourQuote #pre-footer p {width:95%;}
+                #pages_product_home_container_yourQuote #pre-footer,
+                #pages_product_home_container_quoteDetails #pre-footer {margin-right: 0}
+                #form:after {min-height: 0}
+                #pre-footer {margin-right: 12em;}
+                #current-insurer dd, #current-insurer dt {width:100%;}
+                #firstTimeBuyerPanel dl dd, #firstTimeBuyerPanel dl dt {width:96%}
+                #firstTimeBuyerPanel dl dd {margin-left: 0.5em;}
+                #manualAddressPanel dd {width:96%;}
+                #contents-extra a, #information-pack ul li a, #buildings-extra li a {right:3%;}
+                input#changeAddress, input#findAddress {width:76.5%}
+                #quote-layout .content-area-centre dt p {background: none repeat scroll 0 0 transparent;}
+                fieldset fieldset label {margin-left: 0.4em}
+                dl.top-premium-panels dd {width:100%;border:none;}
+                #pages_product_home_container_yourQuote fieldset {padding-top:1em;}
+                .spec-indicator {right: 15em; top: -1.8em;}
+                .additional-info-table ul li input.edit,
+                .additional-info-table ul li input.delete,
+                .specified-info-table ul li input.edit,
+                .specified-info-table ul li input.delete,
+                input#continue, input#next, input#back,
+                input#recalculateDisabled, input#add_driver_next_false,
+                input#modalFinishButton, input#findAddress, input.add-section,
+                input.add-section-clear, input.find-addr {font-size:2em;}
+                img#stImgForUpSpecifiedItems-status, img#stImgForAddSpecifiedItems-status {left: 25em;top: 1.8em;}
+                #pages_product_home_container_yourQuote .content-area-centre .content-btm-right {margin-top:1em}
+                #buildings-extra li a {position: absolute;right: 3%; top: 0.9em;}
+                #pages_product_home_container_quoteDetails .conviction-conditions { margin: 0 1.5em;}
+
+                .c_code_l dl.top-premium-panels dt {width:100%;}
+                .c_code_l  dl.top-premium-panels dd {border-radius: 0 0 4px 4px;border: 1px solid #A8AAAC;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;}
+
+                    a#manualAddressToggle2, a#manualAddressToggle {right: 0 !important;}
+                    input#currentInsurerPolicyNo {margin-left:0.8em;}
+                    /*specified items table*/
+                    .specified-info-table thead {background: none; height:0;}
+                    .specified-info-table .left-col,
+                    .specified-info-table .mid-col, 
+                    .specified-info-table .mid-col-2,
+                    .specified-info-table .mid-col-3,
+                    .specified-info-table .right-col {width:100%;border: 0;  text-align:left;}
+                    .specified-info-table .right-col {padding:0.2em;}
+                    .specified-info-table .mid-col {padding:0;}
+                    .specified-info-table .right-col ul {height:5em;width:100%;margin:1em;}
+                    .specified-info-table .right-col ul li {width:46%}
+                    .specified-info-table ul li input.edit,
+                    .specified-info-table ul li input.delete {height:2em !important;}
+                    .specified-info-table {border: none; width:100%;margin:0;}
+                    /* Zebra striping */
+                    tr:nth-of-type(odd) {background: #BDCADF;}
+                    /*end*/
+                    #specItemsTable\:tbody_element td:nth-of-type(1):before { content: "Item type:"; font-weight: 700}
+                    #specItemsTable\:tbody_element td:nth-of-type(2):before { content: "Full description:"; font-weight: 700}
+                    #specItemsTable\:tbody_element td:nth-of-type(3):before { content: "Item value:"; font-weight: 700}
+                    .additional-info-table {border:none;}
+                    .additional-info-table ul, .additional-info-table ul li {float:none; padding-bottom: 0.3em;}
+
+                    .conviction-conditions dt {display: list-item;list-style-type: disc;list-style-position: inside;}
+                    .conviction-conditions dd {font-weight:700;}
+                    #pages_product_home_container_quoteDetails dl.conviction-conditions dt {margin:8px 0 0}
+                    #general-qs {margin-bottom: 1em}
+                    #general-qs p{padding-left: 0.5em !important}
+                    #prevInsurerMessage .error, #claimAmountMessage .error {left: 0;}
+                    #pages_product_common_paymentOptions .form-background {padding-bottom: 1em}
+                    .shorter-area .form-background,.form-background {background:none repeat scroll 0 0 #E2E8F1 !important;}
+       /*--------------------------------------------------
+Drop 3 home Travel Add-On CR3448
+----------------------------------------------------*/
+
+
+.intro-area h1 {padding:0.5em;background:#fff;}
+#pages_product_home_container_yourQuote #quote-intro {background:none;}
+/* input.add-section, input.add-section:hover {background:none;} */
+#view-details p {padding: 0.8em !important;}
+#view-details input {height:20px} 
+.policy-area h1 {background:#fff;padding:0.5em;}
+.policy-cover {width:100%;}
+ul.includes, ul.includes + ul.includes {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 10px 10px 0 0;
+    margin: 0 5%;
+    padding: 0.5em 0 0 3.5em;
+    width: 79%;}
+    .includes li {height: auto;}
+    ul.includes + ul.includes {border-radius: 0 0 10px 10px;}
+    .policy-link {border-bottom: 1px solid #D2D6D8;}
+    #extra-cover.section-titles h1, #extra-cover.section-titles p {padding-left: 10px;}
+    /* #extra-cover.section-titles h1{text-indent: 25%;} */
+    #topRecalcButtonRegion {float: left; margin: 10px 10px 10px 25px;}
+    #pages_product_home_container_yourQuote fieldset {padding-top: 0;}
+    #home-addons p.intro {margin: 0.5em;}
+
+    #home-addons #travel, 
+    #home-addons #pest, 
+    #home-addons #flp, 
+    #home-addons #home-emergency, 
+    #home-addons #winter{margin:0;width:100%;}
+
+    #home-addons #pest, 
+    #home-addons #flp, 
+    #home-addons #home-emergency{border-bottom: 0.8em solid #FFFFFF;}
+    #pages_product_home_container_yourQuote #content-area-bottom ul li,
+    #pages_product_home_container_yourQuote #content-area-bottom ul li:last-child {width: 99%;padding-left:0;margin-left:0;}
+    #content-area-bottom input#nextDisabled,
+    #content-area-bottom input#nextDisabled:hover {margin: 0 0.1em 0.5em;}
+    #home-addons #flp, #home-addons #home-emergency {min-height: 375px;}
+    #winter > p {margin-left:60px !important; margin-bottom: 0.5em !important;}
+    #tile-area #travel ul {line-height: 1.9em;}
+    .qtip .qtip-tip, .qtip .qtip-tip .qtip-vml, .qtip .qtip-tip canvas {display:none;}/*hide tips in mobile*/
+    .qtip {left:0 !important;width:90%;margin:5%;}
+    .qtip, .qtip {max-width: 90% !important;}
+    .qtip-esure {width:100% !important; box-shadow: 0 0 50px #000000 !important;}
+    .qtip-esure .qtip-icon{display:block;}
+    #btn-area .right-but, #btn-area .left-but {margin: 1.5em 1em;}
+    /*dialog*/
+    .helpDialog {width: 100%;
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+    .helpDialog .yui-panel .bd {padding: 0 !important;}
+    .helpDialog .yui-panel .hd {height: 2em !important;}
+    .helpDialog .yui-panel .hd h3, .bundleDetailsDialog .yui-panel h3 {font-size: 1.2em !important;display:block !important;}
+
+    .helpDialog .mod-body {
+        border: medium none !important;
+        border-radius: 10px 10px 10px 10px;
+        margin: 0;
+        padding: 0;}
+
+        #btn-area .doc-pdf {margin-left: 1em;}
+        /*your cover page*/
+        #description_buildingsCovers_0, #description_contentsCovers_0, #description_buildingsCovers_1, #description_contentsCovers_1, #description_buildingsCovers_2, #description_contentsCovers_2 {
+            height: 0;}
+            .toolhover:before {border: medium none;}
+            #specified-radio + dt {width: 90%;}
+            #btn-area .right-but, #btn-area .left-but {
+                margin: 8px 5%;
+                width: 90%;}
+
+                .left-but a.nothanks-btn, .right-but a.continue-btn {width:100% !important;margin:0.2em 0;}
+                #travel_compare_context_help-panel .mod-content {margin-bottom: 0.5em;}
+                .helpDialog .yui-panel .hd{height:0 !important;}
+
+                .helpDialog .yui-panel .hd h3, .bundleDetailsDialog .yui-panel h3 {
+                    display: block !important;
+                    font-size: 1.2em !important;
+                    line-height: 1;
+                    padding: 0.5em;
+                    text-indent: 0 !important;}
+
+                    #current-insurer dd {padding: 0 0.5em;width: 104% !important;}
+                    /*style other pages to mimic new one*/
+                    #pages_product_home_container_aboutYourHome dl,
+                    #pages_product_home_container_aboutYou dl,
+                    #pages_product_home_container_moreDetailsAboutYourCover dl {
+                        border-bottom: none;
+                        height: auto;
+                        padding: 0;}
+                        #home-addons label {font-size: 90%;}
+                        #pages_product_home_container_yourQuote.c_code_l #agg-message {display:none;}
+
+                        .c_code_l #view-details {
+                            background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/sw_dyn_nightin_logo_home.png") no-repeat center bottom #fff !important;
+                            padding-bottom: 240px !important;
+                            height: auto;
+                        }
+
+
+
+/*--------------------------------------------------
+end small Drop 3 home Travel Add-On CR3448
+----------------------------------------------------*/
+/* small Defaqto logo */
+#pages_product_home_container_yourQuote.c_code_e #view-details{
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_dyn_defaqto_logo_home.png") no-repeat center bottom;
+}
+
+#pages_product_home_container_yourQuote.c_code_l #view-details{
+    background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/sw_dyn_defaqto_logo_home.png") no-repeat center bottom #FFF;
+}
+/* - end small Defaqto logo - */
+}
+
+
+/*--------------------------------------------------
+start MEDIUM 
+----------------------------------------------------*/
+
+@media only screen and (min-width:641px) and (max-width : 954px) {
+
+    /*defaqto medium */
+
+    #pages_product_home_container_yourQuote.c_code_l #view-details {
+        background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/sw_contactus_quote_extras_tablet.png") no-repeat 95% 50%;
+        padding-right: 320px;
+        width:50%;
+        padding-top:40px;
+    }
+
+    #pages_product_home_container_yourQuote.c_code_e #view-details {
+     background: url("../../../../../../cs/groups/visual/@wcm/documents/webasset/es_dyn_defaqto_logo_home.png") no-repeat 82% center !important;
+     width: 50%;
+     padding-right: 50%;
+ }
+
+ /* end defaqto */
+
+ @media only screen and (min-width : 955px) {
+    /* CR3711 */
+    .recalcPosition {
+        display: none;
+    }
+} 
+
+/*--------------------------------------------------
+end medium 
+----------------------------------------------------*/

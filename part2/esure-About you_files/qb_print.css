@@ -1,0 +1,214 @@
+*					{color:#000!IMportant;float:none!important;width:auto!important;left:0!important;margin-left:0!important; font-family: Arial,Helvetica,sans-serif!important;}
+#container			{height:auto!important;}
+#outer				{height:auto!important;}
+#content-area-main	{height:auto!important;margin:0!important;}
+body				{background:#FFF;}
+#outer				{border:none;background:none;}
+#copyright			{display:none;}
+#vol-excess label	{font-size:12pt;}
+.content-area-centre{width:100%;}
+#header h1			{background:none;text-indent:0;width:100%;font-size:3em;top:0;left:0;}
+#header h2			{text-indent:0;background:none;visibility:hidden;font-size:2.5em;left:0;top:0;}
+#header h2 a		{display:none!Important;visibility:hidden;}
+label				{line-height:130%;}
+hr.hr-one			{width:650px!important;color:#000!important;background:#000!important;height:0!important;border:1pt solid #000!important;}
+.additional-info-table,.quote-claims-convictions{width:90%!important;}
+#progress-bar {display: none;}
+
+#container,
+.content-area-centre,
+#content-area-main .top-left
+,#content-area-main .top-right,
+.content-btm-left,
+.content-btm-right,
+#content-area-main .btm-left,
+.content-top-right,.quote-id-left-edge,
+.quote-id-right-edge,
+.section-titles .st-top-left,
+.section-titles .st-top-right,
+.section-titles .st-btm-left,
+.section-titles .st-btm-right,
+input,select,.dec-top-left,
+.dec-top-right,
+.dec-btm-left,
+.dec-btm-right,
+.additional-info-table thead,
+.quote-claims-convictions thead,
+.active-driver .active-ad-top-left,
+.active-driver .active-tab-top-right,
+.active-driver input.remove-driver,
+#pages_product_motor_container_quoteDetails #quote-layout .dec-top-left
+,#quote-layout .dec-btm-left,
+#quote-layout .dec-top-right,
+#quote-layout .dec-btm-right,
+#quote-layout .content-top-right,
+#quote-layout .content-btm-right,
+#quote-layout .content-btm-left,
+#quote-layout .content-btm-right,
+#pages_product_motor_container_quoteDetails .content-area-centre .content-btm-right
+{background:none;}
+
+.content-area-centre,
+.section-titles,
+.additional-info-table tr td,
+input
+{border:none;}
+
+#header ul li,.help-icon-next-to-radio,
+.help-icon,
+.additional-info-table ul li a.delete,
+.additional-info-table ul li a.edit,
+.active-driver input.remove-driver,
+#navigation-area-left,
+#content-area-bottom input.go-to-next,input.add-section,
+input.find-addr,
+#content-area-bottom,
+.active-driver span,
+#pages_product_motor_container_aboutYourAdditionalDrivers .content-area-centre .btm-left,
+#pages_product_motor_container_aboutYourAdditionalDrivers .content-area-centre .btm-right,
+#pages_product_motor_container_aboutYourAdditionalDrivers .content-area-centre .top-right,
+.cc-logo,.dl.dl-two img,.dd-symbol,#pre-footer img,#footer ul,
+#err-msg,.noprint,.content-btm-right{display:none;}
+
+dt,
+.content-area-centre ul li{text-align:left;}
+
+p,
+h1,
+h2,
+h3,
+h4,
+#pages_product_motor_container_yourQuote .content-area-centre h2,
+#information-pack,
+.content-area-centre ul li
+{margin-left:0;}
+
+#pages_product_motor_container_quoteDetails #quote-layout .section-titles h1	{left:0;}
+
+#quote-layout dl.premium-dl,
+#quote-layout dl.monthly-dl
+{margin-left:0;}
+
+#brand-overlay	{display:none;}
+#sw-sub-hdr		{display:none;}
+#call-us		{background:none;min-height:24px;width:80%;}
+#call-us h3		{text-align:left;visibility:visible;position:absolute;top:0;left:0;font-size:1em;}
+#call-us dl,
+#content-area-right,
+#call-us h4
+{display:none;}
+
+#content-area-right		{position:inherit;width:32%;position:absolute;left:10px;top:-45px;min-height:15px;}
+#call-us h3				{visibility:visible;}
+
+#pages_product_motor_container_motorQuotePrintView #quote-layout .section-titles h1,
+#pages_product_home_container_homeQuotePrintView #quote-layout .section-titles h1
+{margin-left:0!important;}
+
+#pages_product_home_container_quoteDetails #quote-layout .section-titles h1	{left:0;}
+#quote-layout .content-area-centre ul.including h2							{position:relative;margin-left:-19px!important;}
+span.prem-title	{width:320px!important;}
+#quote-layout .content-area-centre ul.including	{position:relative;}
+
+#pages_product_home_container_quoteDetailsSummaryView #displayPremium,
+#pages_product_motor_container_quoteDetailsSummaryView #displayPremium
+{margin-left:0;}
+
+dl.premium-dl,
+dl.monthly-dl
+{width:75%;}
+
+dl.conviction-conditions dt						{line-height:135%;left:-20px;}
+#general-questions,#general-qs,#property-dets	{clear:both;float:none; page-break-before:always}
+
+#general-questions dl,
+#general-qs dl,
+#property-dets dl
+{color:#000;}
+
+#general-questions dl dt,
+#general-qs dl dt,
+#property-dets dl dt
+{left:-20px;line-height:135%;}
+
+.quote-id			{top:40px;}
+.section-titles		{position:relative;top:auto;left:0!important;padding:0;height:auto;margin-left:0!important;}
+#quote-layout .section-titles h1	{left:0!important;}
+#pre-footer p			{display:none;}
+.declarations p			{padding:10px;}
+.declarations			{background:none;border:1pt solid #000;margin-left:0;color:#000;display:none;}
+.additional-info-table	{border:1pt solid #000;margin-left:0;}
+ul#drivers				{margin-left:0;}
+ul#drivers li			{background:none;border:none;float:none;margin-left:0;width:100%;}
+#pages_product_motor_container_yourQuote .content-area-centre	{background:none;border:none;}
+#pages_product_motor_container_yourQuote dl dt			{text-indent:0;}
+ul#drivers li.passive-driver							{display:none;visibility:hidden;}
+.quote-premium											{clear:both;}
+#footer													{display:none;visibility:hidden;}
+ul.with-bullets											{padding-left:20px;}
+dl.premium-dl dt,dl.monthly-dl dt						{padding-left:0;width:72%;}
+#print-preview #content-area-main .content-area-centre	{width:80%;border:none;}
+#print-preview #content-area-main						{border:none;}
+#print-preview dt span									{display:block!Important;margin:8px 0;}
+ul#btm-controls,ul#top-controls							{display:none;}
+#displayPremium dt span									{display:block;margin-bottom:5px;}
+#quote-layout .additional-info-table,
+#quote-layout .quote-claims-convictions					{margin:15px auto!important;}
+#quote-layout h2										{margin-left:0;width:95%!important;}
+#tel-nos				{left:-5px;}
+br.hide					{display:block;}
+#outer br				{clear:both;width:100%;}
+#print-preview h3		{margin:auto;}
+
+#print-preview dl.premium-dl,
+#print-preview dl.monthly-dl,
+#print-preview dl.premium-dl .titles,
+#print-preview dl.monthly-dl .titles,
+#print-preview dl.premium-dl dt,
+#print-preview dl.monthly-dl dt
+{margin-left:0!important;margin-right:0!important;left:0!important;}
+
+#quote-layout .content-area-centre ul		{margin:0 0 15px;}
+h2											{page-break-after:avoid;page-break-before:auto;}
+table										{page-break-before:avoid;}
+.form-background							{margin:0!important;}
+#quote-layout .section-titles h1			{margin-left:0!important;}
+
+table,
+th,td
+{border-color:#000!important;background:#FFF!important;border-width:1pt!important; border-collapse:separate; border-spacing :1px}
+
+#print-preview .additional-info-table thead th, 
+#print-preview .quote-claims-convictions thead th, 
+#print-preview .specified-info-table thead th 
+{border: 1pt solid #000000!important;}
+
+th,
+td
+{border-right:1pt solid !important;border-bottom:1pt solid!important;border-top:1pt solid!important;border-left:1pt solid!important}
+
+#navigation-area-left{display:none!important;}
+
+.additional-info-table thead th,
+.quote-claims-convictions thead th,
+.specified-info-table thead th
+{background:#FFF!important;}
+
+div,
+#quote-layout .section-titles		{width:auto!important;position:relative!important;left:0!important;margin-left:0!important;padding-left:0!important;height:auto!important;float:none!important;}
+h2 a								{display:none;}
+#general-questions dl dt,
+#property-dets dl dt,
+#general-qs dl dt	
+{width:580px!important;margin-top:0!important;margin-bottom:0!important;padding:0!important;}
+
+#general-questions dl dd,
+#property-dets dl dd,
+#general-qs dl dd
+{position:relative!important;left:610px!important;top:-14px!important;margin-bottom:0!important;width:50px!important;padding-bottom:0!important;margin-top:0!important;}
+#tel-nos dl dt			{width:400px!important;}
+#tel-nos dl dd			{position:relative!important;left:460px!important;top:-14px!important;margin-bottom:0!important;width:200px!important;text-align:left!important;margin-top:0!important;}
+
+#print-preview .additional-info-table,
+#print-preview .quote-claims-convictions
+{border-collapse: separate; border-spacing:1px}

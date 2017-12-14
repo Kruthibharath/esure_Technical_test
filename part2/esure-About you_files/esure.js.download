@@ -1,0 +1,238 @@
+(function(){var method;
+var noop=function(){};
+var methods=["debug","error","info","log","trace","warn"];
+var length=methods.length;
+var console=(window.console=window.console||{});
+while(length--){method=methods[length];
+if(!console[method]){console[method]=noop
+}}}());
+var docCookies={getItem:function(sKey){return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*"+encodeURIComponent(sKey).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=\\s*([^;]*).*$)|^.*$"),"$1"))||null
+},setItem:function(sKey,sValue,vEnd,sPath,sDomain,bSecure){if(!sKey||/^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)){return false
+}var sExpires="";
+if(vEnd){switch(vEnd.constructor){case Number:sExpires=vEnd===Infinity?"; expires=Fri, 31 Dec 9999 23:59:59 GMT":"; max-age="+vEnd;
+break;
+case String:sExpires="; expires="+vEnd;
+break;
+case Date:sExpires="; expires="+vEnd.toUTCString();
+break
+}}document.cookie=encodeURIComponent(sKey)+"="+encodeURIComponent(sValue)+sExpires+(sDomain?"; domain="+sDomain:"")+(sPath?"; path="+sPath:"")+(bSecure?"; secure":"");
+return true
+},removeItem:function(sKey,sPath,sDomain){if(!sKey||!this.hasItem(sKey)){return false
+}document.cookie=encodeURIComponent(sKey)+"=; expires=Thu, 01 Jan 1970 00:00:00 GMT"+(sDomain?"; domain="+sDomain:"")+(sPath?"; path="+sPath:"");
+return true
+},hasItem:function(sKey){return(new RegExp("(?:^|;\\s*)"+encodeURIComponent(sKey).replace(/[\-\.\+\*]/g,"\\$&")+"\\s*\\=")).test(document.cookie)
+}};
+function isSiteCatalystEnabled(){return"s" in window
+}function sortObject(o){var sorted={},key,a=[];
+for(key in o){if(o.hasOwnProperty(key)){a.push(key)
+}}a.sort();
+for(key=0;
+key<a.length;
+key++){sorted[a[key]]=o[a[key]]
+}return sorted
+}function opLink(url,linkName,props,w,h){if(isSiteCatalystEnabled()){var currentLinkTrackVars=s.linkTrackVars;
+var currentLinkTrackEvents=s.linkTrackEvents;
+s.linkTrackVars="";
+for(var key in props){if(key==="events"){s.linkTrackEvents=props[key]
+}s.linkTrackVars+=","+key;
+s[key]=props[key]
+}s.linkTrackVars=s.linkTrackVars.substring(1);
+s.tl(true,"o",linkName);
+s.linkTrackVars=currentLinkTrackVars;
+s.linkTrackEvents=currentLinkTrackEvents
+}var winOptions="toolbar=no,status=no,menubar=no";
+if(typeof h==="number"&&typeof w==="number"){winOptions+=",height="+h;
+winOptions+=",width="+w
+}window.open(url,"_blank",winOptions)
+}var ESURE_modals={displayModalWindow:function(modalWindowName){var modalDivName=modalWindowName.element.id;
+modalDivName=modalDivName.replace(/:/g,"\\:");
+var parentDiv=customJQuery("#"+modalDivName).parent();
+parentDiv.css("display","block");
+modalWindowName.center();
+modalWindowName.show();
+modalWindowName.hideEvent.subscribe(function(){parentDiv.css("display","none")
+});
+return false
+},displayAnimatedModal:function(modalWindowName){setTimeout(function(){ESURE_modals.displayModalWindow(modalWindowName)
+},10)
+},showHelpDialog:function(dialog,panelId,anchorId,event){dialog.showEvent.subscribe(ESURE_modals.putFocusOnHelpCloseButtonInModal,panelId);
+ESURE_modals.displayModalWindow(dialog);
+dialog.hideEvent.subscribe(ESURE_modals.putFocusOnHelpCloseButton,anchorId);
+customJQuery(".noMulticarAnchor").on("click",function(e){ESURE_handlers.clickNoMulticarAnchor(e)
+});
+ESURE.handlers.disableEventPropagation(event)
+},showConfirmBox:function(modalWindow){if(dataHasChanged){ESURE_modals.displayModalWindow(modalWindow);
+return false
+}return true
+},showRadioModal:function(flagYesComp,size,modalWidget){if(size>0&&!customJQuery("#"+flagYesComp).is(":checked")){ESURE_modals.displayModalWindow(modalWidget);
+return false
+}return true
+},showRadioModalNoSize:function(idflagYesComp,modalWidget){var jqRadioEl=customJQuery("#"+idflagYesComp);
+var isRadioChecked=jqRadioEl.is(":checked");
+if(isRadioChecked){ESURE_modals.displayModalWindow(modalWidget);
+return false
+}return true
+},putFocusOnHelpCloseButtonInModal:function(x,y,z){var closeButton=customJQuery("#"+z).find(".container-close");
+if(closeButton.length>0){closeButton.focus()
+}},putFocusOnHelpCloseButton:function(x,y,z){customJQuery("#"+z).focus()
+}};
+var ESURE_handlers={clickRecalcLink:function(){if(dataHasChanged){customJQuery("#form").find(".recalcPosition").hide();
+customJQuery("#premiumAmount, #premiumAmountInstallments").html("&nbsp;");
+scroll(0,0);
+if(isSiteCatalystEnabled()){var currentLinkTrackVars=s.linkTrackVars;
+if(ESURE_ENVIRONMENT.product==="MOTOR"){s.linkTrackVars="prop12,zip,transactionID,eVar7";
+s.prop12="Recalc"
+}else{s.linkTrackVars="prop15,zip,transactionID,eVar50";
+s.prop15="Recalc"
+}var linkName=ESURE_ENVIRONMENT.product+" Recalculation";
+s.tl(true,"o",linkName);
+s.linkTrackVars=currentLinkTrackVars
+}ESURE.modals.displayAnimatedModal(recalcDialogWidget)
+}},clickSlideMenuClose:function(event){event.preventDefault();
+customJQuery("#slideMenu").slideUp("slow");
+docCookies.setItem(ESURE.CONSTANTS.COOKIE_SLIDER_COOKIE_NAME,"closed",31536000,"/");
+customJQuery("body").addClass("cookieBarClosed").removeClass("cookieBarOpen")
+},clickFAQLink:function(event){if(isSiteCatalystEnabled()){}var winOptions="width=500, height=500, left=24, top=24, scrollbars, resizable";
+var newWindow=window.open(this.href,this.target,winOptions);
+if(newWindow!==null){event.preventDefault()
+}},escapeKeyHandler:function(event){if(event.keyCode==27){event.preventDefault();
+return false
+}},positionAnchor:function(){var elem=customJQuery("span[class='rich-message-label error']:first");
+var foundError=false;
+if(elem.length>0){var parentID=elem.parent().attr("id");
+if(parentID){parentID=parentID+"Anchor";
+var anchor=customJQuery('[id="'+parentID+'"]');
+if(anchor.length==0){var colonPos=parentID.lastIndexOf(":");
+if(colonPos!=-1){parentID=parentID.substr(colonPos+1);
+anchor=customJQuery("#"+parentID)
+}}if(anchor.length>0){scroll(0,anchor.offset().top);
+foundError=true
+}}}return foundError
+},disableEventPropagation:function(event){if(typeof event!=="undefined"){if(event.stopPropagation){event.stopPropagation()
+}else{if(window.event){window.event.cancelBubble=true
+}}}},clickMulticarExistingPolicyRadio:function(event){var id=event.target.id;
+var jqEl=customJQuery("#"+id);
+var el=jqEl[0];
+if(id=="existingCustomerRel_0"||id=="existingCustomerRel_1"){var jqLinkEl=customJQuery("#enableExistingCustomerRelRegLink");
+A4J.AJAX.Submit("form",event,{similarityGroupingId:"enableExistingCustomerRelRegLink",parameters:{enableExistingCustomerRelRegLink:"enableExistingCustomerRelRegLink"},containerId:"j_id71"})
+}else{if(id=="existingCustomerRel_2"){ESURE_modals.showRadioModalNoSize("existingCustomerRel_2",existingCustomerRelModal_Widget)
+}}},unselectCheckables:function(idsStr){if(idsStr){var idArray=idsStr.split(",");
+for(var i=0;
+i<idArray.length;
+i++){var idStr=(idArray[i].substring(0,1)=="#"?"":"#")+idArray[i];
+var jqEl=customJQuery(idStr);
+var el=jqEl[0];
+jqEl.prop("checked",false)
+}}},clickNoMulticarAnchor:function(e){var jqEl=customJQuery(".helpDialog");
+if(jqEl.size()){var jqEls=jqEl.find(".container-close").click();
+if(jqEl.size()){jqEls[0].click()
+}}jqEl=customJQuery("#noMulticarLink");
+if(jqEl.size()){var el=jqEl[0];
+jqEl.click()
+}e.preventDefault()
+},scrollToPosition:function(el){if(el.length>0){customJQuery("html,body").animate({scrollTop:el.offset().top},500)
+}}};
+var ESURE_redeye={CONSTANTS:{LISTENER_TARGET:"esjs_redeyeListenerTarget_",PLACEHOLDER_ID:"redeyeimageplaceholder",HIDDEN_FORM_FIELD_NAME:"com.esure.flashScope.redeyeDeferredImage"},initialiseButtonTracking:function(){var redeyeImagePlaceHolder=customJQuery('<div id="'+ESURE.redeye.CONSTANTS.PLACEHOLDER_ID+'"></div>');
+customJQuery("#analyticsArea").append(redeyeImagePlaceHolder);
+customJQuery("form").prepend('<input type="hidden" name="'+ESURE.redeye.CONSTANTS.HIDDEN_FORM_FIELD_NAME+'" id="'+ESURE.redeye.CONSTANTS.HIDDEN_FORM_FIELD_NAME+'" />')
+},getURLToSendToRedeye:function(target,queryparams){if("undefined"===typeof queryparams){queryparams=""
+}var url=ESURE_ENVIRONMENT.redeyeBtnUrl+encodeURIComponent("/"+target)+queryparams+"&amp;tstamp="+new Date().getTime();
+return url
+},replaceImage:function(target,queryparams){var url=this.getURLToSendToRedeye(target,queryparams);
+customJQuery("#"+ESURE.redeye.CONSTANTS.PLACEHOLDER_ID).replaceWith("<img id='"+ESURE.redeye.CONSTANTS.PLACEHOLDER_ID+"' src='"+url+"' />")
+},setHiddenFieldValueOnSubmit:function(target,queryparams){var url=this.getURLToSendToRedeye(target,queryparams);
+var escapedName=ESURE.redeye.CONSTANTS.HIDDEN_FORM_FIELD_NAME.replace(/\./g,"\\.");
+customJQuery("#"+escapedName).val(url)
+},trackDomObject:function(){customJQuery(".esjs_redeyeListener").each(function(){var x=jQuery(this).attr("class").toString().split(/\s+/);
+var target=null;
+customJQuery.each(x,function(){if($(this).startsWith(ESURE.redeye.CONSTANTS.LISTENER_TARGET)){target=$(this).substring(ESURE.redeye.CONSTANTS.LISTENER_TARGET.length)
+}});
+customJQuery(this).on("click",function(event){ESURE_redeye.replaceImage(target)
+})
+});
+customJQuery(".esjs_redeyeSubmitListener").each(function(){var x=jQuery(this).attr("class").toString().split(/\s+/);
+var target=null;
+customJQuery.each(x,function(){if($(this).startsWith(ESURE.redeye.CONSTANTS.LISTENER_TARGET)){target=$(this).substring(ESURE.redeye.CONSTANTS.LISTENER_TARGET.length)
+}});
+jQuery(this).unbind("click.redeyeTrackDom").bind("click.redeyeTrackDom",function(event){ESURE_redeye.setHiddenFieldValueOnSubmit(target)
+})
+})
+},getRenewalDateString:function(val){if(val===ESURE.CONSTANTS.SELECT_BOX_NOT_SELECTED){return"NULL"
+}return"01/"+((val<10)?"0"+val:val)+"/"+new Date().getFullYear()
+},trackHomeRenewalMonths:function(){var contents=customJQuery("#contentsRenewalMonth").val();
+var buildings=customJQuery("#buildingsRenewalMonth").val();
+var target="renewal_date";
+var queryparams="&amp;contents="+ESURE_redeye.getRenewalDateString(contents)+"&amp;buildings="+ESURE_redeye.getRenewalDateString(buildings);
+this.replaceImage(target,queryparams)
+},trackMotorRenewalMonths:function(){var car=customJQuery("#carRenewalMonth").val();
+var target="renewal_date";
+var queryparams="&amp;car_renewal="+ESURE_redeye.getRenewalDateString(car);
+this.replaceImage(target,queryparams)
+}};
+var ESURE={CONSTANTS:{VALID_INPUTS:"select,input[type=text],input[type=checkbox],input[type=password],input[type=radio],input[type=hidden],input[type=number],input[type=email],input[type=tel]",NON_INPUT_DATA_CHANGED_CLICK_SELECTOR:".hasClickDataChange",SELECT_BOX_NOT_SELECTED:"org.jboss.seam.ui.NoSelectionConverter.noSelectionValue",NO_LISTENER_CSS_CLASS:"noListener",FLASH_SCOPE_PREFIX:"com.esure.flashScope.",COOKIE_SLIDER_COOKIE_NAME:"sliderStatus",COOKIE_PORTAL_NOTIFY_NAME:"portalNotifyStatus"},handlers:ESURE_handlers,modals:ESURE_modals,redeye:ESURE_redeye};
+var dataHasChanged=false;
+var onChangeInputs=[];
+var nonInputClickDataChanged=[];
+var dataChangedFunction=function dataChanged(evt){dataHasChanged=true;
+removeOnChangeListeners(dataChangedFunction);
+if(window.showRecalcFunc){customJQuery("body").addClass("inRecalcMode");
+showRecalcFunc(true)
+}};
+function attachOnChangeToAllInputs(fn){onChangeInputs=customJQuery(ESURE.CONSTANTS.VALID_INPUTS);
+onChangeInputs.each(function(index,input){input=customJQuery(input);
+if(!input.hasClass(ESURE.CONSTANTS.NO_LISTENER_CSS_CLASS)){var inputType=input.attr("type");
+if(document.all&&!window.opera&&(inputType==="radio"||inputType==="checkbox")){input.on("click",fn)
+}else{input.on("change",fn)
+}}});
+nonInputClickDataChanged=customJQuery(ESURE.CONSTANTS.NON_INPUT_DATA_CHANGED_CLICK_SELECTOR);
+nonInputClickDataChanged.on("click",fn)
+}function removeOnChangeListeners(fn){onChangeInputs.each(function(index,input){input=customJQuery(input);
+var inputType=input.attr("type");
+if(document.all&&!window.opera&&(inputType==="radio"||inputType==="checkbox")){input.off("click",fn)
+}else{input.off("change",fn)
+}});
+nonInputClickDataChanged.off("click",fn)
+}onWindowLoaded=function(evt){attachOnChangeToAllInputs(dataChangedFunction)
+};
+function renderPrimefacesDialog(panelId,cssClass,widget){var divName=panelId+"-container";
+var div=$(divName);
+if(div!==null){$(divName).remove()
+}if(div===null){div=document.createElement("div");
+YAHOO.util.Dom.addClass(div,cssClass);
+YAHOO.util.Dom.setStyle(div,"display","none");
+div.id=divName
+}if("ESURE_ENVIRONMENT" in window&&ESURE_ENVIRONMENT.siteCatalystChannel==="efulfilment"){document.getElementById("form").appendChild(div)
+}else{document.body.appendChild(div)
+}widget.render(div)
+}customJQuery(document).ready(function(){onWindowLoaded();
+ESURE.redeye.initialiseButtonTracking();
+ESURE.redeye.trackDomObject();
+customJQuery(".noMulticarAnchor").on("click",function(e){ESURE_handlers.clickNoMulticarAnchor(e)
+});
+customJQuery(document).on("keyup",ESURE.handlers.escapeKeyHandler);
+customJQuery("#slideMenuCloseButton").on("click",ESURE.handlers.clickSlideMenuClose);
+customJQuery(".faqLink").on("click",ESURE.handlers.clickFAQLink);
+if(docCookies.getItem(ESURE.CONSTANTS.COOKIE_SLIDER_COOKIE_NAME)===null){customJQuery("#slideMenu").slideDown("slow");
+customJQuery("body").addClass("cookieBarOpen")
+}else{customJQuery("body").addClass("cookieBarClosed")
+}customJQuery(".error").each(function(){var errorObject=customJQuery(this).parent().attr("id");
+if(errorObject!==null){errorObject=errorObject.slice(0,-7);
+customJQuery('[for="'+errorObject+'"]').addClass("error_selected");
+customJQuery("#"+errorObject).addClass("error_selected")
+}});
+customJQuery("#form").on("click",".radio-group label, fieldset fieldset label, fieldset.radio_stack label, .declarations fieldset label, #label_bundlePriceMonthlyRadio_0, #label_bundlePriceMonthlyRadio_1, #label_ncdProtectionFlag_0, #label_ncdProtectionFlag_1, #label_excessProtectionFlag_1, #label_excessProtectionFlag_0, #label_billingAddrSameAsPolicyAddr_0, #label_billingAddrSameAsPolicyAddr_1, #label_breakdownCover_0, #label_breakdownCover_1, #label_breakdownCover_2, #label_breakdownCover_3, #label_contentsSpecifiedItems_0, #label_contentsSpecifiedItems_1, #label_confirmAssumptionsFlag_0, #label_confirmAssumptionsFlag_1, #label_cardOwnerPolicyHolder_0, #label_cardOwnerPolicyHolder_1, #label_riskAddressSameAsInsuredAddressFlag_0, #label_riskAddressSameAsInsuredAddressFlag_1",function(){customJQuery(this).siblings().removeClass("selected");
+customJQuery(this).addClass("selected")
+});
+customJQuery("#form").on("click","#label_contentsCovers_0, #label_contentsCovers_1, #label_contentsCovers_2, #label_buildingsCovers_0, #label_buildingsCovers_1, #label_buildingsCovers_2",function(){customJQuery(this).parent().siblings().children("label").removeClass("selected");
+customJQuery(this).addClass("selected")
+});
+customJQuery('input[type="radio"]:checked').each(function(){var selectObject=customJQuery(this).attr("id");
+customJQuery("#label_"+selectObject).addClass("selected")
+});
+customJQuery("#burger").on("click",function(){ESURE.modals.displayModalWindow(hamburgerDialogWidget)
+});
+customJQuery("#menubar").addClass("mobileHeading");
+customJQuery("#confirmEmail").on("paste",function(e){e.preventDefault()
+});
+setTimeout(ESURE.handlers.positionAnchor,250)
+});

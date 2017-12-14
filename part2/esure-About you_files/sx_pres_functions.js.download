@@ -1,0 +1,5 @@
+synthetix.pres = function () {
+	if (document.querySelector('[data="Site_Global"]')) {
+		document.querySelector('[data="Site_Global"]').parentNode.remove();
+	}
+};
